@@ -1,4 +1,4 @@
-# Ehsanul Haque's GitHub Account 👨‍💻
+# Ehsanul Haque 👨‍💻
 
 Hey there! Welcome to my GitHub profile. I'm Ehsanul Haque, a passionate coder and a student at American International University Bangladesh pursuing a BSc in CSE. 🎓
 
