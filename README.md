@@ -30,7 +30,7 @@ I love connecting with fellow coders and learning from the amazing programming c
 
 Here are some of the cool projects I've been working on. Make sure to check them out:
 
-1. **Hotel Management System** - My first project developed using Java Swing. It's a comprehensive hotel management system that handles reservations, check-ins, check-outs, and more.
+1. **[Hotel Management System](https://github.com/EhsanulHaqueSiam/HotelManagementSystem)** - My first project developed using Java Swing. It's a comprehensive hotel management system that handles reservations, check-ins, check-outs, and more.
 
 Stay tuned for more exciting projects coming soon! 😄
 
