@@ -1,4 +1,11 @@
-<h2 align="left">Hey👋 What's poppin'!?</h2>
+<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=EhsanulHaqueSiam.EhsanulHaqueSiam">
+
+<h1 align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hey+👋;What's+poppin'!?;+Myself+Ehsanul+Haque!;&center=true&size=30">
+  </a>
+</h1>
+
 
 ###
 
