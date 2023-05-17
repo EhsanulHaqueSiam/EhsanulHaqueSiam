@@ -13,7 +13,7 @@
 
 ###
 
-<h3 align="left">About Me ✨</h3>
+<h2 align="left">About Me ✨</h3>
 
 ###
 
@@ -25,7 +25,7 @@
 
 ###
 
-<h4 align="left">Interest and Skills 🔥</h4>
+<h2 align="left">Interest and Skills 🔥</h4>
 
 ###
 
@@ -37,7 +37,7 @@
 
 ###
 
-<h4 align="left">Let's Connect! 🌐</h4>
+<h2 align="left">Let's Connect! 🌐</h4>
 
 ###
 
@@ -64,16 +64,39 @@
 
 ###
 
-<br clear="both">
+<h2 align="center">⚡ Stats ⚡</h2>
+<br>
+<p align=center>
+  <div align=center>
+    <a href="https://github.com/denvercoder1/github-readme-streak-stats" title="Go to Source">
+      <img align="left" width=390 src="https://github-readme-stats.vercel.app/api?username=EhsanulHaqueSiam&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" alt="zumrudu-anka" />
+    </a>
+    <a href="https://github.com/anuraghazra/github-readme-stats" title="Go to Source">
+      <img align="right" width=390 src="https://github-readme-stats.vercel.app/api/top-langs?username=EhsanulHaqueSiam&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" />
+    </a>
+  </div>
+  <br><br><br><br><br><br><br><br><br>
+  <div align=center>
+    <a href="https://github.com/anuraghazra/github-readme-stats">
+      <img width=325 align="center" src="https://streak-stats.demolab.com?user=EhsanulHaqueSiam&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5&order=3" />
+    </a>
+  </div>
+  <br>
+  <br>
+  <br>
+</p>
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=EhsanulHaqueSiam&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph" /> <br>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=EhsanulHaqueSiam&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph" /> <br>
-  <img src="https://streak-stats.demolab.com?user=EhsanulHaqueSiam&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph"  />
-</div>
+<hr>
 
 ###
 
-![Snake animation](https://github.com/EhsanulHaqueSiam/EhsanulHaqueSiam/blob/output/github-contribution-grid-snake.svg)
+<div align="center">
+  <h2>🐍 Snake eating my contribution 🐍</h2>
+  <br>
+  <img alt="snake eating my contribution" src="https://github.com/EhsanulHaqueSiam/EhsanulHaqueSiam/blob/output/github-contribution-grid-snake.svg">
+  <br>
+  <br>
+  <br>
+</div>
 
 ###
