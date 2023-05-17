@@ -67,6 +67,6 @@
 
 ###
 
-<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/output/snake.svg" alt="Snake animation" />
+![Snake animation](https://github.com/EhsanulHaqueSiam/EhsanulHaqueSiam/blob/output/github-contribution-grid-snake.svg)
 
 ###
