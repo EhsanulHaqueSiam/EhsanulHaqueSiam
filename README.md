@@ -69,7 +69,7 @@
 <p align=center>
   <div align=center>
     <a href="https://github.com/denvercoder1/github-readme-streak-stats" title="Go to Source">
-      <img align="left" width=390 src="https://github-readme-stats.vercel.app/api?username=EhsanulHaqueSiam&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" alt="zumrudu-anka" />
+      <img align="left" width=390 src="https://github-stats-alpha.vercel.app/api?username=EhsanulHaqueSiam&cc=282a36&tc=edede7&ic=ff6e96&bc=dddbdb" alt="zumrudu-anka" />
     </a>
     <a href="https://github.com/anuraghazra/github-readme-stats" title="Go to Source">
       <img align="right" width=390 src="https://github-readme-stats.vercel.app/api/top-langs?username=EhsanulHaqueSiam&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" />
