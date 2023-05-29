@@ -9,7 +9,7 @@
 
 ###
 
-<p align="left">Hey there! Welcome to my GitHub profile. I'm Ehsanul Haque, a passionate coder and a student at American International University Bangladesh pursuing a BSc in CSE. 🎓</p>
+<p align="left">Hey there! Welcome to my GitHub profile. I'm Ehsanul Haque 👋, a passionate coder and a student at American International University Bangladesh 🎓 pursuing a BSc in Computer Science and Engineering (CSE) 💻.</p>
 
 ###
 
@@ -21,7 +21,7 @@
 
 ###
 
-<h5 align="left">🔭 Currently working on Java programming.<br>👯 Looking to collaborate on software projects.<br>🤝 Need help with advanced Java topics.<br>🌱 Learning Java and software design patterns.<br>💬 Ask me about Java, Java Swing, or C++.<br>⚡ Fun fact: I love solving puzzles!</h5>
+<h5 align="left">🔭 Currently working on Java programming.<br>👯 Looking to collaborate on software projects.<br>🤝 Need help with advanced Java topics.<br>🌱 Learning MySQL and C++ data structures.<br>💬 Ask me about Java, Java Swing, or C++.<br>⚡ Fun fact: I turn coffee into code! ☕💻</h5>
 
 ###
 
