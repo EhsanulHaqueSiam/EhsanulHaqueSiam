@@ -96,7 +96,7 @@
   <h2>🐍 Snake eating my contribution 🐍</h2>
   <br>
 
-![snake gif](https://github.com/EhsanulHaqueSiam/EhsanulHaqueSiam/blob/output/github-contribution-grid-snake.gif)
+![snake gif](https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/output/github-contribution-grid-snake.svg)
 
   <br>
   <br>
