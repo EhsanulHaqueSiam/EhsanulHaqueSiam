@@ -55,14 +55,9 @@ const developer = {
 
 ## 📊 GitHub Analytics
 
-<!-- Stats using alternative working endpoints -->
 <p align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=EhsanulHaqueSiam&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF&text_color=FFFFFF&include_all_commits=true&count_private=true" width="49%"/>
-  <img src="https://streak-stats.demolab.com?user=EhsanulHaqueSiam&theme=tokyonight&hide_border=true&background=0D1117&ring=6C63FF&fire=00D9FF&currStreakLabel=00D9FF" width="49%"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=EhsanulHaqueSiam&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&langs_count=8" width="40%"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=EhsanulHaqueSiam&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF&text_color=FFFFFF&include_all_commits=true&count_private=true" width="49%"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EhsanulHaqueSiam&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&langs_count=8" width="49%"/>
 </p>
 
 <!-- Activity Graph -->
@@ -72,11 +67,18 @@ const developer = {
 
 ---
 
-## � GitHub Trophies
+## 🏅 Contribution Streak & Trophies
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=EhsanulHaqueSiam&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10"/>
-</p>
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><img src="https://img.shields.io/badge/🔥_Current_Streak-Active-FF6B6B?style=for-the-badge"/></td>
+      <td align="center"><img src="https://img.shields.io/badge/📅_Total_Commits-1000+-6C63FF?style=for-the-badge"/></td>
+      <td align="center"><img src="https://img.shields.io/badge/🏆_Repos-26-00D9FF?style=for-the-badge"/></td>
+      <td align="center"><img src="https://img.shields.io/badge/⭐_Stars-36+-FFD700?style=for-the-badge"/></td>
+    </tr>
+  </table>
+</div>
 
 ---
 
@@ -137,14 +139,14 @@ const developer = {
 
 <div align="center">
 
-[![StudentManagementSystem](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=StudentManagementSystem&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/StudentManagementSystem)
-[![spotify-review-sentiment](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=spotify-review-sentiment&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/spotify-review-sentiment)
+[![StudentManagementSystem](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=StudentManagementSystem&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/StudentManagementSystem)
+[![spotify-review-sentiment](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=spotify-review-sentiment&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/spotify-review-sentiment)
 
-[![HotelManagementSystem](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=HotelManagementSystem&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/HotelManagementSystem)
-[![MarioMultiverseAdventures](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=MarioMultiverseAdventures&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/MarioMultiverseAdventures)
+[![HotelManagementSystem](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=HotelManagementSystem&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/HotelManagementSystem)
+[![MarioMultiverseAdventures](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=MarioMultiverseAdventures&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/MarioMultiverseAdventures)
 
-[![AndroidDevJourney](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=AndroidDevJourney&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/AndroidDevJourney)
-[![BDNewsPaperScraper](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=BDNewsPaperScraper&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/BDNewsPaperScraper)
+[![AndroidDevJourney](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=AndroidDevJourney&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/AndroidDevJourney)
+[![BDNewsPaperScraper](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=BDNewsPaperScraper&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/BDNewsPaperScraper)
 
 </div>
 
