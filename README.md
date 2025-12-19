@@ -2,8 +2,9 @@
 
 <!-- Header with Typing Animation -->
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=600&lines=Hi+%F0%9F%91%8B+I'm+Ehsanul+Haque+Siam;AI+Developer+%7C+LLM+%26+RL+%7C+Backend;Published+Researcher+%40+Taylor+%26+Francis;Open+to+Opportunities+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=500&lines=Hi+%F0%9F%91%8B+I'm+Ehsanul+Haque+Siam;AI+Developer+%7C+LLM+%26+RL;Published+Researcher+%40+Taylor;36%2B+GitHub+Stars+%E2%AD%90;Open+to+Opportunities+%F0%9F%9A%80" alt="Typing SVG" />
 </h1>
+
 
 <h3 align="center">🚀 Building intelligent systems that solve real-world problems 🚀</h3>
 
