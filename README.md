@@ -257,8 +257,8 @@ const developer = {
 
 ---
 
-<img src="https://raw.githubusercontent.com/BrunnerLivio/brunnerlivio/master/images/notepad.gif" alt="Site created using notepad" height="30" />  <i><b>Profile Views</b></i>
-
-![Profile Views](https://profile-counter.glitch.me/EhsanulHaqueSiam/count.svg)
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=EhsanulHaqueSiam&style=for-the-badge&color=6C63FF&label=Profile+Views"/>
+</p>
 
 </div>
