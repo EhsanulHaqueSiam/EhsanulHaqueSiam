@@ -255,10 +255,5 @@ const developer = {
   <a href="https://discordapp.com/users/193079655811514369"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/></a>
 </p>
 
----
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=EhsanulHaqueSiam&style=for-the-badge&color=6C63FF&label=Profile+Views"/>
-</p>
 
 </div>
