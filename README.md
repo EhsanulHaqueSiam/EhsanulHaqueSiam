@@ -1,14 +1,11 @@
 <img align="right" src="https://komarev.com/ghpvc/?username=ehsanulHaqueSiam&style=flat-square&color=6C63FF">
 
-<!-- Animated Header -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6C63FF,100:00D9FF&height=200&section=header&text=Ehsanul%20Haque%20Siam&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=AI%20Developer%20%7C%20LLM%20%26%20RL%20%7C%20Backend%20Engineer&descAlignY=55&descSize=20"/>
-</div>
+<!-- Header with Typing Animation -->
+<h1 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=600&lines=Hi+%F0%9F%91%8B+I'm+Ehsanul+Haque+Siam;AI+Developer+%7C+LLM+%26+RL+%7C+Backend;Published+Researcher+%40+Taylor+%26+Francis;Open+to+Opportunities+%F0%9F%9A%80" alt="Typing SVG" />
+</h1>
 
-<!-- Typing Animation -->
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=600&lines=Published+Researcher+%40+Taylor+%26+Francis+%F0%9F%93%9A;AI+Developer+Building+Intelligent+Systems+%F0%9F%A4%96;36%2B+GitHub+Stars+%7C+Open+to+Opportunities+%E2%AD%90;Let's+Build+Something+Amazing+Together!+%F0%9F%9A%80" alt="Typing SVG" />
-</p>
+<h3 align="center">🚀 Building intelligent systems that solve real-world problems 🚀</h3>
 
 <!-- Quick Actions -->
 <p align="center">
@@ -17,10 +14,6 @@
   <a href="https://www.linkedin.com/in/ehsanulhaquesiam/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://flowcv.com/resume/61p1hietib2o"><img src="https://img.shields.io/badge/📄_Resume-00D9FF?style=for-the-badge"/></a>
 </p>
-
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-</div>
 
 ---
 
@@ -62,27 +55,28 @@ const developer = {
 
 ## 📊 GitHub Analytics
 
-<div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=EhsanulHaqueSiam&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF&text_color=FFFFFF"/>
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com?user=EhsanulHaqueSiam&theme=tokyonight&hide_border=true&background=0D1117&ring=6C63FF&fire=00D9FF&currStreakLabel=00D9FF"/>
-</div>
+<!-- Stats using alternative working endpoints -->
+<p align="center">
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=EhsanulHaqueSiam&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF&text_color=FFFFFF&include_all_commits=true&count_private=true" width="49%"/>
+  <img src="https://streak-stats.demolab.com?user=EhsanulHaqueSiam&theme=tokyonight&hide_border=true&background=0D1117&ring=6C63FF&fire=00D9FF&currStreakLabel=00D9FF" width="49%"/>
+</p>
 
-<div align="center">
-  <img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=EhsanulHaqueSiam&layout=donut&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF"/>
-</div>
+<p align="center">
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=EhsanulHaqueSiam&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&langs_count=8" width="40%"/>
+</p>
 
 <!-- Activity Graph -->
-<div align="center">
+<p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=EhsanulHaqueSiam&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=6C63FF&line=00D9FF&point=FFFFFF&area=true&area_color=6C63FF" width="98%"/>
-</div>
+</p>
 
 ---
 
-## 🎖️ Trophies
+## � GitHub Trophies
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=EhsanulHaqueSiam&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=10"/>
-</div>
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=EhsanulHaqueSiam&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10"/>
+</p>
 
 ---
 
@@ -143,22 +137,22 @@ const developer = {
 
 <div align="center">
 
-[![StudentManagementSystem](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=StudentManagementSystem&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/StudentManagementSystem)
-[![spotify-review-sentiment](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=spotify-review-sentiment&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/spotify-review-sentiment)
+[![StudentManagementSystem](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=StudentManagementSystem&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/StudentManagementSystem)
+[![spotify-review-sentiment](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=spotify-review-sentiment&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/spotify-review-sentiment)
 
-[![HotelManagementSystem](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=HotelManagementSystem&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/HotelManagementSystem)
-[![MarioMultiverseAdventures](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=MarioMultiverseAdventures&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/MarioMultiverseAdventures)
+[![HotelManagementSystem](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=HotelManagementSystem&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/HotelManagementSystem)
+[![MarioMultiverseAdventures](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=MarioMultiverseAdventures&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/MarioMultiverseAdventures)
 
-[![AndroidDevJourney](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=AndroidDevJourney&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/AndroidDevJourney)
-[![BDNewsPaperScraper](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=BDNewsPaperScraper&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/BDNewsPaperScraper)
+[![AndroidDevJourney](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=AndroidDevJourney&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/AndroidDevJourney)
+[![BDNewsPaperScraper](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=BDNewsPaperScraper&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/BDNewsPaperScraper)
 
 </div>
 
-<div align="center">
+<p align="center">
   <a href="https://github.com/EhsanulHaqueSiam?tab=repositories">
     <img src="https://img.shields.io/badge/🔍_View_All_26_Repositories-0D1117?style=for-the-badge&logo=github"/>
   </a>
-</div>
+</p>
 
 ---
 
@@ -212,15 +206,24 @@ const developer = {
 
 ## 💭 Random Dev Quote
 
-<div align="center">
+<p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight"/>
-</div>
+</p>
 
 ---
 
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-</div>
+## 📅 Weekly Coding Stats
+
+<!--START_SECTION:waka-->
+```text
+🌞 Morning    ██████░░░░░░░░░░░░░░░  28.5%
+🌆 Daytime    ████████░░░░░░░░░░░░░  38.2%
+🌃 Evening    █████░░░░░░░░░░░░░░░░  24.1%
+🌙 Night      ██░░░░░░░░░░░░░░░░░░░   9.2%
+```
+<!--END_SECTION:waka-->
+
+---
 
 <div align="center">
   
@@ -250,8 +253,10 @@ const developer = {
   <a href="https://discordapp.com/users/193079655811514369"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/></a>
 </p>
 
-</div>
+---
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6C63FF,100:00D9FF&height=120&section=footer"/>
+<img src="https://raw.githubusercontent.com/BrunnerLivio/brunnerlivio/master/images/notepad.gif" alt="Site created using notepad" height="30" />  <i><b>Profile Views</b></i>
+
+![Profile Views](https://profile-counter.glitch.me/EhsanulHaqueSiam/count.svg)
+
 </div>
