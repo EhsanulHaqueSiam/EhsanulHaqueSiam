@@ -1,161 +1,176 @@
-<!-- Hireable GitHub Profile - Auto-Updating & Recruiter-Optimized -->
-<img align="right" src="https://komarev.com/ghpvc/?username=ehsanulHaqueSiam&style=flat-square&color=blueviolet">
+<img align="right" src="https://komarev.com/ghpvc/?username=ehsanulHaqueSiam&style=flat-square&color=6C63FF">
 
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?lines=AI/ML+Engineer+%7C+Published+Researcher;Backend+Developer+%7C+Open+to+Work;Building+Intelligent+Systems+That+Matter&center=true&size=22&duration=3000&pause=1000&color=6C63FF&width=500">
-</h1>
-
-<!-- QUICK HIRE INFO -->
+<!-- Animated Header -->
 <div align="center">
-  
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Visit-8A2BE2?style=for-the-badge)](https://ehsanulhaquesiam.netlify.app)
-[![Email](https://img.shields.io/badge/📧_Hire_Me-Contact-EA4335?style=for-the-badge)](mailto:ehsanul.siamdev@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ehsanulhaquesiam/)
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6C63FF,100:00D9FF&height=200&section=header&text=Ehsanul%20Haque%20Siam&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=AI%20Developer%20%7C%20LLM%20%26%20RL%20%7C%20Backend%20Engineer&descAlignY=55&descSize=20"/>
+</div>
 
+<!-- Typing Animation -->
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=600&lines=Published+Researcher+%40+Taylor+%26+Francis+%F0%9F%93%9A;AI+Developer+Building+Intelligent+Systems+%F0%9F%A4%96;36%2B+GitHub+Stars+%7C+Open+to+Opportunities+%E2%AD%90;Let's+Build+Something+Amazing+Together!+%F0%9F%9A%80" alt="Typing SVG" />
+</p>
+
+<!-- Quick Actions -->
+<p align="center">
+  <a href="https://ehsanulhaquesiam.netlify.app"><img src="https://img.shields.io/badge/🌐_Portfolio-6C63FF?style=for-the-badge"/></a>
+  <a href="mailto:ehsanul.siamdev@gmail.com"><img src="https://img.shields.io/badge/📧_HIRE_ME-FF6B6B?style=for-the-badge"/></a>
+  <a href="https://www.linkedin.com/in/ehsanulhaquesiam/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="https://flowcv.com/resume/61p1hietib2o"><img src="https://img.shields.io/badge/📄_Resume-00D9FF?style=for-the-badge"/></a>
+</p>
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 </div>
 
 ---
 
-## 👋 About Me
+## ⚡ Quick Facts
 
-```python
-class AIEngineer:
-    def __init__(self):
-        self.name = "Ehsanul Haque Siam"
-        self.role = "AI/ML Engineer | Backend Developer"
-        self.education = "BSc CSE @ AIUB"
-        self.location = "Dhaka, Bangladesh 🇧🇩"
-        self.available_for = ["Full-time", "Contract", "Remote"]
-        
-    def current_focus(self):
-        return ["LLMs & NLP", "Medical AI", "Backend Systems"]
+```typescript
+const developer = {
+    name: "Ehsanul Haque Siam",
+    title: "AI Developer | LLM & RL | Backend Engineer",
     
-    def fun_fact(self):
-        return "I turn ☕ into ML models that actually work!"
+    education: "BSc CSE @ AIUB (2022-2026)",
+    location: "Dhaka, Bangladesh 🇧🇩",
+    
+    currentlyWorking: "Fine-tuning Medical BERTs for Healthcare AI",
+    learning: ["Reinforcement Learning", "LangChain", "MLOps"],
+    
+    askMeAbout: ["AI/ML", "NLP", "Backend Systems", "Android Dev"],
+    achievements: ["Published @ Taylor & Francis", "36+ GitHub Stars", "1st Runner-Up AIUB CS Fest"],
+    
+    available: { fullTime: true, contract: true, remote: true, relocation: true }
+};
 ```
 
 ---
 
-## 📊 Live GitHub Stats
+## 🏆 Achievements
 
-<!-- Auto-updating GitHub Stats -->
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=EhsanulHaqueSiam&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&bg_color=0D1117" height="180"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EhsanulHaqueSiam&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&bg_color=0D1117" height="180"/>
+  <table>
+    <tr>
+      <td align="center"><img src="https://img.shields.io/badge/📖_Published_Author-6C63FF?style=for-the-badge"/><br><b>Taylor & Francis</b><br>IDAA 2025</td>
+      <td align="center"><img src="https://img.shields.io/badge/🏅_Award_Winner-FFD700?style=for-the-badge"/><br><b>1st Runner-Up</b><br>AIUB CS Fest 2024</td>
+      <td align="center"><img src="https://img.shields.io/badge/⭐_Open_Source-00D9FF?style=for-the-badge"/><br><b>36+ Stars</b><br>26 Repositories</td>
+    </tr>
+  </table>
 </div>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=EhsanulHaqueSiam&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak"/>
-</p>
+---
 
-<!-- Activity Graph - Auto Updates -->
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EhsanulHaqueSiam&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=6C63FF&line=6C63FF&point=FFFFFF" width="100%"/>
-</p>
+## 📊 GitHub Analytics
+
+<div align="center">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=EhsanulHaqueSiam&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF&text_color=FFFFFF"/>
+  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com?user=EhsanulHaqueSiam&theme=tokyonight&hide_border=true&background=0D1117&ring=6C63FF&fire=00D9FF&currStreakLabel=00D9FF"/>
+</div>
+
+<div align="center">
+  <img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=EhsanulHaqueSiam&layout=donut&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF"/>
+</div>
+
+<!-- Activity Graph -->
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EhsanulHaqueSiam&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=6C63FF&line=00D9FF&point=FFFFFF&area=true&area_color=6C63FF" width="98%"/>
+</div>
 
 ---
 
-## 🏆 GitHub Trophies
+## 🎖️ Trophies
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=EhsanulHaqueSiam&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=15"/>
-</p>
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=EhsanulHaqueSiam&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=10"/>
+</div>
 
 ---
 
-## 🎯 What I Bring to Your Team
+## 💼 What I Do
 
+<div align="center">
 <table>
 <tr>
 <td width="50%">
 
-### 🤖 AI/ML Engineering
-- Fine-tuned **Medical BERTs** for healthcare NLP
-- **52,702 reviews** → **85-90% accuracy**
-- Published @ **Taylor & Francis** (IDAA 2025)
-- TensorFlow, PyTorch, scikit-learn
+<h3 align="center">🤖 AI/ML Engineering</h3>
+
+- 🔬 **Published Researcher** @ Taylor & Francis
+- 🏥 Fine-tuned **Medical BERTs** (BioBERT, PubMedBERT)
+- 📊 **52,702 reviews** → **85-90%** accuracy
+- 🧠 TensorFlow, PyTorch, scikit-learn
 
 </td>
 <td width="50%">
 
-### 💻 Backend Development  
-- **3NF normalized** database design
-- **6-8ms query times** with connection pooling
-- REST APIs & data pipelines
-- Java, Python, MySQL, PostgreSQL
+<h3 align="center">🗄️ Backend Development</h3>
+
+- ⚡ **6-8ms** query performance
+- 📐 **3NF normalized** database design
+- 🔗 REST APIs, JDBC, FastAPI
+- 🐬 MySQL (Expert), SQLite, PostgreSQL
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-### 📱 Mobile Development
-- **54+ Android lessons** (MVVM)
-- Retrofit, Hilt, Firebase, Room
-- RxJava3 & Kotlin Coroutines
-- Production-ready apps
+<h3 align="center">📱 Mobile Development</h3>
+
+- 📚 **54+** Android lessons created
+- 🏗️ MVVM, Retrofit, Hilt, Room
+- 🔥 Firebase, RxJava3, Paging 3
+- 📲 Production-ready applications
 
 </td>
 <td width="50%">
 
-### 🔧 Engineering Practices
-- **17-starred** open-source project
-- Comprehensive documentation
-- CI/CD with GitHub Actions
-- OpenGL game development
+<h3 align="center">🎮 Game & Graphics</h3>
+
+- 🎯 **OpenGL** 2D/3D rendering
+- ⚙️ Custom physics engine
+- 🎵 SFML audio integration
+- 👥 Led team of **5 developers**
 
 </td>
 </tr>
 </table>
-
----
-
-## � Impact Metrics
-
-<div align="center">
-
-| ⭐ Stars | 📊 Data Points | 🎯 ML Accuracy | 📚 Lessons | ⚡ Query Speed |
-|:-------:|:-------------:|:--------------:|:---------:|:-------------:|
-| **36+** | **52,702** | **85-90%** | **54+** | **6-8ms** |
-
 </div>
 
 ---
 
-## 🏆 Featured Projects
+## 🚀 Featured Projects
 
 <div align="center">
 
-[![StudentManagementSystem](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=StudentManagementSystem&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EhsanulHaqueSiam/StudentManagementSystem)
-[![spotify-review-sentiment](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=spotify-review-sentiment&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EhsanulHaqueSiam/spotify-review-sentiment)
+[![StudentManagementSystem](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=StudentManagementSystem&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/StudentManagementSystem)
+[![spotify-review-sentiment](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=spotify-review-sentiment&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/spotify-review-sentiment)
 
-[![MarioMultiverseAdventures](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=MarioMultiverseAdventures&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EhsanulHaqueSiam/MarioMultiverseAdventures)
-[![AndroidDevJourney](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=AndroidDevJourney&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EhsanulHaqueSiam/AndroidDevJourney)
+[![HotelManagementSystem](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=HotelManagementSystem&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/HotelManagementSystem)
+[![MarioMultiverseAdventures](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=MarioMultiverseAdventures&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/MarioMultiverseAdventures)
 
+[![AndroidDevJourney](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=AndroidDevJourney&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/AndroidDevJourney)
+[![BDNewsPaperScraper](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=BDNewsPaperScraper&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=00D9FF)](https://github.com/EhsanulHaqueSiam/BDNewsPaperScraper)
+
+</div>
+
+<div align="center">
+  <a href="https://github.com/EhsanulHaqueSiam?tab=repositories">
+    <img src="https://img.shields.io/badge/🔍_View_All_26_Repositories-0D1117?style=for-the-badge&logo=github"/>
+  </a>
 </div>
 
 ---
 
-## 📄 Publications & Recognition
+## 📈 Impact Metrics
 
-<table align="center">
-<tr>
-<td align="center">📖</td>
-<td><strong>Taylor & Francis</strong> - Medical BERTs for ADR Classification (IDAA 2025)</td>
-</tr>
-<tr>
-<td align="center">🏆</td>
-<td><strong>1st Runner-Up</strong> - AIUB CS Fest 2024 App Showcase</td>
-</tr>
-<tr>
-<td align="center">🎤</td>
-<td><strong>Conference</strong> - 2nd South Asian Climate Conference</td>
-</tr>
-<tr>
-<td align="center">🎖️</td>
-<td><strong>Dean's Award</strong> - Academic Excellence</td>
-</tr>
-</table>
+<div align="center">
+
+| ⭐ Stars | 📊 Data Points | 🎯 ML Accuracy | 📚 Lessons | ⚡ Query Speed | 📰 Sources |
+|:-------:|:-------------:|:-------------:|:---------:|:-------------:|:---------:|
+| ![](https://img.shields.io/badge/36+-6C63FF?style=flat-square) | ![](https://img.shields.io/badge/52,702-00D9FF?style=flat-square) | ![](https://img.shields.io/badge/85--90%25-FFD700?style=flat-square) | ![](https://img.shields.io/badge/54+-FF6B6B?style=flat-square) | ![](https://img.shields.io/badge/6--8ms-00FF88?style=flat-square) | ![](https://img.shields.io/badge/7-6C63FF?style=flat-square) |
+
+</div>
 
 ---
 
@@ -163,31 +178,53 @@ class AIEngineer:
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+### Languages & AI/ML
+<p>
+  <img src="https://skillicons.dev/icons?i=python,java,cpp,kotlin,cs,tensorflow,pytorch&theme=dark" />
+</p>
 
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+### Backend & Databases  
+<p>
+  <img src="https://skillicons.dev/icons?i=mysql,sqlite,postgres,firebase,fastapi&theme=dark" />
+</p>
 
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+### Mobile, Tools & More
+<p>
+  <img src="https://skillicons.dev/icons?i=androidstudio,git,github,linux,docker,neovim,vscode&theme=dark" />
+</p>
 
 </div>
 
 ---
 
+## 📄 Publications & Experience
+
 <div align="center">
-  <h2>🚀 My Contributions 🚀</h2>
-  <br>
+<table>
+<tr><td>📖</td><td><b>Taylor & Francis</b></td><td>Medical BERTs for Multi-Label ADR Classification (IDAA 2025)</td></tr>
+<tr><td>🎤</td><td><b>Conference Presenter</b></td><td>2nd South Asian Conference on Climate (Sep 2024)</td></tr>
+<tr><td>👥</td><td><b>Team Lead</b></td><td>Game Development Project - 5 developers (Oct-Dec 2024)</td></tr>
+<tr><td>🏆</td><td><b>1st Runner-Up</b></td><td>AIUB CS Fest 2024 - App Showcase (20+ teams)</td></tr>
+</table>
+</div>
+
+---
+
+## 💭 Random Dev Quote
+
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight"/>
+</div>
+
+---
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+</div>
+
+<div align="center">
+  
+## 🚀 My Contributions
 
   <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/EhsanulHaqueSiam/EhsanulHaqueSiam/blob/output/github-contribution-grid-snake-dark.svg" />
@@ -195,26 +232,26 @@ class AIEngineer:
   <img alt="github-snake" src="https://github.com/EhsanulHaqueSiam/EhsanulHaqueSiam/blob/output/github-contribution-grid-snake.svg" />
 </picture>
 
-  <br>
-  <br>
-  <br>
 </div>
 
 ---
 
-## 🤝 Let's Connect
+## 🤝 Let's Connect!
 
 <div align="center">
 
-**Open to AI/ML Engineering, Backend Development, or Research opportunities!**
+**🔥 Open to AI/ML, Backend, or Research Opportunities! 🔥**
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-8A2BE2?style=for-the-badge&logo=netlify&logoColor=white)](https://ehsanulhaquesiam.netlify.app)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ehsanulhaquesiam/)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ehsanul.siamdev@gmail.com)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/mdehaquesiam)
+<p>
+  <a href="https://ehsanulhaquesiam.netlify.app"><img src="https://img.shields.io/badge/Portfolio-6C63FF?style=for-the-badge&logo=google-chrome&logoColor=white"/></a>
+  <a href="https://www.linkedin.com/in/ehsanulhaquesiam/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="mailto:ehsanul.siamdev@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="https://twitter.com/mdehaquesiam"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/></a>
+  <a href="https://discordapp.com/users/193079655811514369"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/></a>
+</p>
 
----
+</div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer"/>
-
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6C63FF,100:00D9FF&height=120&section=footer"/>
 </div>
