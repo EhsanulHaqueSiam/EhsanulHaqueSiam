@@ -1,49 +1,65 @@
-<!-- Hireable GitHub Profile - Optimized for Recruiters -->
+<!-- Hireable GitHub Profile - Auto-Updating & Recruiter-Optimized -->
 <img align="right" src="https://komarev.com/ghpvc/?username=ehsanulHaqueSiam&style=flat-square&color=blueviolet">
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?lines=AI/ML+Engineer+%7C+Published+Researcher;Backend+Developer+%7C+Open+to+Work;36%2B+GitHub+Stars+%7C+52K%2B+Data+Points+Analyzed&center=true&size=24&duration=3000&pause=1000&color=6C63FF&width=600">
+  <img src="https://readme-typing-svg.herokuapp.com/?lines=AI/ML+Engineer+%7C+Published+Researcher;Backend+Developer+%7C+Open+to+Work;Building+Intelligent+Systems+That+Matter&center=true&size=22&duration=3000&pause=1000&color=6C63FF&width=500">
 </h1>
 
-<!-- QUICK HIRE INFO - What recruiters need in 5 seconds -->
+<!-- QUICK HIRE INFO -->
 <div align="center">
   
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-ehsanulhaquesiam.netlify.app-8A2BE2?style=for-the-badge)](https://ehsanulhaquesiam.netlify.app)
-[![Email](https://img.shields.io/badge/📧_Hire_Me-ehsanul.siamdev@gmail.com-EA4335?style=for-the-badge)](mailto:ehsanul.siamdev@gmail.com)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Visit-8A2BE2?style=for-the-badge)](https://ehsanulhaquesiam.netlify.app)
+[![Email](https://img.shields.io/badge/📧_Hire_Me-Contact-EA4335?style=for-the-badge)](mailto:ehsanul.siamdev@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ehsanulhaquesiam/)
-[![Resume](https://img.shields.io/badge/📄_Resume-Download-success?style=for-the-badge)](https://ehsanulhaquesiam.netlify.app)
 
 </div>
 
 ---
 
-## � About Me
+## 👋 About Me
 
 ```python
 class AIEngineer:
     def __init__(self):
         self.name = "Ehsanul Haque Siam"
         self.role = "AI/ML Engineer | Backend Developer"
-        self.education = "BSc CSE @ AIUB (American International University-Bangladesh)"
-        self.location = "Dhaka, Bangladesh"
+        self.education = "BSc CSE @ AIUB"
+        self.location = "Dhaka, Bangladesh 🇧🇩"
         self.available_for = ["Full-time", "Contract", "Remote"]
         
-    def skills(self):
-        return {
-            "AI/ML": ["TensorFlow", "PyTorch", "NLP", "LLMs", "BERT", "Computer Vision"],
-            "Languages": ["Python", "Java", "C++", "Kotlin", "SQL"],
-            "Backend": ["REST APIs", "JDBC", "Database Design (3NF)", "MySQL", "PostgreSQL"],
-            "Mobile": ["Android SDK", "MVVM", "Retrofit", "Firebase"],
-        }
+    def current_focus(self):
+        return ["LLMs & NLP", "Medical AI", "Backend Systems"]
     
-    def achievements(self):
-        return [
-            "📄 Published Author @ Taylor & Francis (IDAA 2025)",
-            "🏆 1st Runner-Up - AIUB CS Fest 2024",
-            "⭐ 36+ GitHub Stars across 26 repositories",
-            "🔬 Research: Medical BERTs for ADR Classification"
-        ]
+    def fun_fact(self):
+        return "I turn ☕ into ML models that actually work!"
 ```
+
+---
+
+## 📊 Live GitHub Stats
+
+<!-- Auto-updating GitHub Stats -->
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=EhsanulHaqueSiam&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&bg_color=0D1117" height="180"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EhsanulHaqueSiam&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&bg_color=0D1117" height="180"/>
+</div>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=EhsanulHaqueSiam&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak"/>
+</p>
+
+<!-- Activity Graph - Auto Updates -->
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EhsanulHaqueSiam&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=6C63FF&line=6C63FF&point=FFFFFF" width="100%"/>
+</p>
+
+---
+
+## 🏆 GitHub Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=EhsanulHaqueSiam&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=15"/>
+</p>
 
 ---
 
@@ -54,39 +70,39 @@ class AIEngineer:
 <td width="50%">
 
 ### 🤖 AI/ML Engineering
-- Fine-tuned **Medical BERTs** (BioBERT, PubMedBERT) for healthcare NLP
-- Built sentiment classifier analyzing **52,702 reviews** → **85-90% accuracy**
-- Published research on **Adverse Drug Reaction classification**
-- Experience with TensorFlow, PyTorch, scikit-learn
+- Fine-tuned **Medical BERTs** for healthcare NLP
+- **52,702 reviews** → **85-90% accuracy**
+- Published @ **Taylor & Francis** (IDAA 2025)
+- TensorFlow, PyTorch, scikit-learn
 
 </td>
 <td width="50%">
 
-### 💻 Backend Development
-- Designed **3NF normalized databases** with ER diagrams
-- Implemented **connection pooling** achieving **6-8ms query times**
-- Built **REST APIs** and data pipelines
-- Proficient in Java, Python, MySQL, PostgreSQL
+### 💻 Backend Development  
+- **3NF normalized** database design
+- **6-8ms query times** with connection pooling
+- REST APIs & data pipelines
+- Java, Python, MySQL, PostgreSQL
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-### � Mobile Development
-- Created **54+ Android lessons** covering MVVM architecture
-- Experience with Retrofit, Hilt, Firebase, Room Database
-- Built production-ready Android applications
+### 📱 Mobile Development
+- **54+ Android lessons** (MVVM)
+- Retrofit, Hilt, Firebase, Room
 - RxJava3 & Kotlin Coroutines
+- Production-ready apps
 
 </td>
 <td width="50%">
 
-### 🔧 Software Engineering
-- **17-starred** open-source project (8 forks)
-- GitHub Wiki documentation & technical writing
-- Web scraping frameworks (Scrapy)
-- OpenGL game development with C++
+### 🔧 Engineering Practices
+- **17-starred** open-source project
+- Comprehensive documentation
+- CI/CD with GitHub Actions
+- OpenGL game development
 
 </td>
 </tr>
@@ -94,19 +110,13 @@ class AIEngineer:
 
 ---
 
-## 📊 Impact & Metrics
+## � Impact Metrics
 
 <div align="center">
 
-| Metric | Value | Context |
-|:------:|:-----:|:--------|
-| ⭐ **36+** | GitHub Stars | Community-recognized code quality |
-| 📊 **52,702** | Reviews Analyzed | Large-scale NLP project |
-| 🎯 **85-90%** | ML Accuracy | Production-grade models |
-| � **54+** | Android Lessons | Comprehensive curriculum |
-| ⚡ **6-8ms** | Query Performance | Optimized database design |
-| � **7** | News Sources | Multi-source web scraper |
-| � **1st** | Runner-Up | AIUB CS Fest 2024 |
+| ⭐ Stars | 📊 Data Points | 🎯 ML Accuracy | 📚 Lessons | ⚡ Query Speed |
+|:-------:|:-------------:|:--------------:|:---------:|:-------------:|
+| **36+** | **52,702** | **85-90%** | **54+** | **6-8ms** |
 
 </div>
 
@@ -114,64 +124,13 @@ class AIEngineer:
 
 ## 🏆 Featured Projects
 
-<table>
-<tr>
-<td width="50%">
-
-### [📚 StudentManagementSystem](https://github.com/EhsanulHaqueSiam/StudentManagementSystem) ⭐17
-**Java • MySQL • JDBC**
-
-Most-starred student project demonstrating:
-- 3NF database normalization
-- Singleton pattern with connection pooling
-- 4-page GitHub Wiki documentation
-- Benchmarked 6 connection strategies
-
-</td>
-<td width="50%">
-
-### [🤖 Spotify Sentiment Analysis](https://github.com/EhsanulHaqueSiam/spotify-review-sentiment)
-**Python • NLP • scikit-learn**
-
-Production-grade ML pipeline:
-- 52,702 reviews analyzed
-- 85-90% classification accuracy
-- Complete NLP preprocessing pipeline
-- TF-IDF + MultinomialNB
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### [🎮 Mario's Multiverse Adventure](https://github.com/EhsanulHaqueSiam/MarioMultiverseAdventures)
-**C++ • OpenGL • SFML** | [📺 Demo](https://www.youtube.com/watch?v=wK7qjTRkStg)
-
-Computer Graphics course project:
-- 3 unique game levels
-- Physics & collision detection
-- SQLite high-score persistence
-- 5-member team collaboration
-
-</td>
-<td width="50%">
-
-### [📱 Android Dev Journey](https://github.com/EhsanulHaqueSiam/AndroidDevJourney)
-**Java • Android SDK • MVVM**
-
-Comprehensive Android curriculum:
-- 54+ structured lessons
-- MVVM, Retrofit, Hilt, Firebase
-- Beginner to advanced progression
-- Real-world project patterns
-
-</td>
-</tr>
-</table>
-
 <div align="center">
-  
-[![View All Repositories](https://img.shields.io/badge/🔍_View_All_26_Repositories-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/EhsanulHaqueSiam?tab=repositories)
+
+[![StudentManagementSystem](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=StudentManagementSystem&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EhsanulHaqueSiam/StudentManagementSystem)
+[![spotify-review-sentiment](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=spotify-review-sentiment&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EhsanulHaqueSiam/spotify-review-sentiment)
+
+[![MarioMultiverseAdventures](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=MarioMultiverseAdventures&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EhsanulHaqueSiam/MarioMultiverseAdventures)
+[![AndroidDevJourney](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=AndroidDevJourney&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/EhsanulHaqueSiam/AndroidDevJourney)
 
 </div>
 
@@ -179,67 +138,50 @@ Comprehensive Android curriculum:
 
 ## 📄 Publications & Recognition
 
-| Type | Title | Publisher/Event |
-|:----:|:------|:----------------|
-| 📖 **Book Chapter** | "Beyond NER: Medical BERTs for ADR Classification" | Taylor & Francis (IDAA 2025) |
-| 🎤 **Conference** | "Emerging Issues in Changing Climatic Scenarios" | 2nd South Asian Climate Conference |
-| 🏆 **Competition** | 1st Runner-Up - App Showcase | AIUB CS Fest 2024 |
-| 🎖️ **Academic** | Dean's Award | Academic Excellence |
+<table align="center">
+<tr>
+<td align="center">📖</td>
+<td><strong>Taylor & Francis</strong> - Medical BERTs for ADR Classification (IDAA 2025)</td>
+</tr>
+<tr>
+<td align="center">🏆</td>
+<td><strong>1st Runner-Up</strong> - AIUB CS Fest 2024 App Showcase</td>
+</tr>
+<tr>
+<td align="center">🎤</td>
+<td><strong>Conference</strong> - 2nd South Asian Climate Conference</td>
+</tr>
+<tr>
+<td align="center">🎖️</td>
+<td><strong>Dean's Award</strong> - Academic Excellence</td>
+</tr>
+</table>
 
 ---
 
-## 🛠️ Technical Skills
+## 🛠️ Tech Stack
 
 <div align="center">
 
-**Languages**
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
 
-**AI/ML & Data Science**
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-
-**Backend & Databases**
-
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
-
-**Mobile & Tools**
-
-![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 </div>
-
----
-
-## 📈 GitHub Analytics
-
-<p align="center">
-  <a href="https://github.com/EhsanulHaqueSiam">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=EhsanulHaqueSiam&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=EhsanulHaqueSiam&layout=compact&langs_count=8&theme=tokyonight&hide_border=true"/>
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/EhsanulHaqueSiam">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=EhsanulHaqueSiam&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
-  </a>
-</p>
 
 ---
 
@@ -264,13 +206,12 @@ Comprehensive Android curriculum:
 
 <div align="center">
 
-I'm actively seeking opportunities in **AI/ML Engineering**, **Backend Development**, or **Research** roles.
+**Open to AI/ML Engineering, Backend Development, or Research opportunities!**
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-8A2BE2?style=for-the-badge&logo=netlify&logoColor=white)](https://ehsanulhaquesiam.netlify.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ehsanulhaquesiam/)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ehsanul.siamdev@gmail.com)
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/mdehaquesiam)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discordapp.com/users/193079655811514369)
 
 ---
 
