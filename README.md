@@ -261,19 +261,10 @@ const siam = {
 
 ---
 
-## 🗓️ Isometric Contribution Calendar
-
-<!-- Generated Daily via lowlighter/metrics - See .github/workflows/metrics.yml -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/metrics/isocalendar.svg" width="100%" alt="Isometric Calendar"/>
-</p>
-
----
-
 ## 💭 Random Dev Quote
 
 <p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote"/>
+  <img src="https://quotes-github-readme.vercel.app/api?type=vertical&theme=tokyonight" width="400" alt="Dev Quote"/>
 </p>
 
 ---
