@@ -46,7 +46,7 @@ const siam = {
     },
 
     experience: [
-        "Lead Developer @ BetaScript LLC — 4 production apps, ~$2K daily revenue",
+        "Lead Developer @ BetaScript LLC — 4 production apps, 1.5x revenue growth",
         "AI Engineering Intern @ Unies — RAG systems & LLM evaluation",
         "Team Lead @ AIUB — 5-dev game development team"
     ],
@@ -71,7 +71,7 @@ const siam = {
 ### Lead Developer — BetaScript LLC
 `Jan 2026 — Present`
 
-Architected **4 production React applications** using React 19 and TanStack ecosystem. Maintained **100% client satisfaction** across 150+ projects serving **50,000+ users** and generating **~$2K daily revenue**.
+Architected **4 production React applications** using React 19 and TanStack ecosystem. Maintained **100% client satisfaction** across 150+ projects serving **50,000+ users**, driving **1.5x revenue growth**.
 
 </td>
 <td width="50%" valign="top">
@@ -174,9 +174,9 @@ Engineered **retrieval-augmented generation** systems with LangChain, Pinecone, 
 
 <div align="center">
 
-| Revenue | Users Served | Client Projects | Publications | ML Accuracy | Dean's List |
-|:-------:|:-----------:|:---------------:|:------------:|:-----------:|:-----------:|
-| ![](https://img.shields.io/badge/~$2K/day-26A69A?style=flat-square) | ![](https://img.shields.io/badge/50,000+-2C5364?style=flat-square) | ![](https://img.shields.io/badge/150+-29B6F6?style=flat-square) | ![](https://img.shields.io/badge/3-EF5350?style=flat-square) | ![](https://img.shields.io/badge/85--90%25-80CBC4?style=flat-square) | ![](https://img.shields.io/badge/3x-26A69A?style=flat-square) |
+| Revenue Growth | Users Served | Client Projects | Publications | ML Accuracy | Dean's List |
+|:-------------:|:-----------:|:---------------:|:------------:|:-----------:|:-----------:|
+| ![](https://img.shields.io/badge/1.5x-26A69A?style=flat-square) | ![](https://img.shields.io/badge/50,000+-2C5364?style=flat-square) | ![](https://img.shields.io/badge/150+-29B6F6?style=flat-square) | ![](https://img.shields.io/badge/3-EF5350?style=flat-square) | ![](https://img.shields.io/badge/85--90%25-80CBC4?style=flat-square) | ![](https://img.shields.io/badge/3x-26A69A?style=flat-square) |
 
 </div>
 
