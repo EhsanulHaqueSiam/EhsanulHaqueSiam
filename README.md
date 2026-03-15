@@ -47,7 +47,7 @@ const siam = {
 
     experience: [
         "Solo Developer @ BetaScript LLC — 4 production apps, 1.5x revenue growth",
-        "AI & Data Engineer @ BDTracks — 15+ scrapers, Gemini fine-tuning, live dashboards",
+        "AI & Data Engineer @ BDTracks — 82 spiders, Gemini fine-tuning, live dashboards",
         "AI Engineering Intern @ Unies — RAG systems & LLM evaluation",
         "Team Lead @ AIUB — 5-dev game development team"
     ],
