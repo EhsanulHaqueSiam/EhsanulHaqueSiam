@@ -239,17 +239,17 @@ Engineered **retrieval-augmented generation** systems with LangChain, Pinecone, 
 
 <!-- Profile Summary Cards -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/profile-summary-card-output/nord_dark/0-profile-details.svg" width="100%" alt="Profile Details"/>
+  <img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/profile-summary-card-output/gotham/0-profile-details.svg" width="100%" alt="Profile Details"/>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/profile-summary-card-output/nord_dark/3-stats.svg" width="49%" alt="Stats"/>
-  <img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/profile-summary-card-output/nord_dark/4-productive-time.svg" width="49%" alt="Productive Time"/>
+  <img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/profile-summary-card-output/gotham/3-stats.svg" width="49%" alt="Stats"/>
+  <img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/profile-summary-card-output/gotham/4-productive-time.svg" width="49%" alt="Productive Time"/>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/profile-summary-card-output/nord_dark/1-repos-per-language.svg" width="49%" alt="Repos per Language"/>
-  <img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/profile-summary-card-output/nord_dark/2-most-commit-language.svg" width="49%" alt="Most Commit Language"/>
+  <img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/profile-summary-card-output/gotham/1-repos-per-language.svg" width="49%" alt="Repos per Language"/>
+  <img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/profile-summary-card-output/gotham/2-most-commit-language.svg" width="49%" alt="Most Commit Language"/>
 </p>
 
 <!-- Streak Stats -->
@@ -267,7 +267,7 @@ Engineered **retrieval-augmented generation** systems with LangChain, Pinecone, 
 ## Trophies
 
 <p align="center">
-  <img src="https://github-trophies.vercel.app/?username=EhsanulHaqueSiam&theme=nord&no-frame=true&no-bg=true&column=7&margin-w=15&margin-h=15" width="100%" alt="Trophies"/>
+  <img src="https://github-trophies.vercel.app/?username=EhsanulHaqueSiam&theme=gitdimmed&no-frame=true&no-bg=true&column=7&margin-w=15&margin-h=15" width="100%" alt="Trophies"/>
 </p>
 
 ---
