@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: "0 6 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
 
 jobs:
   update:
@@ -19,22 +21,52 @@ jobs:
         run: |
           # Fetch repos pushed in the last 30 days, exclude forks and profile repo
           CUTOFF=$(date -u -d '30 days ago' '+%Y-%m-%dT%H:%M:%SZ')
+          NOW=$(date -u '+%s')
 
           PROJECTS=$(gh api users/EhsanulHaqueSiam/repos --paginate -q \
             ".[] | select(.fork == false) | select(.name != \"EhsanulHaqueSiam\") | select(.pushed_at > \"$CUTOFF\") | select(.language != null) | {name, description: (.description // \"No description\"), language, pushed_at, html_url}" \
-            | jq -s 'sort_by(.pushed_at) | reverse | .[0:8]')
+            | jq -s 'sort_by(.pushed_at) | reverse')
+
+          COUNT=$(echo "$PROJECTS" | jq 'length')
+
+          if [ "$COUNT" -eq 0 ]; then
+            echo "No active projects found"
+            exit 0
+          fi
 
           # Build the markdown table
-          TABLE="| Project | Description | Tech |"
-          TABLE+="\n|:--------|:-----------|:-----|"
+          TABLE="| Project | Description | Tech | Last Active |"
+          TABLE+="\n|:--------|:-----------|:-----|:-----------|"
 
           while IFS= read -r row; do
             NAME=$(echo "$row" | jq -r '.name')
             DESC=$(echo "$row" | jq -r '.description' | head -c 80)
             LANG=$(echo "$row" | jq -r '.language')
             URL=$(echo "$row" | jq -r '.html_url')
-            TABLE+="\n| [$NAME]($URL) | $DESC | $LANG |"
+            PUSHED=$(echo "$row" | jq -r '.pushed_at')
+
+            # Calculate relative time
+            PUSHED_TS=$(date -u -d "$PUSHED" '+%s')
+            DIFF=$(( (NOW - PUSHED_TS) / 86400 ))
+            if [ "$DIFF" -eq 0 ]; then
+              AGO="today"
+            elif [ "$DIFF" -eq 1 ]; then
+              AGO="yesterday"
+            elif [ "$DIFF" -lt 7 ]; then
+              AGO="${DIFF} days ago"
+            elif [ "$DIFF" -lt 14 ]; then
+              AGO="1 week ago"
+            elif [ "$DIFF" -lt 30 ]; then
+              WEEKS=$(( DIFF / 7 ))
+              AGO="${WEEKS} weeks ago"
+            else
+              AGO="$(date -u -d "$PUSHED" '+%b %d')"
+            fi
+
+            TABLE+="\n| [$NAME]($URL) | $DESC | $LANG | $AGO |"
           done < <(echo "$PROJECTS" | jq -c '.[]')
+
+          UPDATED=$(date -u '+%b %d, %Y %H:%M UTC')
 
           # Write replacement content to a temp file
           {
@@ -44,12 +76,14 @@ jobs:
             echo ''
             echo -e "$TABLE"
             echo ''
+            echo "<sub>Auto-updated daily · Last refresh: $UPDATED</sub>"
+            echo ''
             echo '</div>'
             echo ''
             echo '<!-- ACTIVE-PROJECTS-END -->'
           } > /tmp/active-projects.md
 
-          # Replace the section between markers using python
+          # Replace the section between markers
           python3 -c "
           import re
           with open('README.md', 'r') as f:

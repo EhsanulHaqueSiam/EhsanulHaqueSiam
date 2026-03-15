@@ -166,14 +166,19 @@ Engineered **retrieval-augmented generation** systems with LangChain, Pinecone, 
 
 <div align="center">
 
-| Project | Description | Tech |
-|:--------|:-----------|:-----|
-| [dam-price-tracker](https://github.com/EhsanulHaqueSiam/dam-price-tracker) | Bangladesh agricultural market prices — 447 commodities, 298 markets | Python |
-| [jomi-bhag](https://github.com/EhsanulHaqueSiam/jomi-bhag) | Islamic inheritance calculator — Quran/Hadith-backed, Hanafi jurisprudence | TypeScript |
-| [BDNewsPaperScraper](https://github.com/EhsanulHaqueSiam/BDNewsPaperScraper) | Advanced news scraper for 74+ Bangladeshi newspaper sources | Python |
-| [bd-mouza-scraper](https://github.com/EhsanulHaqueSiam/bd-mouza-scraper) | Bangladesh mouza-level land price data scraper + API | Python |
-| [kaajkormo](https://github.com/EhsanulHaqueSiam/kaajkormo) | Bangladesh job portal with swipe-to-apply — React 19 + Rust/Axum | TypeScript |
-| [docmind](https://github.com/EhsanulHaqueSiam/docmind) | RAG system with Vertex AI Gemini, Docling, and Qdrant | HTML |
+| Project | Description | Tech | Last Active |
+|:--------|:-----------|:-----|:-----------|
+| [dam-price-tracker](https://github.com/EhsanulHaqueSiam/dam-price-tracker) | Bangladesh agricultural market prices — 447 commodities, 298 markets | Python | today |
+| [jomi-bhag](https://github.com/EhsanulHaqueSiam/jomi-bhag) | Islamic inheritance calculator — Quran/Hadith-backed, Hanafi jurisprudence | TypeScript | yesterday |
+| [BDNewsPaperScraper](https://github.com/EhsanulHaqueSiam/BDNewsPaperScraper) | Advanced news scraper for 74+ Bangladeshi newspaper sources | Python | yesterday |
+| [bd-mouza-scraper](https://github.com/EhsanulHaqueSiam/bd-mouza-scraper) | Bangladesh mouza-level land price data scraper + API | Python | 3 days ago |
+| [Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam) | Personal portfolio website with modern design | TypeScript | 5 days ago |
+| [docmind](https://github.com/EhsanulHaqueSiam/docmind) | RAG system with Vertex AI Gemini, Docling, and Qdrant | HTML | 1 week ago |
+| [flowcv-mcp](https://github.com/EhsanulHaqueSiam/flowcv-mcp) | MCP server + CLI for FlowCV resume builder — 50 tools | JavaScript | 1 week ago |
+| [kaajkormo](https://github.com/EhsanulHaqueSiam/kaajkormo) | Bangladesh job portal with swipe-to-apply — React 19 + Rust/Axum | TypeScript | 1 week ago |
+| [offerlagbe](https://github.com/EhsanulHaqueSiam/offerlagbe) | Discover and share the best deals near you in Bangladesh | TypeScript | 1 week ago |
+
+<sub>Auto-updated daily · Last refresh: Mar 15, 2026 03:55 UTC</sub>
 
 </div>
 
