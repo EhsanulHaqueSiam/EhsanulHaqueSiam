@@ -62,6 +62,36 @@ const siam = {
 
 ---
 
+## Tech Stack
+
+<div align="center">
+
+### Languages
+<p>
+  <img src="https://skillicons.dev/icons?i=java,python,typescript,cpp,kotlin,cs,js&theme=dark" />
+</p>
+
+### AI/ML & Data
+<p>
+  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn&theme=dark" />
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" height="48"/>
+  <img src="https://img.shields.io/badge/Pinecone-000?style=for-the-badge&logoColor=white" height="48"/>
+</p>
+
+### Frontend & Backend
+<p>
+  <img src="https://skillicons.dev/icons?i=react,tailwind,fastapi,firebase&theme=dark" />
+</p>
+
+### Databases & DevOps
+<p>
+  <img src="https://skillicons.dev/icons?i=mysql,sqlite,postgres,docker,git,linux,neovim&theme=dark" />
+</p>
+
+</div>
+
+---
+
 ## Experience
 
 <table>
@@ -120,95 +150,34 @@ Engineered **retrieval-augmented generation** systems with LangChain, Pinecone, 
 
 ## What I Build
 
-<div align="center">
-<table>
-<tr>
-<td width="50%">
+**AI & LLM** — RAG Pipelines (LangChain, Pinecone, ChromaDB), Medical NLP (BioBERT, PubMedBERT), ML Systems (85-90% accuracy), TensorFlow, PyTorch
 
-### AI & LLM Engineering
+**Full-Stack** — React 19, TanStack, TailwindCSS, Framer Motion, FastAPI, MySQL, 7x query optimization
 
-- **RAG Pipelines** — LangChain, LlamaIndex, Pinecone, ChromaDB
-- **Medical NLP** — BioBERT, PubMedBERT fine-tuning
-- **ML Systems** — 85-90% accuracy on 52,702 reviews
-- **Frameworks** — TensorFlow, PyTorch, scikit-learn
+**Mobile** — Android (MVVM, Retrofit, Room, Firebase, Hilt DI, RxJava3)
 
-</td>
-<td width="50%">
-
-### Full-Stack Development
-
-- **Frontend** — React 19, TanStack, TailwindCSS, Framer Motion
-- **Backend** — FastAPI, REST APIs, JDBC
-- **Databases** — MySQL (Expert), SQLite, SQL Server
-- **Performance** — 7x query optimization (50ms → 7ms)
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### Mobile Development
-
-- **Android** — MVVM, Retrofit, Room, Firebase
-- **Architecture** — Hilt DI, RxJava3, Paging 3
-- **54+ lessons** documented in Android Dev Journey
-
-</td>
-<td width="50%">
-
-### Web Scraping & Automation
-
-- **BD News Scraper** — 82 spiders across 74+ sources
-- **Stack** — Scrapy, FastAPI, Docker, GitHub Actions
-- **Game Dev** — OpenGL/SFML, custom physics engine
-- **Led team of 5** on 2D platformer project
-
-</td>
-</tr>
-</table>
-</div>
+**Scraping & Automation** — 82 spiders across 74+ sources, Scrapy, Docker, GitHub Actions
 
 ---
 
-## Impact
+## Currently Working On
+
+<!-- ACTIVE-PROJECTS-START -->
 
 <div align="center">
 
-| Revenue Growth | Users Served | Client Projects | Publications | ML Accuracy | Dean's List |
-|:-------------:|:-----------:|:---------------:|:------------:|:-----------:|:-----------:|
-| ![](https://img.shields.io/badge/1.5x-26A69A?style=flat-square) | ![](https://img.shields.io/badge/50,000+-2C5364?style=flat-square) | ![](https://img.shields.io/badge/150+-29B6F6?style=flat-square) | ![](https://img.shields.io/badge/3-EF5350?style=flat-square) | ![](https://img.shields.io/badge/85--90%25-80CBC4?style=flat-square) | ![](https://img.shields.io/badge/3x-26A69A?style=flat-square) |
+| Project | Description | Tech |
+|:--------|:-----------|:-----|
+| [dam-price-tracker](https://github.com/EhsanulHaqueSiam/dam-price-tracker) | Bangladesh agricultural market prices — 447 commodities, 298 markets | Python |
+| [jomi-bhag](https://github.com/EhsanulHaqueSiam/jomi-bhag) | Islamic inheritance calculator — Quran/Hadith-backed, Hanafi jurisprudence | TypeScript |
+| [BDNewsPaperScraper](https://github.com/EhsanulHaqueSiam/BDNewsPaperScraper) | Advanced news scraper for 74+ Bangladeshi newspaper sources | Python |
+| [bd-mouza-scraper](https://github.com/EhsanulHaqueSiam/bd-mouza-scraper) | Bangladesh mouza-level land price data scraper + API | Python |
+| [kaajkormo](https://github.com/EhsanulHaqueSiam/kaajkormo) | Bangladesh job portal with swipe-to-apply — React 19 + Rust/Axum | TypeScript |
+| [docmind](https://github.com/EhsanulHaqueSiam/docmind) | RAG system with Vertex AI Gemini, Docling, and Qdrant | HTML |
 
 </div>
 
----
-
-## Tech Stack
-
-<div align="center">
-
-### Languages
-<p>
-  <img src="https://skillicons.dev/icons?i=java,python,typescript,cpp,kotlin,cs,js&theme=dark" />
-</p>
-
-### AI/ML & Data
-<p>
-  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn&theme=dark" />
-  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" height="48"/>
-  <img src="https://img.shields.io/badge/Pinecone-000?style=for-the-badge&logoColor=white" height="48"/>
-</p>
-
-### Frontend & Backend
-<p>
-  <img src="https://skillicons.dev/icons?i=react,tailwind,fastapi,firebase&theme=dark" />
-</p>
-
-### Databases & DevOps
-<p>
-  <img src="https://skillicons.dev/icons?i=mysql,sqlite,postgres,docker,git,linux,neovim&theme=dark" />
-</p>
-
-</div>
+<!-- ACTIVE-PROJECTS-END -->
 
 ---
 
@@ -216,14 +185,14 @@ Engineered **retrieval-augmented generation** systems with LangChain, Pinecone, 
 
 <div align="center">
 
-[![spotify-review-sentiment](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=spotify-review-sentiment&theme=algolia&hide_border=true&bg_color=0F2027&title_color=80CBC4&icon_color=26A69A)](https://github.com/EhsanulHaqueSiam/spotify-review-sentiment)
-[![BDNewsPaperScraper](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=BDNewsPaperScraper&theme=algolia&hide_border=true&bg_color=0F2027&title_color=80CBC4&icon_color=26A69A)](https://github.com/EhsanulHaqueSiam/BDNewsPaperScraper)
+[![spotify-review-sentiment](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=spotify-review-sentiment&hide_border=true&bg_color=0F2027&title_color=80CBC4&icon_color=26A69A&text_color=E0F7FA)](https://github.com/EhsanulHaqueSiam/spotify-review-sentiment)
+[![BDNewsPaperScraper](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=BDNewsPaperScraper&hide_border=true&bg_color=0F2027&title_color=80CBC4&icon_color=26A69A&text_color=E0F7FA)](https://github.com/EhsanulHaqueSiam/BDNewsPaperScraper)
 
-[![StudentManagementSystem](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=StudentManagementSystem&theme=algolia&hide_border=true&bg_color=0F2027&title_color=80CBC4&icon_color=26A69A)](https://github.com/EhsanulHaqueSiam/StudentManagementSystem)
-[![MarioMultiverseAdventures](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=MarioMultiverseAdventures&theme=algolia&hide_border=true&bg_color=0F2027&title_color=80CBC4&icon_color=26A69A)](https://github.com/EhsanulHaqueSiam/MarioMultiverseAdventures)
+[![StudentManagementSystem](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=StudentManagementSystem&hide_border=true&bg_color=0F2027&title_color=80CBC4&icon_color=26A69A&text_color=E0F7FA)](https://github.com/EhsanulHaqueSiam/StudentManagementSystem)
+[![MarioMultiverseAdventures](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=MarioMultiverseAdventures&hide_border=true&bg_color=0F2027&title_color=80CBC4&icon_color=26A69A&text_color=E0F7FA)](https://github.com/EhsanulHaqueSiam/MarioMultiverseAdventures)
 
-[![HotelManagementSystem](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=HotelManagementSystem&theme=algolia&hide_border=true&bg_color=0F2027&title_color=80CBC4&icon_color=26A69A)](https://github.com/EhsanulHaqueSiam/HotelManagementSystem)
-[![AndroidDevJourney](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=AndroidDevJourney&theme=algolia&hide_border=true&bg_color=0F2027&title_color=80CBC4&icon_color=26A69A)](https://github.com/EhsanulHaqueSiam/AndroidDevJourney)
+[![HotelManagementSystem](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=HotelManagementSystem&hide_border=true&bg_color=0F2027&title_color=80CBC4&icon_color=26A69A&text_color=E0F7FA)](https://github.com/EhsanulHaqueSiam/HotelManagementSystem)
+[![AndroidDevJourney](https://github-readme-stats.vercel.app/api/pin/?username=EhsanulHaqueSiam&repo=AndroidDevJourney&hide_border=true&bg_color=0F2027&title_color=80CBC4&icon_color=26A69A&text_color=E0F7FA)](https://github.com/EhsanulHaqueSiam/AndroidDevJourney)
 
 </div>
 
@@ -254,7 +223,7 @@ Engineered **retrieval-augmented generation** systems with LangChain, Pinecone, 
 
 <!-- Streak Stats -->
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=EhsanulHaqueSiam&theme=algolia&hide_border=true&background=0F2027&ring=26A69A&fire=EF5350&currStreakLabel=80CBC4&sideLabels=80CBC4&currStreakNum=E0F7FA&sideNums=E0F7FA&dates=546E7A" width="80%" alt="Streak Stats"/>
+  <img src="https://streak-stats.demolab.com?user=EhsanulHaqueSiam&hide_border=true&background=0F2027&ring=26A69A&fire=EF5350&currStreakLabel=80CBC4&sideLabels=80CBC4&currStreakNum=E0F7FA&sideNums=E0F7FA&dates=546E7A&stroke=2C5364" width="80%" alt="Streak Stats"/>
 </p>
 
 <!-- Activity Graph -->
@@ -264,49 +233,9 @@ Engineered **retrieval-augmented generation** systems with LangChain, Pinecone, 
 
 ---
 
-## Trophies
-
-<p align="center">
-  <img src="https://github-trophies.vercel.app/?username=EhsanulHaqueSiam&theme=gitdimmed&no-frame=true&no-bg=true&column=7&margin-w=15&margin-h=15" width="100%" alt="Trophies"/>
-</p>
-
----
-
-## Contribution Snake
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/EhsanulHaqueSiam/EhsanulHaqueSiam/blob/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github.com/EhsanulHaqueSiam/EhsanulHaqueSiam/blob/output/github-contribution-grid-snake.svg" />
-    <img alt="github-snake" src="https://github.com/EhsanulHaqueSiam/EhsanulHaqueSiam/blob/output/github-contribution-grid-snake.svg" />
-  </picture>
-</div>
-
----
-
-## 3D Contribution Map
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/3d-contrib/profile-night-green.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/3d-contrib/profile-green.svg" />
-    <img alt="3D Contribution Map" src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/3d-contrib/profile-night-green.svg" width="100%"/>
-  </picture>
-</div>
-
----
-
 <div align="center">
 
 **Open to AI/ML, Full-Stack, and Research opportunities.**
-
-<br>
-
-<a href="https://ehsanulhaquesiam.netlify.app"><img src="https://img.shields.io/badge/Portfolio-0F2027?style=for-the-badge&logo=googlechrome&logoColor=80CBC4"/></a>
-<a href="https://www.linkedin.com/in/ehsanulhaquesiam/"><img src="https://img.shields.io/badge/LinkedIn-0F2027?style=for-the-badge&logo=linkedin&logoColor=29B6F6"/></a>
-<a href="mailto:ehsanul.siamdev@gmail.com"><img src="https://img.shields.io/badge/Email-0F2027?style=for-the-badge&logo=gmail&logoColor=EF5350"/></a>
-<a href="https://kaggle.com/ehsanulhaquesiam"><img src="https://img.shields.io/badge/Kaggle-0F2027?style=for-the-badge&logo=kaggle&logoColor=26C6DA"/></a>
-<a href="https://discordapp.com/users/193079655811514369"><img src="https://img.shields.io/badge/Discord-0F2027?style=for-the-badge&logo=discord&logoColor=7289DA"/></a>
 
 </div>
 

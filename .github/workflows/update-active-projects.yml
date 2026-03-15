@@ -1,0 +1,69 @@
+name: Update Active Projects
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update active projects in README
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Fetch repos pushed in the last 30 days, exclude forks and profile repo
+          CUTOFF=$(date -u -d '30 days ago' '+%Y-%m-%dT%H:%M:%SZ')
+
+          PROJECTS=$(gh api users/EhsanulHaqueSiam/repos --paginate -q \
+            ".[] | select(.fork == false) | select(.name != \"EhsanulHaqueSiam\") | select(.pushed_at > \"$CUTOFF\") | select(.language != null) | {name, description: (.description // \"No description\"), language, pushed_at, html_url}" \
+            | jq -s 'sort_by(.pushed_at) | reverse | .[0:8]')
+
+          # Build the markdown table
+          TABLE="| Project | Description | Tech |"
+          TABLE+="\n|:--------|:-----------|:-----|"
+
+          while IFS= read -r row; do
+            NAME=$(echo "$row" | jq -r '.name')
+            DESC=$(echo "$row" | jq -r '.description' | head -c 80)
+            LANG=$(echo "$row" | jq -r '.language')
+            URL=$(echo "$row" | jq -r '.html_url')
+            TABLE+="\n| [$NAME]($URL) | $DESC | $LANG |"
+          done < <(echo "$PROJECTS" | jq -c '.[]')
+
+          # Write replacement content to a temp file
+          {
+            echo '<!-- ACTIVE-PROJECTS-START -->'
+            echo ''
+            echo '<div align="center">'
+            echo ''
+            echo -e "$TABLE"
+            echo ''
+            echo '</div>'
+            echo ''
+            echo '<!-- ACTIVE-PROJECTS-END -->'
+          } > /tmp/active-projects.md
+
+          # Replace the section between markers using python
+          python3 -c "
+          import re
+          with open('README.md', 'r') as f:
+              content = f.read()
+          with open('/tmp/active-projects.md', 'r') as f:
+              replacement = f.read()
+          pattern = r'<!-- ACTIVE-PROJECTS-START -->.*?<!-- ACTIVE-PROJECTS-END -->'
+          content = re.sub(pattern, replacement.strip(), content, flags=re.DOTALL)
+          with open('README.md', 'w') as f:
+              f.write(content)
+          "
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet README.md || (git add README.md && git commit -m "Update active projects" && git push)
