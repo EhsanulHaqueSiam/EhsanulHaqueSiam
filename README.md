@@ -47,6 +47,7 @@ const siam = {
 
     experience: [
         "Solo Developer @ BetaScript LLC — 4 production apps, 1.5x revenue growth",
+        "AI & Data Engineer @ BDTracks — 15+ scrapers, Gemini fine-tuning, live dashboards",
         "AI Engineering Intern @ Unies — RAG systems & LLM evaluation",
         "Team Lead @ AIUB — 5-dev game development team"
     ],
@@ -101,16 +102,33 @@ const siam = {
 ### Solo Developer — BetaScript LLC
 `Jan 2026 — Present`
 
-Architected **4 production React applications** using React 19 and TanStack ecosystem. Maintained **100% client satisfaction** across 150+ projects serving **50,000+ users**, driving **1.5x revenue growth**.
+- Drove **1.5x revenue growth** across 150+ client projects, by architecting **4 production React applications** with React 19 and TanStack ecosystem
+- Achieved **100% client satisfaction** serving **50,000+ users**, by delivering performant, production-grade web applications with optimized query performance
 
 </td>
+<td width="50%" valign="top">
+
+### AI & Data Engineer — BDTracks
+`Aug 2025 — Present`
+
+- Powered Bangladesh's commodity and accident tracking platform ([bdtracks.com](https://bdtracks.com)), by building **15+ web scrapers** processing daily feeds from multiple national sources
+- Improved data classification accuracy across commodity pricing and accident reports, by training and fine-tuning **Google Gemini 2.5 Flash/Pro** via Vertex AI
+- Enabled **live dashboards** with structured, searchable datasets, by engineering production data pipelines from raw multi-source feeds
+
+</td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### AI Engineering Intern — Unies
 `Feb 2026 — May 2026`
 
-Engineered **retrieval-augmented generation** systems with LangChain, Pinecone, and ChromaDB. Built automated **LLM evaluation frameworks** using FastAPI. Designed vector database architectures for production RAG pipelines.
+- Built production-ready **RAG systems** with improved retrieval accuracy, by engineering pipelines with LangChain, Pinecone, and ChromaDB
+- Streamlined model evaluation workflows, by building automated **LLM evaluation frameworks** using FastAPI
+- Enabled scalable vector search for production RAG pipelines, by designing optimized vector database architectures
 
+</td>
+<td width="50%" valign="top">
 </td>
 </tr>
 </table>
