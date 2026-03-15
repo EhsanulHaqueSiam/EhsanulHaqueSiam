@@ -4,7 +4,7 @@
 <div align="center">
 
 <!-- Typing Animation -->
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&duration=3500&pause=1200&color=80CBC4&center=true&vCenter=true&random=false&width=680&lines=Lead+Developer+%40+BetaScript+LLC+%E2%80%94+4+Production+Apps;AI+Engineer+%E2%80%94+RAG+Systems+%26+LLM+Pipelines;Published+%40+IEEE+Xplore+%26+Taylor+%26+Francis;Shipped+apps+serving+50%2C000%2B+users;3x+Dean's+List+%E2%80%A2+CGPA+3.95" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&duration=3500&pause=1200&color=80CBC4&center=true&vCenter=true&random=false&width=680&lines=Solo+Developer+%40+BetaScript+LLC+%E2%80%94+4+Production+Apps;AI+Engineer+%E2%80%94+RAG+Systems+%26+LLM+Pipelines;Published+%40+IEEE+Xplore+%26+Taylor+%26+Francis;Shipped+apps+serving+50%2C000%2B+users;3x+Dean's+List+%E2%80%A2+CGPA+3.95" alt="Typing SVG" />
 
 <br>
 
@@ -46,7 +46,7 @@ const siam = {
     },
 
     experience: [
-        "Lead Developer @ BetaScript LLC — 4 production apps, 1.5x revenue growth",
+        "Solo Developer @ BetaScript LLC — 4 production apps, 1.5x revenue growth",
         "AI Engineering Intern @ Unies — RAG systems & LLM evaluation",
         "Team Lead @ AIUB — 5-dev game development team"
     ],
@@ -68,7 +68,7 @@ const siam = {
 <tr>
 <td width="50%" valign="top">
 
-### Lead Developer — BetaScript LLC
+### Solo Developer — BetaScript LLC
 `Jan 2026 — Present`
 
 Architected **4 production React applications** using React 19 and TanStack ecosystem. Maintained **100% client satisfaction** across 150+ projects serving **50,000+ users**, driving **1.5x revenue growth**.
