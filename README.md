@@ -111,7 +111,7 @@ const siam = {
 ### AI & Data Engineer — BDTracks
 `Aug 2025 — Present`
 
-- Powered Bangladesh's commodity and accident tracking platform ([bdtracks.com](https://bdtracks.com)), by building **15+ web scrapers** processing daily feeds from multiple national sources
+- Powered Bangladesh's commodity and accident tracking platform ([bdtracks.com](https://bdtracks.com)), by building **82 spiders** processing daily feeds from multiple national sources
 - Improved data classification accuracy across commodity pricing and accident reports, by training and fine-tuning **Google Gemini 2.5 Flash/Pro** via Vertex AI
 - Enabled **live dashboards** with structured, searchable datasets, by engineering production data pipelines from raw multi-source feeds
 
