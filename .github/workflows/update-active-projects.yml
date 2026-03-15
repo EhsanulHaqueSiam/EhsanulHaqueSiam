@@ -4,8 +4,6 @@ on:
   schedule:
     - cron: "0 6 * * *"
   workflow_dispatch:
-  push:
-    branches: [main]
 
 jobs:
   update:
@@ -18,36 +16,89 @@ jobs:
       - name: Update active projects in README
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: EhsanulHaqueSiam
         run: |
-          # Fetch repos pushed in the last 30 days, exclude forks and profile repo
           CUTOFF=$(date -u -d '30 days ago' '+%Y-%m-%dT%H:%M:%SZ')
           NOW=$(date -u '+%s')
 
-          PROJECTS=$(gh api users/EhsanulHaqueSiam/repos --paginate -q \
-            ".[] | select(.fork == false) | select(.name != \"EhsanulHaqueSiam\") | select(.pushed_at > \"$CUTOFF\") | select(.language != null) | {name, description: (.description // \"No description\"), language, pushed_at, html_url}" \
-            | jq -s 'sort_by(.pushed_at) | reverse')
+          # Fetch public, non-fork, non-profile repos with a language
+          REPOS=$(gh api "users/$OWNER/repos?per_page=100&type=public" --paginate -q \
+            ".[] | select(.fork == false) | select(.name != \"$OWNER\") | select(.private == false) | select(.language != null) | select(.pushed_at > \"$CUTOFF\") | {name, description: (.description // \"\"), language, pushed_at, html_url, topics: (.topics // [])}")
 
-          COUNT=$(echo "$PROJECTS" | jq 'length')
+          # For each repo, check if the latest non-bot commit is within 30 days
+          VALID_PROJECTS="[]"
+
+          while IFS= read -r repo; do
+            [ -z "$repo" ] && continue
+            REPO_NAME=$(echo "$repo" | jq -r '.name')
+
+            # Get recent commits, filter out bots and GitHub Actions
+            LAST_USER_COMMIT=$(gh api "repos/$OWNER/$REPO_NAME/commits?per_page=5" -q \
+              "[.[] | select(.author.login != null) | select(.author.login != \"github-actions[bot]\") | select(.author.login != \"dependabot[bot]\") | select(.author.type != \"Bot\") | select(.commit.author.name != \"github-actions[bot]\") | select(.commit.author.name != \"GitHub Actions\")] | .[0].commit.author.date // empty" 2>/dev/null || echo "")
+
+            if [ -z "$LAST_USER_COMMIT" ]; then
+              continue
+            fi
+
+            # Check if last user commit is within cutoff
+            COMMIT_TS=$(date -u -d "$LAST_USER_COMMIT" '+%s' 2>/dev/null || echo "0")
+            CUTOFF_TS=$(date -u -d "$CUTOFF" '+%s')
+
+            if [ "$COMMIT_TS" -lt "$CUTOFF_TS" ]; then
+              continue
+            fi
+
+            # Add to valid projects with the actual last user commit date
+            VALID_PROJECTS=$(echo "$VALID_PROJECTS" | jq --argjson repo "$repo" --arg lcd "$LAST_USER_COMMIT" \
+              '. + [$repo + {last_commit_date: $lcd}]')
+
+          done < <(echo "$REPOS" | jq -c '.')
+
+          # Sort by last commit date descending
+          VALID_PROJECTS=$(echo "$VALID_PROJECTS" | jq 'sort_by(.last_commit_date) | reverse')
+          COUNT=$(echo "$VALID_PROJECTS" | jq 'length')
 
           if [ "$COUNT" -eq 0 ]; then
             echo "No active projects found"
             exit 0
           fi
 
+          # Language to emoji mapping
+          lang_emoji() {
+            case "$1" in
+              Python)       echo "🐍" ;;
+              TypeScript)   echo "💠" ;;
+              JavaScript)   echo "⚡" ;;
+              Java)         echo "☕" ;;
+              Kotlin)       echo "🟣" ;;
+              Dart)         echo "🎯" ;;
+              "C++")        echo "⚙️" ;;
+              "C#")         echo "🔷" ;;
+              HTML)         echo "🌐" ;;
+              Shell)        echo "🐚" ;;
+              Rust)         echo "🦀" ;;
+              Lua)          echo "🌙" ;;
+              PHP)          echo "🐘" ;;
+              Go)           echo "🔵" ;;
+              *)            echo "📦" ;;
+            esac
+          }
+
           # Build the markdown table
-          TABLE="| Project | Description | Tech | Last Active |"
-          TABLE+="\n|:--------|:-----------|:-----|:-----------|"
+          TABLE="| | Project | Description | Last Active |"
+          TABLE+="\n|:--|:--------|:-----------|:-----------|"
 
           while IFS= read -r row; do
             NAME=$(echo "$row" | jq -r '.name')
             DESC=$(echo "$row" | jq -r '.description' | head -c 80)
             LANG=$(echo "$row" | jq -r '.language')
             URL=$(echo "$row" | jq -r '.html_url')
-            PUSHED=$(echo "$row" | jq -r '.pushed_at')
+            LCD=$(echo "$row" | jq -r '.last_commit_date')
+            EMOJI=$(lang_emoji "$LANG")
 
             # Calculate relative time
-            PUSHED_TS=$(date -u -d "$PUSHED" '+%s')
-            DIFF=$(( (NOW - PUSHED_TS) / 86400 ))
+            LCD_TS=$(date -u -d "$LCD" '+%s')
+            DIFF=$(( (NOW - LCD_TS) / 86400 ))
             if [ "$DIFF" -eq 0 ]; then
               AGO="today"
             elif [ "$DIFF" -eq 1 ]; then
@@ -60,15 +111,15 @@ jobs:
               WEEKS=$(( DIFF / 7 ))
               AGO="${WEEKS} weeks ago"
             else
-              AGO="$(date -u -d "$PUSHED" '+%b %d')"
+              AGO="$(date -u -d "$LCD" '+%b %d')"
             fi
 
-            TABLE+="\n| [$NAME]($URL) | $DESC | $LANG | $AGO |"
-          done < <(echo "$PROJECTS" | jq -c '.[]')
+            TABLE+="\n| $EMOJI | **[$NAME]($URL)** | $DESC | \`$AGO\` |"
+          done < <(echo "$VALID_PROJECTS" | jq -c '.[]')
 
-          UPDATED=$(date -u '+%b %d, %Y %H:%M UTC')
+          UPDATED=$(date -u '+%b %d, %Y')
 
-          # Write replacement content to a temp file
+          # Write replacement content
           {
             echo '<!-- ACTIVE-PROJECTS-START -->'
             echo ''
@@ -76,7 +127,7 @@ jobs:
             echo ''
             echo -e "$TABLE"
             echo ''
-            echo "<sub>Auto-updated daily · Last refresh: $UPDATED</sub>"
+            echo "<sub>🔄 Auto-updated · $UPDATED</sub>"
             echo ''
             echo '</div>'
             echo ''
