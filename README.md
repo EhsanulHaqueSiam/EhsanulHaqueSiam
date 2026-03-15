@@ -186,19 +186,17 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| 🐍 | **[dam-price-tracker](https://github.com/EhsanulHaqueSiam/dam-price-tracker)** | Bangladesh agricultural market prices — 447 commodities, 298 markets | `today` |
-| 💠 | **[jomi-bhag](https://github.com/EhsanulHaqueSiam/jomi-bhag)** | Islamic inheritance calculator — Quran/Hadith-backed, Hanafi jurisprudence | `today` |
-| 🐍 | **[BDNewsPaperScraper](https://github.com/EhsanulHaqueSiam/BDNewsPaperScraper)** | Advanced news scraper for 74+ Bangladeshi newspaper sources | `today` |
-| 🐍 | **[bd-mouza-scraper](https://github.com/EhsanulHaqueSiam/bd-mouza-scraper)** | Bangladesh mouza-level land price data scraper + API | `2 days ago` |
-| 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website with modern design | `4 days ago` |
+| 💠 | **[jomi-bhag](https://github.com/EhsanulHaqueSiam/jomi-bhag)** | Islamic inheritance (Faraid) land & property division calculator for Bangladeshi | `today` |
+| 🐍 | **[bd-mouza-scraper](https://github.com/EhsanulHaqueSiam/bd-mouza-scraper)** | Bangladesh mouza-level land price data (মৌজা রেট) - scraper + API | `2 days ago` |
+| 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `4 days ago` |
 | 🌐 | **[docmind](https://github.com/EhsanulHaqueSiam/docmind)** | RAG system with Vertex AI Gemini, Docling, and Qdrant | `1 week ago` |
-| ⚡ | **[flowcv-mcp](https://github.com/EhsanulHaqueSiam/flowcv-mcp)** | MCP server + CLI for FlowCV resume builder — 50 tools | `1 week ago` |
-| 💠 | **[kaajkormo](https://github.com/EhsanulHaqueSiam/kaajkormo)** | Bangladesh job portal with swipe-to-apply — React 19 + Rust/Axum | `1 week ago` |
-| 💠 | **[offerlagbe](https://github.com/EhsanulHaqueSiam/offerlagbe)** | Discover and share the best deals near you in Bangladesh | `1 week ago` |
-| 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation | `3 weeks ago` |
-| 💠 | **[aurum-gold](https://github.com/EhsanulHaqueSiam/aurum-gold)** | Aurum — Premium Gold Jewellery E-Commerce | `3 weeks ago` |
-| 💠 | **[void-threads](https://github.com/EhsanulHaqueSiam/void-threads)** | Premium streetwear e-commerce — React 19, TanStack Start, Tailwind CSS v4 | `3 weeks ago` |
-| 🎯 | **[Mess-Manager](https://github.com/EhsanulHaqueSiam/Mess-Manager)** | Flutter-based manager for bachelor messes and shared apartments | `4 weeks ago` |
+| ⚡ | **[flowcv-mcp](https://github.com/EhsanulHaqueSiam/flowcv-mcp)** | MCP server + CLI for FlowCV resume builder — 50 tools, Chrome auto-login, Clau | `1 week ago` |
+| 💠 | **[kaajkormo](https://github.com/EhsanulHaqueSiam/kaajkormo)** | KaajKormo (কাজকর্ম) - Bangladesh's next-gen job portal with Tinder | `1 week ago` |
+| 💠 | **[offerlagbe](https://github.com/EhsanulHaqueSiam/offerlagbe)** | Discover and share the best deals, discounts, and offers near you in Bangladesh. | `1 week ago` |
+| 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `3 weeks ago` |
+| 💠 | **[aurum-gold](https://github.com/EhsanulHaqueSiam/aurum-gold)** | Aurum — Premium Gold Jewellery E-Commerce. Photo-forward, editorial-grade shop | `3 weeks ago` |
+| 💠 | **[void-threads](https://github.com/EhsanulHaqueSiam/void-threads)** | Premium streetwear e-commerce — React 19, TanStack Start, Tailwind CSS v4, Fra | `3 weeks ago` |
+| 📦 | **[Antigravity-Cleaner](https://github.com/EhsanulHaqueSiam/Antigravity-Cleaner)** |  | `3 weeks ago` |
 
 <sub>🔄 Auto-updated · Mar 15, 2026</sub>
 
