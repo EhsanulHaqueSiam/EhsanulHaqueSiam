@@ -47,7 +47,7 @@ const siam = {
 
     experience: [
         "Solo Developer @ BetaScript LLC — 4 production apps, 1.5x revenue growth",
-        "AI & Data Engineer @ BDTracks — 82 spiders, Gemini fine-tuning, live dashboards",
+        "AI & Data Engineer @ BDTracks — 82+ spiders, Gemini fine-tuning, live dashboards",
         "AI Engineering Intern @ Unies — RAG systems & LLM evaluation",
         "Team Lead @ AIUB — 5-dev game development team"
     ],
@@ -111,7 +111,7 @@ const siam = {
 ### AI & Data Engineer — BDTracks
 `Aug 2025 — Present`
 
-- Powered Bangladesh's commodity and accident tracking platform ([bdtracks.com](https://bdtracks.com)), by building **82 spiders** processing daily feeds from multiple national sources
+- Powered Bangladesh's commodity and accident tracking platform ([bdtracks.com](https://bdtracks.com)), by building **82+ spiders** processing daily feeds from multiple national sources
 - Improved data classification accuracy across commodity pricing and accident reports, by training and fine-tuning **Google Gemini 2.5 Flash/Pro** via Vertex AI
 - Enabled **live dashboards** with structured, searchable datasets, by engineering production data pipelines from raw multi-source feeds
 
@@ -174,7 +174,7 @@ const siam = {
 
 **Mobile** — Android (MVVM, Retrofit, Room, Firebase, Hilt DI, RxJava3)
 
-**Scraping & Automation** — 82 spiders across 74+ sources, Scrapy, Docker, GitHub Actions
+**Scraping & Automation** — 82+ spiders across 74+ sources, Scrapy, Docker, GitHub Actions
 
 ---
 
