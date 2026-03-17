@@ -186,9 +186,9 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| 💠 | **[jomi-bhag](https://github.com/EhsanulHaqueSiam/jomi-bhag)** | Islamic inheritance (Faraid) land & property division calculator for Bangladeshi | `yesterday` |
-| 🐍 | **[bd-mouza-scraper](https://github.com/EhsanulHaqueSiam/bd-mouza-scraper)** | Bangladesh mouza-level land price data (মৌজা রেট) - scraper + API | `3 days ago` |
-| 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `5 days ago` |
+| 💠 | **[jomi-bhag](https://github.com/EhsanulHaqueSiam/jomi-bhag)** | Islamic inheritance (Faraid) land & property division calculator for Bangladeshi | `2 days ago` |
+| 🐍 | **[bd-mouza-scraper](https://github.com/EhsanulHaqueSiam/bd-mouza-scraper)** | Bangladesh mouza-level land price data (মৌজা রেট) - scraper + API | `4 days ago` |
+| 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `6 days ago` |
 | 🌐 | **[docmind](https://github.com/EhsanulHaqueSiam/docmind)** | RAG system with Vertex AI Gemini, Docling, and Qdrant | `1 week ago` |
 | ⚡ | **[flowcv-mcp](https://github.com/EhsanulHaqueSiam/flowcv-mcp)** | MCP server + CLI for FlowCV resume builder — 50 tools, Chrome auto-login, Clau | `1 week ago` |
 | 💠 | **[kaajkormo](https://github.com/EhsanulHaqueSiam/kaajkormo)** | KaajKormo (কাজকর্ম) - Bangladesh's next-gen job portal with Tinder | `1 week ago` |
@@ -198,7 +198,7 @@ const siam = {
 | 💠 | **[void-threads](https://github.com/EhsanulHaqueSiam/void-threads)** | Premium streetwear e-commerce — React 19, TanStack Start, Tailwind CSS v4, Fra | `3 weeks ago` |
 | 📦 | **[Antigravity-Cleaner](https://github.com/EhsanulHaqueSiam/Antigravity-Cleaner)** |  | `4 weeks ago` |
 
-<sub>🔄 Auto-updated · Mar 16, 2026</sub>
+<sub>🔄 Auto-updated · Mar 17, 2026</sub>
 
 </div>
 
