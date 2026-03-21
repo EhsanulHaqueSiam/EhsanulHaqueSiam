@@ -186,9 +186,9 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| 💠 | **[ScholarHub](https://github.com/EhsanulHaqueSiam/ScholarHub)** | The most comprehensive international scholarship directory | `today` |
-| 💠 | **[jomi-bhag](https://github.com/EhsanulHaqueSiam/jomi-bhag)** | Islamic inheritance (Faraid) land & property division calculator for Bangladeshi | `today` |
-| 🐍 | **[BDNewsPaperScraper](https://github.com/EhsanulHaqueSiam/BDNewsPaperScraper)** | 🕷️ Advanced news scraper for major Bangladeshi newspapers with cross-platfo | `2 days ago` |
+| 🐍 | **[ScholarHub](https://github.com/EhsanulHaqueSiam/ScholarHub)** | The most comprehensive international scholarship directory | `today` |
+| 💠 | **[jomi-bhag](https://github.com/EhsanulHaqueSiam/jomi-bhag)** | Islamic inheritance (Faraid) land & property division calculator for Bangladeshi | `yesterday` |
+| 🐍 | **[BDNewsPaperScraper](https://github.com/EhsanulHaqueSiam/BDNewsPaperScraper)** | 🕷️ Advanced news scraper for major Bangladeshi newspapers with cross-platfo | `3 days ago` |
 | 🐍 | **[bd-mouza-scraper](https://github.com/EhsanulHaqueSiam/bd-mouza-scraper)** | Bangladesh mouza-level land price data (মৌজা রেট) - scraper + API | `1 week ago` |
 | 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `1 week ago` |
 | 🌐 | **[docmind](https://github.com/EhsanulHaqueSiam/docmind)** | RAG system with Vertex AI Gemini, Docling, and Qdrant | `2 weeks ago` |
@@ -196,10 +196,10 @@ const siam = {
 | 💠 | **[kaajkormo](https://github.com/EhsanulHaqueSiam/kaajkormo)** | KaajKormo (কাজকর্ম) - Bangladesh's next-gen job portal with Tinder | `2 weeks ago` |
 | 💠 | **[offerlagbe](https://github.com/EhsanulHaqueSiam/offerlagbe)** | Discover and share the best deals, discounts, and offers near you in Bangladesh. | `2 weeks ago` |
 | 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `3 weeks ago` |
-| 💠 | **[aurum-gold](https://github.com/EhsanulHaqueSiam/aurum-gold)** | Aurum — Premium Gold Jewellery E-Commerce. Photo-forward, editorial-grade shop | `3 weeks ago` |
-| 💠 | **[void-threads](https://github.com/EhsanulHaqueSiam/void-threads)** | Premium streetwear e-commerce — React 19, TanStack Start, Tailwind CSS v4, Fra | `3 weeks ago` |
+| 💠 | **[aurum-gold](https://github.com/EhsanulHaqueSiam/aurum-gold)** | Aurum — Premium Gold Jewellery E-Commerce. Photo-forward, editorial-grade shop | `4 weeks ago` |
+| 💠 | **[void-threads](https://github.com/EhsanulHaqueSiam/void-threads)** | Premium streetwear e-commerce — React 19, TanStack Start, Tailwind CSS v4, Fra | `4 weeks ago` |
 
-<sub>🔄 Auto-updated · Mar 20, 2026</sub>
+<sub>🔄 Auto-updated · Mar 21, 2026</sub>
 
 </div>
 
