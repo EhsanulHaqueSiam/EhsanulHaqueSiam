@@ -186,20 +186,20 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| 🎯 | **[TagMe](https://github.com/EhsanulHaqueSiam/TagMe)** | A Flutter app for students in Bangladesh to find ride-sharing partners. See near | `today` |
-| 💠 | **[ScholarHub](https://github.com/EhsanulHaqueSiam/ScholarHub)** | The most comprehensive international scholarship directory | `today` |
 | 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `today` |
-| 💠 | **[DoinikHishab](https://github.com/EhsanulHaqueSiam/DoinikHishab)** | দৈনিক হিসাব — A beautiful money tracking app built with Ex | `2 days ago` |
-| 🎯 | **[Mess-Manager](https://github.com/EhsanulHaqueSiam/Mess-Manager)** | A Flutter-based manager for bachelor messes and shared apartments. Features real | `3 days ago` |
-| 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `6 days ago` |
-| 💠 | **[jomi-bhag](https://github.com/EhsanulHaqueSiam/jomi-bhag)** | Islamic inheritance (Faraid) land & property division calculator for Bangladeshi | `6 days ago` |
-| 🌐 | **[docmind](https://github.com/EhsanulHaqueSiam/docmind)** | RAG system with Vertex AI Gemini, Docling, and Qdrant | `6 days ago` |
+| 🎯 | **[TagMe](https://github.com/EhsanulHaqueSiam/TagMe)** | A Flutter app for students in Bangladesh to find ride-sharing partners. See near | `today` |
+| 💠 | **[ScholarHub](https://github.com/EhsanulHaqueSiam/ScholarHub)** | The most comprehensive international scholarship directory | `yesterday` |
+| 💠 | **[DoinikHishab](https://github.com/EhsanulHaqueSiam/DoinikHishab)** | দৈনিক হিসাব — A beautiful money tracking app built with Ex | `3 days ago` |
+| 🎯 | **[Mess-Manager](https://github.com/EhsanulHaqueSiam/Mess-Manager)** | A Flutter-based manager for bachelor messes and shared apartments. Features real | `4 days ago` |
+| 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `1 week ago` |
+| 💠 | **[jomi-bhag](https://github.com/EhsanulHaqueSiam/jomi-bhag)** | Islamic inheritance (Faraid) land & property division calculator for Bangladeshi | `1 week ago` |
+| 🌐 | **[docmind](https://github.com/EhsanulHaqueSiam/docmind)** | RAG system with Vertex AI Gemini, Docling, and Qdrant | `1 week ago` |
 | 🐍 | **[bd-mouza-scraper](https://github.com/EhsanulHaqueSiam/bd-mouza-scraper)** | Bangladesh mouza-level land price data (মৌজা রেট) - scraper + API | `2 weeks ago` |
 | ⚡ | **[flowcv-mcp](https://github.com/EhsanulHaqueSiam/flowcv-mcp)** | MCP server + CLI for FlowCV resume builder — 50 tools, Chrome auto-login, Clau | `3 weeks ago` |
 | 💠 | **[kaajkormo](https://github.com/EhsanulHaqueSiam/kaajkormo)** | KaajKormo (কাজকর্ম) - Bangladesh's next-gen job portal with Tinder | `3 weeks ago` |
 | 💠 | **[offerlagbe](https://github.com/EhsanulHaqueSiam/offerlagbe)** | Discover and share the best deals, discounts, and offers near you in Bangladesh. | `3 weeks ago` |
 
-<sub>🔄 Auto-updated · Mar 29, 2026</sub>
+<sub>🔄 Auto-updated · Mar 30, 2026</sub>
 
 </div>
 
