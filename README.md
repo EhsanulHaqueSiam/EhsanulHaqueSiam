@@ -186,21 +186,21 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| 💠 | **[Praxis](https://github.com/EhsanulHaqueSiam/Praxis)** | Praxis — Build Real Skills Through Projects. Premium ed-tech course platform w | `today` |
-| 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `2 days ago` |
-| 🎯 | **[TagMe](https://github.com/EhsanulHaqueSiam/TagMe)** | A Flutter app for students in Bangladesh to find ride-sharing partners. See near | `2 days ago` |
-| 💠 | **[ScholarHub](https://github.com/EhsanulHaqueSiam/ScholarHub)** | The most comprehensive international scholarship directory | `3 days ago` |
-| 💠 | **[DoinikHishab](https://github.com/EhsanulHaqueSiam/DoinikHishab)** | দৈনিক হিসাব — A beautiful money tracking app built with Ex | `5 days ago` |
-| 🎯 | **[Mess-Manager](https://github.com/EhsanulHaqueSiam/Mess-Manager)** | A Flutter-based manager for bachelor messes and shared apartments. Features real | `6 days ago` |
+| 💠 | **[ScholarHub](https://github.com/EhsanulHaqueSiam/ScholarHub)** | The most comprehensive international scholarship directory | `today` |
+| 💠 | **[Praxis](https://github.com/EhsanulHaqueSiam/Praxis)** | Praxis — Build Real Skills Through Projects. Premium ed-tech course platform w | `yesterday` |
+| 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `3 days ago` |
+| 🎯 | **[TagMe](https://github.com/EhsanulHaqueSiam/TagMe)** | A Flutter app for students in Bangladesh to find ride-sharing partners. See near | `3 days ago` |
+| 💠 | **[DoinikHishab](https://github.com/EhsanulHaqueSiam/DoinikHishab)** | দৈনিক হিসাব — A beautiful money tracking app built with Ex | `6 days ago` |
+| 🎯 | **[Mess-Manager](https://github.com/EhsanulHaqueSiam/Mess-Manager)** | A Flutter-based manager for bachelor messes and shared apartments. Features real | `1 week ago` |
 | 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `1 week ago` |
 | 💠 | **[jomi-bhag](https://github.com/EhsanulHaqueSiam/jomi-bhag)** | Islamic inheritance (Faraid) land & property division calculator for Bangladeshi | `1 week ago` |
 | 🌐 | **[docmind](https://github.com/EhsanulHaqueSiam/docmind)** | RAG system with Vertex AI Gemini, Docling, and Qdrant | `1 week ago` |
 | 🐍 | **[bd-mouza-scraper](https://github.com/EhsanulHaqueSiam/bd-mouza-scraper)** | Bangladesh mouza-level land price data (মৌজা রেট) - scraper + API | `2 weeks ago` |
-| ⚡ | **[flowcv-mcp](https://github.com/EhsanulHaqueSiam/flowcv-mcp)** | MCP server + CLI for FlowCV resume builder — 50 tools, Chrome auto-login, Clau | `3 weeks ago` |
+| ⚡ | **[flowcv-mcp](https://github.com/EhsanulHaqueSiam/flowcv-mcp)** | MCP server + CLI for FlowCV resume builder — 50 tools, Chrome auto-login, Clau | `4 weeks ago` |
 | 💠 | **[kaajkormo](https://github.com/EhsanulHaqueSiam/kaajkormo)** | KaajKormo (কাজকর্ম) - Bangladesh's next-gen job portal with Tinder | `4 weeks ago` |
 | 💠 | **[offerlagbe](https://github.com/EhsanulHaqueSiam/offerlagbe)** | Discover and share the best deals, discounts, and offers near you in Bangladesh. | `4 weeks ago` |
 
-<sub>🔄 Auto-updated · Apr 01, 2026</sub>
+<sub>🔄 Auto-updated · Apr 02, 2026</sub>
 
 </div>
 
