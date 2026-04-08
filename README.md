@@ -186,12 +186,12 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| ⚡ | **[bdmeter](https://github.com/EhsanulHaqueSiam/bdmeter)** | Bangladesh Prepaid Electricity Meter Dashboard — NESCO & DESCO | `2 days ago` |
-| 💠 | **[ielts-prep](https://github.com/EhsanulHaqueSiam/ielts-prep)** | IELTS Preparation Hub — community-vetted resources, strategies, and study plan | `2 days ago` |
-| 🌐 | **[pretext-demo](https://github.com/EhsanulHaqueSiam/pretext-demo)** | Interactive particle portfolio powered by @chenglou/pretext | `2 days ago` |
-| 🐍 | **[mediscrape](https://github.com/EhsanulHaqueSiam/mediscrape)** | Comprehensive medicine database scraper for 26 sources - Bangladesh & internatio | `2 days ago` |
-| 💠 | **[ScholarHub](https://github.com/EhsanulHaqueSiam/ScholarHub)** | The most comprehensive international scholarship directory | `3 days ago` |
-| 💠 | **[Praxis](https://github.com/EhsanulHaqueSiam/Praxis)** | Praxis — Build Real Skills Through Projects. Premium ed-tech course platform w | `6 days ago` |
+| ⚡ | **[bdmeter](https://github.com/EhsanulHaqueSiam/bdmeter)** | Bangladesh Prepaid Electricity Meter Dashboard — NESCO & DESCO | `3 days ago` |
+| 💠 | **[ielts-prep](https://github.com/EhsanulHaqueSiam/ielts-prep)** | IELTS Preparation Hub — community-vetted resources, strategies, and study plan | `3 days ago` |
+| 🌐 | **[pretext-demo](https://github.com/EhsanulHaqueSiam/pretext-demo)** | Interactive particle portfolio powered by @chenglou/pretext | `3 days ago` |
+| 🐍 | **[mediscrape](https://github.com/EhsanulHaqueSiam/mediscrape)** | Comprehensive medicine database scraper for 26 sources - Bangladesh & internatio | `3 days ago` |
+| 💠 | **[ScholarHub](https://github.com/EhsanulHaqueSiam/ScholarHub)** | The most comprehensive international scholarship directory | `4 days ago` |
+| 💠 | **[Praxis](https://github.com/EhsanulHaqueSiam/Praxis)** | Praxis — Build Real Skills Through Projects. Premium ed-tech course platform w | `1 week ago` |
 | 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `1 week ago` |
 | 🎯 | **[TagMe](https://github.com/EhsanulHaqueSiam/TagMe)** | A Flutter app for students in Bangladesh to find ride-sharing partners. See near | `1 week ago` |
 | 💠 | **[DoinikHishab](https://github.com/EhsanulHaqueSiam/DoinikHishab)** | দৈনিক হিসাব — A beautiful money tracking app built with Ex | `1 week ago` |
@@ -201,7 +201,7 @@ const siam = {
 | 🌐 | **[docmind](https://github.com/EhsanulHaqueSiam/docmind)** | RAG system with Vertex AI Gemini, Docling, and Qdrant | `2 weeks ago` |
 | 🐍 | **[bd-mouza-scraper](https://github.com/EhsanulHaqueSiam/bd-mouza-scraper)** | Bangladesh mouza-level land price data (মৌজা রেট) - scraper + API | `3 weeks ago` |
 
-<sub>🔄 Auto-updated · Apr 07, 2026</sub>
+<sub>🔄 Auto-updated · Apr 08, 2026</sub>
 
 </div>
 
