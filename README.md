@@ -201,7 +201,7 @@ const siam = {
 | 💠 | **[jomi-bhag](https://github.com/EhsanulHaqueSiam/jomi-bhag)** | Islamic inheritance (Faraid) land & property division calculator for Bangladeshi | `3 weeks ago` |
 | 🌐 | **[docmind](https://github.com/EhsanulHaqueSiam/docmind)** | RAG system with Vertex AI Gemini, Docling, and Qdrant | `3 weeks ago` |
 
-<sub>🔄 Auto-updated · Apr 13, 2026</sub>
+<sub>🔄 Auto-updated · Apr 14, 2026</sub>
 
 </div>
 
