@@ -48,6 +48,7 @@ const siam = {
     experience: [
         "Solo Developer @ BetaScript LLC — 4 production apps, 1.5x revenue growth",
         "AI & Data Engineer @ BDTracks — 82+ spiders, Gemini fine-tuning, live dashboards",
+        "Research Assistant @ Deepchain Labs — competitive research, feature discovery across AI & Blockchain",
         "AI Engineering Intern @ Unies — RAG systems & LLM evaluation",
         "Team Lead @ AIUB — 5-dev game development team"
     ],
@@ -129,6 +130,14 @@ const siam = {
 
 </td>
 <td width="50%" valign="top">
+
+### Research Assistant — [Deepchain Labs](https://deepchainlabs.com/)
+`Oct 2025 — Present`
+
+- Informed product roadmap decisions with actionable competitive intelligence, by researching industry trends, competitors, and emerging technologies across **Privacy, Security, Blockchain, and AI**
+- Accelerated feature development with data-driven insights, by preparing **research reports, presentations, and documentation** for product and development teams
+- Identified strategic gaps, risks, and innovation opportunities, by validating research outcomes with cross-functional product and engineering teams
+
 </td>
 </tr>
 </table>
