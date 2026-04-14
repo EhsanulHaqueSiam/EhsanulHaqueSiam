@@ -132,7 +132,7 @@ const siam = {
 <td width="50%" valign="top">
 
 ### Research Assistant — [Deepchain Labs](https://deepchainlabs.com/)
-`Oct 2025 — Present`
+`Apr 2026 — Present`
 
 - Informed product roadmap decisions with actionable competitive intelligence, by researching industry trends, competitors, and emerging technologies across **Privacy, Security, Blockchain, and AI**
 - Accelerated feature development with data-driven insights, by preparing **research reports, presentations, and documentation** for product and development teams
