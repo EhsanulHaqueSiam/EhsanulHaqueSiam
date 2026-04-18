@@ -195,12 +195,13 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| 💠 | **[Eventarc](https://github.com/EhsanulHaqueSiam/Eventarc)** | A multi-event management platform for large-scale events — QR-based access con | `3 days ago` |
+| 💠 | **[aiub-portal-plus](https://github.com/EhsanulHaqueSiam/aiub-portal-plus)** | Browser extension that modernizes the AIUB Student Portal — routine generator, | `today` |
+| 💠 | **[Eventarc](https://github.com/EhsanulHaqueSiam/Eventarc)** | A multi-event management platform for large-scale events — QR-based access con | `4 days ago` |
 | ⚡ | **[bdmeter](https://github.com/EhsanulHaqueSiam/bdmeter)** | Bangladesh Prepaid Electricity Meter Dashboard — NESCO & DESCO | `1 week ago` |
 | 💠 | **[ielts-prep](https://github.com/EhsanulHaqueSiam/ielts-prep)** | IELTS Preparation Hub — community-vetted resources, strategies, and study plan | `1 week ago` |
 | 🌐 | **[pretext-demo](https://github.com/EhsanulHaqueSiam/pretext-demo)** | Interactive particle portfolio powered by @chenglou/pretext | `1 week ago` |
 | 🐍 | **[mediscrape](https://github.com/EhsanulHaqueSiam/mediscrape)** | Comprehensive medicine database scraper for 26 sources - Bangladesh & internatio | `1 week ago` |
-| 💠 | **[ScholarHub](https://github.com/EhsanulHaqueSiam/ScholarHub)** | The most comprehensive international scholarship directory | `1 week ago` |
+| 💠 | **[ScholarHub](https://github.com/EhsanulHaqueSiam/ScholarHub)** | The most comprehensive international scholarship directory | `2 weeks ago` |
 | 💠 | **[Praxis](https://github.com/EhsanulHaqueSiam/Praxis)** | Praxis — Build Real Skills Through Projects. Premium ed-tech course platform w | `2 weeks ago` |
 | 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `2 weeks ago` |
 | 🎯 | **[TagMe](https://github.com/EhsanulHaqueSiam/TagMe)** | A Flutter app for students in Bangladesh to find ride-sharing partners. See near | `2 weeks ago` |
@@ -210,7 +211,7 @@ const siam = {
 | 💠 | **[jomi-bhag](https://github.com/EhsanulHaqueSiam/jomi-bhag)** | Islamic inheritance (Faraid) land & property division calculator for Bangladeshi | `3 weeks ago` |
 | 🌐 | **[docmind](https://github.com/EhsanulHaqueSiam/docmind)** | RAG system with Vertex AI Gemini, Docling, and Qdrant | `3 weeks ago` |
 
-<sub>🔄 Auto-updated · Apr 17, 2026</sub>
+<sub>🔄 Auto-updated · Apr 18, 2026</sub>
 
 </div>
 
