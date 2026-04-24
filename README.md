@@ -195,10 +195,10 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| 💠 | **[sayit](https://github.com/EhsanulHaqueSiam/sayit)** | Voice dictation that feels editorial. Hold Space, speak, get polished text. Web  | `today` |
-| 💠 | **[Eventarc](https://github.com/EhsanulHaqueSiam/Eventarc)** | A multi-event management platform for large-scale events — QR-based access con | `today` |
-| 💠 | **[aiub-portal-plus](https://github.com/EhsanulHaqueSiam/aiub-portal-plus)** | Browser extension that modernizes the AIUB Student Portal — routine generator, | `2 days ago` |
-| 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `4 days ago` |
+| 💠 | **[sayit](https://github.com/EhsanulHaqueSiam/sayit)** | Voice dictation that feels editorial. Hold Space, speak, get polished text. Web  | `yesterday` |
+| 💠 | **[Eventarc](https://github.com/EhsanulHaqueSiam/Eventarc)** | A multi-event management platform for large-scale events — QR-based access con | `yesterday` |
+| 💠 | **[aiub-portal-plus](https://github.com/EhsanulHaqueSiam/aiub-portal-plus)** | Browser extension that modernizes the AIUB Student Portal — routine generator, | `3 days ago` |
+| 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `5 days ago` |
 | ⚡ | **[bdmeter](https://github.com/EhsanulHaqueSiam/bdmeter)** | Bangladesh Prepaid Electricity Meter Dashboard — NESCO & DESCO | `2 weeks ago` |
 | 💠 | **[ielts-prep](https://github.com/EhsanulHaqueSiam/ielts-prep)** | IELTS Preparation Hub — community-vetted resources, strategies, and study plan | `2 weeks ago` |
 | 🌐 | **[pretext-demo](https://github.com/EhsanulHaqueSiam/pretext-demo)** | Interactive particle portfolio powered by @chenglou/pretext | `2 weeks ago` |
@@ -207,10 +207,10 @@ const siam = {
 | 💠 | **[Praxis](https://github.com/EhsanulHaqueSiam/Praxis)** | Praxis — Build Real Skills Through Projects. Premium ed-tech course platform w | `3 weeks ago` |
 | 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `3 weeks ago` |
 | 🎯 | **[TagMe](https://github.com/EhsanulHaqueSiam/TagMe)** | A Flutter app for students in Bangladesh to find ride-sharing partners. See near | `3 weeks ago` |
-| 💠 | **[DoinikHishab](https://github.com/EhsanulHaqueSiam/DoinikHishab)** | দৈনিক হিসাব — A beautiful money tracking app built with Ex | `3 weeks ago` |
+| 💠 | **[DoinikHishab](https://github.com/EhsanulHaqueSiam/DoinikHishab)** | দৈনিক হিসাব — A beautiful money tracking app built with Ex | `4 weeks ago` |
 | 🎯 | **[Mess-Manager](https://github.com/EhsanulHaqueSiam/Mess-Manager)** | A Flutter-based manager for bachelor messes and shared apartments. Features real | `4 weeks ago` |
 
-<sub>🔄 Auto-updated · Apr 23, 2026</sub>
+<sub>🔄 Auto-updated · Apr 24, 2026</sub>
 
 </div>
 
