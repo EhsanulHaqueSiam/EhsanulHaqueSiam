@@ -195,9 +195,9 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| 💠 | **[ScholarHub](https://github.com/EhsanulHaqueSiam/ScholarHub)** | The most comprehensive international scholarship directory | `4 days ago` |
-| 💠 | **[sayit](https://github.com/EhsanulHaqueSiam/sayit)** | Voice dictation that feels editorial. Hold Space, speak, get polished text. Web  | `6 days ago` |
-| 💠 | **[Eventarc](https://github.com/EhsanulHaqueSiam/Eventarc)** | A multi-event management platform for large-scale events — QR-based access con | `6 days ago` |
+| 💠 | **[ScholarHub](https://github.com/EhsanulHaqueSiam/ScholarHub)** | The most comprehensive international scholarship directory | `5 days ago` |
+| 💠 | **[sayit](https://github.com/EhsanulHaqueSiam/sayit)** | Voice dictation that feels editorial. Hold Space, speak, get polished text. Web  | `1 week ago` |
+| 💠 | **[Eventarc](https://github.com/EhsanulHaqueSiam/Eventarc)** | A multi-event management platform for large-scale events — QR-based access con | `1 week ago` |
 | 💠 | **[aiub-portal-plus](https://github.com/EhsanulHaqueSiam/aiub-portal-plus)** | Browser extension that modernizes the AIUB Student Portal — routine generator, | `1 week ago` |
 | 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `1 week ago` |
 | ⚡ | **[bdmeter](https://github.com/EhsanulHaqueSiam/bdmeter)** | Bangladesh Prepaid Electricity Meter Dashboard — NESCO & DESCO | `3 weeks ago` |
@@ -206,7 +206,7 @@ const siam = {
 | 🐍 | **[mediscrape](https://github.com/EhsanulHaqueSiam/mediscrape)** | Comprehensive medicine database scraper for 26 sources - Bangladesh & internatio | `3 weeks ago` |
 | 💠 | **[Praxis](https://github.com/EhsanulHaqueSiam/Praxis)** | Praxis — Build Real Skills Through Projects. Premium ed-tech course platform w | `4 weeks ago` |
 
-<sub>🔄 Auto-updated · Apr 29, 2026</sub>
+<sub>🔄 Auto-updated · Apr 30, 2026</sub>
 
 </div>
 
