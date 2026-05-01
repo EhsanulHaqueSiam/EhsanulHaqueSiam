@@ -195,7 +195,7 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| 💠 | **[ScholarHub](https://github.com/EhsanulHaqueSiam/ScholarHub)** | The most comprehensive international scholarship directory | `5 days ago` |
+| 💠 | **[ScholarHub](https://github.com/EhsanulHaqueSiam/ScholarHub)** | The most comprehensive international scholarship directory | `6 days ago` |
 | 💠 | **[sayit](https://github.com/EhsanulHaqueSiam/sayit)** | Voice dictation that feels editorial. Hold Space, speak, get polished text. Web  | `1 week ago` |
 | 💠 | **[Eventarc](https://github.com/EhsanulHaqueSiam/Eventarc)** | A multi-event management platform for large-scale events — QR-based access con | `1 week ago` |
 | 💠 | **[aiub-portal-plus](https://github.com/EhsanulHaqueSiam/aiub-portal-plus)** | Browser extension that modernizes the AIUB Student Portal — routine generator, | `1 week ago` |
@@ -204,9 +204,8 @@ const siam = {
 | 💠 | **[ielts-prep](https://github.com/EhsanulHaqueSiam/ielts-prep)** | IELTS Preparation Hub — community-vetted resources, strategies, and study plan | `3 weeks ago` |
 | 🌐 | **[pretext-demo](https://github.com/EhsanulHaqueSiam/pretext-demo)** | Interactive particle portfolio powered by @chenglou/pretext | `3 weeks ago` |
 | 🐍 | **[mediscrape](https://github.com/EhsanulHaqueSiam/mediscrape)** | Comprehensive medicine database scraper for 26 sources - Bangladesh & internatio | `3 weeks ago` |
-| 💠 | **[Praxis](https://github.com/EhsanulHaqueSiam/Praxis)** | Praxis — Build Real Skills Through Projects. Premium ed-tech course platform w | `4 weeks ago` |
 
-<sub>🔄 Auto-updated · Apr 30, 2026</sub>
+<sub>🔄 Auto-updated · May 01, 2026</sub>
 
 </div>
 
