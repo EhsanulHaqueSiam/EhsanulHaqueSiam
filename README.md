@@ -195,7 +195,7 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| 💠 | **[ScholarHub](https://github.com/EhsanulHaqueSiam/ScholarHub)** | The most comprehensive international scholarship directory | `6 days ago` |
+| 💠 | **[ScholarHub](https://github.com/EhsanulHaqueSiam/ScholarHub)** | The most comprehensive international scholarship directory | `1 week ago` |
 | 💠 | **[sayit](https://github.com/EhsanulHaqueSiam/sayit)** | Voice dictation that feels editorial. Hold Space, speak, get polished text. Web  | `1 week ago` |
 | 💠 | **[Eventarc](https://github.com/EhsanulHaqueSiam/Eventarc)** | A multi-event management platform for large-scale events — QR-based access con | `1 week ago` |
 | 💠 | **[aiub-portal-plus](https://github.com/EhsanulHaqueSiam/aiub-portal-plus)** | Browser extension that modernizes the AIUB Student Portal — routine generator, | `1 week ago` |
@@ -205,7 +205,7 @@ const siam = {
 | 🌐 | **[pretext-demo](https://github.com/EhsanulHaqueSiam/pretext-demo)** | Interactive particle portfolio powered by @chenglou/pretext | `3 weeks ago` |
 | 🐍 | **[mediscrape](https://github.com/EhsanulHaqueSiam/mediscrape)** | Comprehensive medicine database scraper for 26 sources - Bangladesh & internatio | `3 weeks ago` |
 
-<sub>🔄 Auto-updated · May 01, 2026</sub>
+<sub>🔄 Auto-updated · May 02, 2026</sub>
 
 </div>
 
