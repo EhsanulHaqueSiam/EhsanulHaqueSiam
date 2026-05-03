@@ -199,13 +199,13 @@ const siam = {
 | 💠 | **[sayit](https://github.com/EhsanulHaqueSiam/sayit)** | Voice dictation that feels editorial. Hold Space, speak, get polished text. Web  | `1 week ago` |
 | 💠 | **[Eventarc](https://github.com/EhsanulHaqueSiam/Eventarc)** | A multi-event management platform for large-scale events — QR-based access con | `1 week ago` |
 | 💠 | **[aiub-portal-plus](https://github.com/EhsanulHaqueSiam/aiub-portal-plus)** | Browser extension that modernizes the AIUB Student Portal — routine generator, | `1 week ago` |
-| 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `1 week ago` |
-| ⚡ | **[bdmeter](https://github.com/EhsanulHaqueSiam/bdmeter)** | Bangladesh Prepaid Electricity Meter Dashboard — NESCO & DESCO | `3 weeks ago` |
-| 💠 | **[ielts-prep](https://github.com/EhsanulHaqueSiam/ielts-prep)** | IELTS Preparation Hub — community-vetted resources, strategies, and study plan | `3 weeks ago` |
-| 🌐 | **[pretext-demo](https://github.com/EhsanulHaqueSiam/pretext-demo)** | Interactive particle portfolio powered by @chenglou/pretext | `3 weeks ago` |
-| 🐍 | **[mediscrape](https://github.com/EhsanulHaqueSiam/mediscrape)** | Comprehensive medicine database scraper for 26 sources - Bangladesh & internatio | `3 weeks ago` |
+| 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `2 weeks ago` |
+| ⚡ | **[bdmeter](https://github.com/EhsanulHaqueSiam/bdmeter)** | Bangladesh Prepaid Electricity Meter Dashboard — NESCO & DESCO | `4 weeks ago` |
+| 💠 | **[ielts-prep](https://github.com/EhsanulHaqueSiam/ielts-prep)** | IELTS Preparation Hub — community-vetted resources, strategies, and study plan | `4 weeks ago` |
+| 🌐 | **[pretext-demo](https://github.com/EhsanulHaqueSiam/pretext-demo)** | Interactive particle portfolio powered by @chenglou/pretext | `4 weeks ago` |
+| 🐍 | **[mediscrape](https://github.com/EhsanulHaqueSiam/mediscrape)** | Comprehensive medicine database scraper for 26 sources - Bangladesh & internatio | `4 weeks ago` |
 
-<sub>🔄 Auto-updated · May 02, 2026</sub>
+<sub>🔄 Auto-updated · May 03, 2026</sub>
 
 </div>
 
