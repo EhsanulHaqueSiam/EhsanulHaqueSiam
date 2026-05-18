@@ -201,7 +201,7 @@ const siam = {
 | 💠 | **[aiub-portal-plus](https://github.com/EhsanulHaqueSiam/aiub-portal-plus)** | Browser extension that modernizes the AIUB Student Portal — routine generator, | `3 weeks ago` |
 | 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `4 weeks ago` |
 
-<sub>🔄 Auto-updated · May 17, 2026</sub>
+<sub>🔄 Auto-updated · May 18, 2026</sub>
 
 </div>
 
