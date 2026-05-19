@@ -198,10 +198,9 @@ const siam = {
 | 💠 | **[ScholarHub](https://github.com/EhsanulHaqueSiam/ScholarHub)** | The most comprehensive international scholarship directory | `3 weeks ago` |
 | 💠 | **[sayit](https://github.com/EhsanulHaqueSiam/sayit)** | Voice dictation that feels editorial. Hold Space, speak, get polished text. Web  | `3 weeks ago` |
 | 💠 | **[Eventarc](https://github.com/EhsanulHaqueSiam/Eventarc)** | A multi-event management platform for large-scale events — QR-based access con | `3 weeks ago` |
-| 💠 | **[aiub-portal-plus](https://github.com/EhsanulHaqueSiam/aiub-portal-plus)** | Browser extension that modernizes the AIUB Student Portal — routine generator, | `3 weeks ago` |
-| 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `4 weeks ago` |
+| 💠 | **[aiub-portal-plus](https://github.com/EhsanulHaqueSiam/aiub-portal-plus)** | Browser extension that modernizes the AIUB Student Portal — routine generator, | `4 weeks ago` |
 
-<sub>🔄 Auto-updated · May 18, 2026</sub>
+<sub>🔄 Auto-updated · May 19, 2026</sub>
 
 </div>
 
