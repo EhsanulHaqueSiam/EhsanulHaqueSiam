@@ -199,7 +199,7 @@ const siam = {
 | 💠 | **[sayit](https://github.com/EhsanulHaqueSiam/sayit)** | Voice dictation that feels editorial. Hold Space, speak, get polished text. Web  | `4 weeks ago` |
 | 💠 | **[Eventarc](https://github.com/EhsanulHaqueSiam/Eventarc)** | A multi-event management platform for large-scale events — QR-based access con | `4 weeks ago` |
 
-<sub>🔄 Auto-updated · May 21, 2026</sub>
+<sub>🔄 Auto-updated · May 22, 2026</sub>
 
 </div>
 
