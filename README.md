@@ -197,7 +197,7 @@ const siam = {
 |:--|:--------|:-----------|:-----------|
 | 💠 | **[ScholarHub](https://github.com/EhsanulHaqueSiam/ScholarHub)** | The most comprehensive international scholarship directory | `4 weeks ago` |
 
-<sub>🔄 Auto-updated · May 23, 2026</sub>
+<sub>🔄 Auto-updated · May 24, 2026</sub>
 
 </div>
 
