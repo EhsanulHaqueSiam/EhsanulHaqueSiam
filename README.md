@@ -197,7 +197,7 @@ const siam = {
 |:--|:--------|:-----------|:-----------|
 | 🐍 | **[polashi](https://github.com/EhsanulHaqueSiam/polashi)** | পলাশী — a provably-fair LLM social-deduction benchmark themed on the | `today` |
 
-<sub>🔄 Auto-updated · Jun 28, 2026</sub>
+<sub>🔄 Auto-updated · Jun 29, 2026</sub>
 
 </div>
 
