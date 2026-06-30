@@ -195,9 +195,9 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| 🐍 | **[polashi](https://github.com/EhsanulHaqueSiam/polashi)** | পলাশী — a provably-fair LLM social-deduction benchmark themed on the | `today` |
+| 🐍 | **[polashi](https://github.com/EhsanulHaqueSiam/polashi)** | পলাশী — a provably-fair LLM social-deduction benchmark themed on the | `yesterday` |
 
-<sub>🔄 Auto-updated · Jun 29, 2026</sub>
+<sub>🔄 Auto-updated · Jun 30, 2026</sub>
 
 </div>
 
