@@ -196,9 +196,9 @@ const siam = {
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
 | 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `today` |
-| 🐍 | **[polashi](https://github.com/EhsanulHaqueSiam/polashi)** | পলাশী — a provably-fair LLM social-deduction benchmark themed on the | `3 days ago` |
+| 🐍 | **[polashi](https://github.com/EhsanulHaqueSiam/polashi)** | পলাশী — a provably-fair LLM social-deduction benchmark themed on the | `4 days ago` |
 
-<sub>🔄 Auto-updated · Jul 02, 2026</sub>
+<sub>🔄 Auto-updated · Jul 03, 2026</sub>
 
 </div>
 
