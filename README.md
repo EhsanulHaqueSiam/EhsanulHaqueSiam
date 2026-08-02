@@ -195,10 +195,11 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| 🐍 | **[omarchy-ticktick](https://github.com/EhsanulHaqueSiam/omarchy-ticktick)** | TickTick in your Omarchy bar — local-first task list with due counts, a keyboa | `today` |
-| 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `6 days ago` |
+| 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `today` |
+| 🐍 | **[omarchy-ticktick](https://github.com/EhsanulHaqueSiam/omarchy-ticktick)** | TickTick in your Omarchy bar — local-first task list with due counts, a keyboa | `yesterday` |
+| 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `1 week ago` |
 
-<sub>🔄 Auto-updated · Aug 01, 2026</sub>
+<sub>🔄 Auto-updated · Aug 02, 2026</sub>
 
 </div>
 
