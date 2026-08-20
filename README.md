@@ -195,13 +195,13 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| 🐍 | **[claude-skills](https://github.com/EhsanulHaqueSiam/claude-skills)** |  | `3 days ago` |
-| 💠 | **[ScholarAssist](https://github.com/EhsanulHaqueSiam/ScholarAssist)** | It fills. You review. You submit. Config-driven scholarship application assistan | `6 days ago` |
+| 🐍 | **[claude-skills](https://github.com/EhsanulHaqueSiam/claude-skills)** |  | `4 days ago` |
+| 💠 | **[ScholarAssist](https://github.com/EhsanulHaqueSiam/ScholarAssist)** | It fills. You review. You submit. Config-driven scholarship application assistan | `1 week ago` |
 | 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `2 weeks ago` |
 | 🐍 | **[omarchy-ticktick](https://github.com/EhsanulHaqueSiam/omarchy-ticktick)** | TickTick in your Omarchy bar — local-first task list with due counts, a keyboa | `2 weeks ago` |
 | 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `3 weeks ago` |
 
-<sub>🔄 Auto-updated · Aug 19, 2026</sub>
+<sub>🔄 Auto-updated · Aug 20, 2026</sub>
 
 </div>
 
