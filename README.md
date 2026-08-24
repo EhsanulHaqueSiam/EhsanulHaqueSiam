@@ -197,11 +197,11 @@ const siam = {
 |:--|:--------|:-----------|:-----------|
 | 🐍 | **[claude-skills](https://github.com/EhsanulHaqueSiam/claude-skills)** |  | `1 week ago` |
 | 💠 | **[ScholarAssist](https://github.com/EhsanulHaqueSiam/ScholarAssist)** | It fills. You review. You submit. Config-driven scholarship application assistan | `1 week ago` |
-| 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `2 weeks ago` |
+| 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `3 weeks ago` |
 | 🐍 | **[omarchy-ticktick](https://github.com/EhsanulHaqueSiam/omarchy-ticktick)** | TickTick in your Omarchy bar — local-first task list with due counts, a keyboa | `3 weeks ago` |
 | 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `4 weeks ago` |
 
-<sub>🔄 Auto-updated · Aug 23, 2026</sub>
+<sub>🔄 Auto-updated · Aug 24, 2026</sub>
 
 </div>
 
