@@ -197,9 +197,8 @@ const siam = {
 |:--|:--------|:-----------|:-----------|
 | 🐍 | **[claude-skills](https://github.com/EhsanulHaqueSiam/claude-skills)** |  | `2 weeks ago` |
 | 💠 | **[ScholarAssist](https://github.com/EhsanulHaqueSiam/ScholarAssist)** | It fills. You review. You submit. Config-driven scholarship application assistan | `2 weeks ago` |
-| 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `4 weeks ago` |
 
-<sub>🔄 Auto-updated · Aug 31, 2026</sub>
+<sub>🔄 Auto-updated · Sep 01, 2026</sub>
 
 </div>
 
