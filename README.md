@@ -195,11 +195,11 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| 🐚 | **[macarchy](https://github.com/EhsanulHaqueSiam/macarchy)** | Omarchy's Hyprland window management, keybindings and bar on macOS: AeroSpace +  | `yesterday` |
+| 🐚 | **[macarchy](https://github.com/EhsanulHaqueSiam/macarchy)** | Omarchy's Hyprland window management, keybindings and bar on macOS: AeroSpace +  | `2 days ago` |
 | 🐍 | **[claude-skills](https://github.com/EhsanulHaqueSiam/claude-skills)** |  | `3 weeks ago` |
 | 💠 | **[ScholarAssist](https://github.com/EhsanulHaqueSiam/ScholarAssist)** | It fills. You review. You submit. Config-driven scholarship application assistan | `4 weeks ago` |
 
-<sub>🔄 Auto-updated · Sep 10, 2026</sub>
+<sub>🔄 Auto-updated · Sep 11, 2026</sub>
 
 </div>
 
