@@ -197,7 +197,7 @@ const siam = {
 |:--|:--------|:-----------|:-----------|
 | 🐚 | **[macarchy](https://github.com/EhsanulHaqueSiam/macarchy)** | Omarchy's Hyprland window management, keybindings and bar on macOS: AeroSpace +  | `1 week ago` |
 
-<sub>🔄 Auto-updated · Sep 16, 2026</sub>
+<sub>🔄 Auto-updated · Sep 17, 2026</sub>
 
 </div>
 
