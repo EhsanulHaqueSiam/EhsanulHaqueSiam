@@ -195,10 +195,10 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `today` |
+| 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `yesterday` |
 | 🐚 | **[macarchy](https://github.com/EhsanulHaqueSiam/macarchy)** | Omarchy's Hyprland window management, keybindings and bar on macOS: AeroSpace +  | `2 weeks ago` |
 
-<sub>🔄 Auto-updated · Sep 25, 2026</sub>
+<sub>🔄 Auto-updated · Sep 26, 2026</sub>
 
 </div>
 
