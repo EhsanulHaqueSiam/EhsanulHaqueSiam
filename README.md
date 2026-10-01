@@ -195,10 +195,11 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `5 days ago` |
+| 🐍 | **[bd-live-tv](https://github.com/EhsanulHaqueSiam/bd-live-tv)** | Static Stremio/Nuvio addon: live Bangladeshi and Indian TV, dead channels remove | `today` |
+| 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `6 days ago` |
 | 🐚 | **[macarchy](https://github.com/EhsanulHaqueSiam/macarchy)** | Omarchy's Hyprland window management, keybindings and bar on macOS: AeroSpace +  | `3 weeks ago` |
 
-<sub>🔄 Auto-updated · Sep 30, 2026</sub>
+<sub>🔄 Auto-updated · Oct 01, 2026</sub>
 
 </div>
 
