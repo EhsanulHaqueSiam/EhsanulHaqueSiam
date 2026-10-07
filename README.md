@@ -195,13 +195,13 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| 🐍 | **[nuvio-hindi-dub](https://github.com/EhsanulHaqueSiam/nuvio-hindi-dub)** | Nuvio/Stremio catalog: anime with an official Hindi dub, newest first | `yesterday` |
-| 🐚 | **[macarchy](https://github.com/EhsanulHaqueSiam/macarchy)** | Omarchy's Hyprland window management, keybindings and bar on macOS: AeroSpace +  | `yesterday` |
-| 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `3 days ago` |
-| 🐍 | **[bd-live-tv](https://github.com/EhsanulHaqueSiam/bd-live-tv)** | Static Stremio/Nuvio addon: live Bangladeshi and Indian TV, dead channels remove | `5 days ago` |
+| 🐍 | **[nuvio-hindi-dub](https://github.com/EhsanulHaqueSiam/nuvio-hindi-dub)** | Nuvio/Stremio catalog: anime with an official Hindi dub, newest first | `2 days ago` |
+| 🐚 | **[macarchy](https://github.com/EhsanulHaqueSiam/macarchy)** | Omarchy's Hyprland window management, keybindings and bar on macOS: AeroSpace +  | `2 days ago` |
+| 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `4 days ago` |
+| 🐍 | **[bd-live-tv](https://github.com/EhsanulHaqueSiam/bd-live-tv)** | Static Stremio/Nuvio addon: live Bangladeshi and Indian TV, dead channels remove | `6 days ago` |
 | 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `1 week ago` |
 
-<sub>🔄 Auto-updated · Oct 06, 2026</sub>
+<sub>🔄 Auto-updated · Oct 07, 2026</sub>
 
 </div>
 
