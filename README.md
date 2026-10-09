@@ -195,15 +195,15 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| 💠 | **[getmyprof](https://github.com/EhsanulHaqueSiam/getmyprof)** | An app for the PhD hunt: find professors who can fund you, and the money behind  | `today` |
 | 📦 | **[homebrew-tap](https://github.com/EhsanulHaqueSiam/homebrew-tap)** | Homebrew casks: brew install --cask EhsanulHaqueSiam/tap/<name> | `today` |
-| 🐍 | **[nuvio-hindi-dub](https://github.com/EhsanulHaqueSiam/nuvio-hindi-dub)** | Nuvio/Stremio catalog: anime with an official Hindi dub, newest first | `3 days ago` |
-| 🐚 | **[macarchy](https://github.com/EhsanulHaqueSiam/macarchy)** | Omarchy's Hyprland window management, keybindings and bar on macOS: AeroSpace +  | `3 days ago` |
-| 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `5 days ago` |
+| 💠 | **[getmyprof](https://github.com/EhsanulHaqueSiam/getmyprof)** | An app for the PhD hunt: find professors who can fund you, and the money behind  | `today` |
+| 🐍 | **[nuvio-hindi-dub](https://github.com/EhsanulHaqueSiam/nuvio-hindi-dub)** | Nuvio/Stremio catalog: anime with an official Hindi dub, newest first | `4 days ago` |
+| 🐚 | **[macarchy](https://github.com/EhsanulHaqueSiam/macarchy)** | Omarchy's Hyprland window management, keybindings and bar on macOS: AeroSpace +  | `4 days ago` |
+| 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `6 days ago` |
 | 🐍 | **[bd-live-tv](https://github.com/EhsanulHaqueSiam/bd-live-tv)** | Static Stremio/Nuvio addon: live Bangladeshi and Indian TV, dead channels remove | `1 week ago` |
-| 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `1 week ago` |
+| 🐚 | **[dev](https://github.com/EhsanulHaqueSiam/dev)** | Development environment setup scripts and configuration automation. | `2 weeks ago` |
 
-<sub>🔄 Auto-updated · Oct 08, 2026</sub>
+<sub>🔄 Auto-updated · Oct 09, 2026</sub>
 
 </div>
 
