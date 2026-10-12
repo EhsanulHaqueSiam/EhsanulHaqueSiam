@@ -195,14 +195,14 @@ const siam = {
 
 | | Project | Description | Last Active |
 |:--|:--------|:-----------|:-----------|
-| 💠 | **[getmyprof](https://github.com/EhsanulHaqueSiam/getmyprof)** | An app for the PhD hunt: find professors who can fund you, and the money behind  | `today` |
-| 📦 | **[homebrew-tap](https://github.com/EhsanulHaqueSiam/homebrew-tap)** | Homebrew casks: brew install --cask EhsanulHaqueSiam/tap/<name> | `today` |
-| 🐍 | **[nuvio-hindi-dub](https://github.com/EhsanulHaqueSiam/nuvio-hindi-dub)** | Nuvio/Stremio catalog: anime with an official Hindi dub, newest first | `6 days ago` |
-| 🐚 | **[macarchy](https://github.com/EhsanulHaqueSiam/macarchy)** | Omarchy's Hyprland window management, keybindings and bar on macOS: AeroSpace +  | `6 days ago` |
+| 💠 | **[getmyprof](https://github.com/EhsanulHaqueSiam/getmyprof)** | An app for the PhD hunt: find professors who can fund you, and the money behind  | `yesterday` |
+| 📦 | **[homebrew-tap](https://github.com/EhsanulHaqueSiam/homebrew-tap)** | Homebrew casks: brew install --cask EhsanulHaqueSiam/tap/<name> | `yesterday` |
+| 🐍 | **[nuvio-hindi-dub](https://github.com/EhsanulHaqueSiam/nuvio-hindi-dub)** | Nuvio/Stremio catalog: anime with an official Hindi dub, newest first | `1 week ago` |
+| 🐚 | **[macarchy](https://github.com/EhsanulHaqueSiam/macarchy)** | Omarchy's Hyprland window management, keybindings and bar on macOS: AeroSpace +  | `1 week ago` |
 | 💠 | **[Portfolio_EhsanulHaqueSiam](https://github.com/EhsanulHaqueSiam/Portfolio_EhsanulHaqueSiam)** | Personal portfolio website showcasing projects, publications, and skills with mo | `1 week ago` |
 | 🐍 | **[bd-live-tv](https://github.com/EhsanulHaqueSiam/bd-live-tv)** | Static Stremio/Nuvio addon: live Bangladeshi and Indian TV, dead channels remove | `1 week ago` |
 
-<sub>🔄 Auto-updated · Oct 11, 2026</sub>
+<sub>🔄 Auto-updated · Oct 12, 2026</sub>
 
 </div>
 
