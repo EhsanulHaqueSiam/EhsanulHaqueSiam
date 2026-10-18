@@ -129,29 +129,25 @@ for (const [name, theme] of Object.entries(THEMES)) {
   writeFileSync(`${DIR}/hero-stats.svg`, card(1200, 124, divs + cells));
 }
 
-// 3. Strength cards: animated gradient border, icon motion, lines wipe in
+// 3. Strength cards: a painted cover, the title and one proof line
 {
   const cards = [
-    { t: "LLM systems in production", c: C.cyan, lines: ["RAG on Vertex AI, Document AI + Gemini", "Gemini 2.5 fine-tuning, LLM evals", "MCP servers, serverless GCP, Terraform"], proof: "DocMind · FlowCV MCP · Polashi · Veritas KYC",
-      icon: `<g transform="translate(340 44)"><circle r="16" fill="none" stroke="${C.cyan}" stroke-opacity="0.4"/><circle class="spin" r="16" fill="none" stroke="${C.cyan}" stroke-dasharray="20 80" stroke-linecap="round"/><circle class="pulse" r="4" fill="${C.cyan}"/></g>` },
-    { t: "Full-stack product", c: C.violet, lines: ["React 19, TanStack Start, Convex, Expo", "Flutter, Fastify, FastAPI, Postgres", "Go and Rust services, CI/CD to cloud"], proof: "InvoicePilot · Eventarc · 4 BetaScript sites",
-      icon: `<g transform="translate(324 30)">${[0, 1, 2].map((k) => `<rect x="0" y="${k * 10}" width="32" height="6" rx="2" fill="${C.violet}" fill-opacity="${0.35 + k * 0.3}"><animate attributeName="x" values="0;${k % 2 ? -4 : 4};0" dur="${3 + k}s" repeatCount="indefinite"/></rect>`).join("")}</g>` },
-    { t: "Research", c: C.pink, lines: ["NLP and LLMs, topic modeling", "Medical BERTs, Bengali NLP", "IEEE Xplore (Scopus), Taylor &amp; Francis"], proof: "2 papers · 1 conference talk",
-      icon: `<g transform="translate(322 28)"><rect width="36" height="40" rx="4" fill="none" stroke="${C.pink}" stroke-opacity="0.6"/>${[0, 1, 2, 3].map((k) => `<rect x="7" y="${9 + k * 8}" width="0" height="2.5" rx="1" fill="${C.pink}"><animate attributeName="width" values="0;${k === 3 ? 12 : 22};${k === 3 ? 12 : 22};0" keyTimes="0;0.3;0.8;1" begin="${k * 0.25}s" dur="4s" repeatCount="indefinite"/></rect>`).join("")}</g>` },
+    { t: "LLM systems in production", c: C.cyan, img: "strength-llm.jpg", proof: "RAG on Vertex AI · fine-tuning · MCP servers" },
+    { t: "Full-stack product", c: C.violet, img: "strength-product.jpg", proof: "React 19 · Convex · Expo · Go · Rust" },
+    { t: "Published research", c: C.pink, img: "strength-research.jpg", proof: "IEEE Xplore · Taylor & Francis · NLP" },
   ];
-  const body = cards.map((k, i) => { const x = i * 400, gid = id("gb"); const lines = k.lines.map((l, j) => { const cid = id("wp");
-      return `<clipPath id="${cid}"><rect x="24" y="${96 + j * 26}" width="0" height="26"><animate attributeName="width" from="0" to="360" begin="${(0.7 + i * 0.25 + j * 0.18).toFixed(2)}s" dur="0.8s" fill="freeze" ${EASE}/></rect></clipPath><text clip-path="url(#${cid})" x="24" y="${114 + j * 26}" fill="${T.body}" font-size="18">${l}</text>`; }).join("");
+  const body = cards.map((k, i) => { const x = i * 400, cid = `sc${i}`;
     return `<g opacity="0" transform="translate(${x} 0)">
-  <rect x="8" y="8" width="384" height="220" rx="18" fill="${T.card}" stroke="${T.line}"/>
-  <rect x="8" y="8" width="384" height="220" rx="18" fill="none" stroke="${k.c}" stroke-opacity="0.25"/>
-  <rect x="8" y="8" width="384" height="220" rx="18" fill="none" stroke="${k.c}" stroke-width="1.5" pathLength="100" stroke-dasharray="14 86" stroke-linecap="round"><animate attributeName="stroke-dashoffset" from="0" to="-100" dur="6s" begin="${i * 2}s" repeatCount="indefinite"/></rect>
-  <rect x="24" y="24" width="${24 + k.t.length * 0}" height="0"/><rect x="24" y="26" width="34" height="18" rx="9" fill="${k.c}" fill-opacity="0.18"/><text x="41" y="39" fill="${k.c}" font-size="15" font-weight="700" text-anchor="middle">0${i + 1}</text>
-  <text x="24" y="70" fill="${T.ink}" font-size="21" font-weight="700" letter-spacing="-0.3">${k.t}</text>
-  <clipPath id="sp${i}"><rect x="306" y="22" width="72" height="72" rx="14"/></clipPath><image clip-path="url(#sp${i})" href="${img(`spot${i + 1}.jpg`)}" x="306" y="22" width="72" height="72" preserveAspectRatio="xMidYMid slice" opacity="0">${fadeIn(0.5 + i * 0.25)}</image>${lines}
-  <text x="24" y="208" fill="${k.c}" font-size="17" font-weight="600" opacity="0">${k.proof}${fadeIn(1.5 + i * 0.25)}</text>
+  <clipPath id="${cid}"><rect x="8" y="8" width="384" height="292" rx="18"/></clipPath>
+  <rect x="8" y="8" width="384" height="292" rx="18" fill="${T.card}" stroke="${T.line}"/>
+  <image clip-path="url(#${cid})" href="${img(k.img)}" x="8" y="8" width="384" height="200" preserveAspectRatio="xMidYMid slice"/>
+  <rect x="8" y="8" width="384" height="292" rx="18" fill="none" stroke="${k.c}" stroke-opacity="0.25"/>
+  <rect x="8" y="8" width="384" height="292" rx="18" fill="none" stroke="${k.c}" stroke-width="1.5" pathLength="100" stroke-dasharray="14 86" stroke-linecap="round"><animate attributeName="stroke-dashoffset" from="0" to="-100" dur="6s" begin="${i * 2}s" repeatCount="indefinite"/></rect>
+  <text x="28" y="246" fill="${T.ink}" font-size="22" font-weight="700" letter-spacing="-0.3">${k.t}</text>
+  <text x="28" y="276" fill="${k.c}" font-size="16" font-weight="600">${esc(k.proof)}</text>
   ${fadeIn(0.15 + i * 0.25)}<animateTransform attributeName="transform" type="translate" values="${x} 28;${x} -5;${x} 0" keyTimes="0;0.7;1" begin="${(0.15 + i * 0.25).toFixed(2)}s" dur="1s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.3 1;0.3 0 0.4 1"/>
 </g>`; }).join("");
-  writeFileSync(`${DIR}/strengths.svg`, svg(1200, 236, body));
+  writeFileSync(`${DIR}/strengths.svg`, svg(1200, 308, body));
 }
 
 // 4. Marquee: the stack scrolling forever, two copies for a seamless loop
@@ -234,28 +230,6 @@ ${grid}
   writeFileSync(`${DIR}/languages.svg`, card(590, 260, `${title("Languages across public repos")}<clipPath id="bar"><rect x="24" y="56" width="542" height="14" rx="7"/></clipPath><g clip-path="url(#bar)"><rect x="24" y="56" width="542" height="14" fill="${T.soft}"/>${bar}</g>${legend}`));
 }
 
-// 7. Activity: last 90 days drawn on as a glowing area chart with a live dot at today
-{
-  const last = days.slice(-90), max = Math.max(1, ...last.map((d) => d.contributionCount));
-  const W = 1200, H = 180, L = 24, R = 24, TOP = 48, B = 36, sx = (W - L - R) / (last.length - 1), sy = (H - TOP - B) / max;
-  const pts = last.map((d, i) => [L + i * sx, H - B - d.contributionCount * sy]);
-  const line = pts.map(([x, y], i) => `${i ? "L" : "M"}${x.toFixed(1)} ${y.toFixed(1)}`).join(" ");
-  const area = `${line} L${pts.at(-1)[0].toFixed(1)} ${H - B} L${L} ${H - B} Z`;
-  const total90 = last.reduce((n, d) => n + d.contributionCount, 0), peak = last.reduce((a, b) => (b.contributionCount > a.contributionCount ? b : a));
-  const fmt = (s) => new Date(s + "T00:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
-  const ticks = [0, 30, 60, 89].map((i) => `<text x="${pts[i][0].toFixed(1)}" y="${H - 12}" fill="${T.faint}" font-size="16" text-anchor="${i === 0 ? "start" : i === 89 ? "end" : "middle"}">${fmt(last[i].date)}</text>`).join("");
-  const [ex, ey] = pts.at(-1);
-  writeFileSync(`${DIR}/activity.svg`, card(W, H, `${title("Contributions, last 90 days")}
-<text x="${W - 24}" y="36" fill="${T.muted}" font-size="17" text-anchor="end">${total90.toLocaleString("en-US")} total · peak ${peak.contributionCount} on ${fmt(peak.date)}</text>
-${[0.25, 0.5, 0.75].map((f) => `<line x1="${L}" x2="${W - R}" y1="${(H - B - (H - TOP - B) * f).toFixed(1)}" y2="${(H - B - (H - TOP - B) * f).toFixed(1)}" stroke="${T.soft}"/>`).join("")}
-<path d="${area}" fill="${C.cyan}" fill-opacity="0.12" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.2s" dur="0.8s" fill="freeze"/></path>
-<path d="${line}" fill="none" stroke="${C.cyan}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" filter="url(#glow)"><animate attributeName="stroke-dashoffset" from="1" to="0" begin="0.1s" dur="2s" fill="freeze" calcMode="spline" keySplines="0.3 0 0.2 1"/></path>
-<circle cx="${ex.toFixed(1)}" cy="${ey.toFixed(1)}" r="5" fill="${C.pink}" filter="url(#glow)" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="2s" dur="0.4s" fill="freeze"/></circle>
-<circle cx="${ex.toFixed(1)}" cy="${ey.toFixed(1)}" r="5" fill="none" stroke="${C.pink}" opacity="0"><animate attributeName="opacity" values="0;0.7;0" begin="2.4s" dur="2s" repeatCount="indefinite"/><animate attributeName="r" values="5;20" begin="2.4s" dur="2s" repeatCount="indefinite"/></circle>
-${ticks}`));
-}
-
-
 // 7b. Isometric calendar: 53 weeks x 7 days of contributions as bars, drawn from the same data
 {
   const weeks = cc.contributionCalendar.weeks; const t = 16, cos = 0.9, sin = 0.32;
@@ -294,44 +268,41 @@ const chipRow = (x, y, items, color) => items.map((t) => { const c = chip(x, y, 
 const months = (from) => { const a = new Date(from + "-01T00:00:00Z"), b = new Date(); return (b.getUTCFullYear() - a.getUTCFullYear()) * 12 + b.getUTCMonth() - a.getUTCMonth(); };
 const repoOf = (name) => repos.find((r) => r.name.toLowerCase() === name.toLowerCase());
 
-// 9. Current roles: one card per role (so each can be a link), with live tenure, a short summary and the stack as chips
+// 9. Current roles: compact tiles with live tenure, one per role so each links to its site
 {
   const roles = [
-    { file: "role-ledgercross", role: "Software Engineer", org: "Ledgercross", site: "ledgercross.com", since: "2026-06", c: C.cyan, lines: wrap("Full-stack and platform: InvoicePilot (700-test backend, QuickBooks, Xero, NetSuite and Sage) and Veritas KYC on Cloud Run.", 52), stack: ["React 19", "Fastify", "PostgreSQL", "Gemini"] },
-    { file: "role-arche", role: "Lead Researcher, NLP & LLMs", org: "Arché Intelligence Lab", site: "arche-lab.org", since: "2026-06", c: C.violet, lines: wrap("Leading LLM and Bengali NLP research toward publication with researchers across AIUB, BUET, BRAC and RUET.", 52), stack: ["LLMs", "Bengali NLP", "BERT", "PyTorch"] },
+    { file: "role-ledgercross", role: "Software Engineer", org: "Ledgercross", site: "ledgercross.com", since: "2026-06", c: C.cyan },
+    { file: "role-arche", role: "Lead Researcher, NLP & LLMs", org: "Arché Intelligence Lab", site: "arche-lab.org", since: "2026-06", c: C.violet },
   ];
-  roles.forEach((r) => { const m = months(r.since); const tenure = `NOW · ${m < 1 ? "THIS MONTH" : m === 1 ? "1 MO" : `${m} MO`}`; const c1 = chip(24, 44, tenure, r.c); const org = chip(24, 110, r.org, r.c);
-    writeFileSync(`${DIR}/${r.file}.svg`, card(590, 258, `<rect x="0.5" y="0.5" width="589" height="257" rx="18" fill="none" stroke="${r.c}" stroke-opacity="0.25"/>
+  roles.forEach((r) => { const m = months(r.since); const tenure = `NOW · ${m < 1 ? "THIS MONTH" : m === 1 ? "1 MO" : `${m} MO`}`; const c1 = chip(24, 44, tenure, r.c); const org = chip(24, 118, r.org, r.c);
+    writeFileSync(`${DIR}/${r.file}.svg`, card(590, 144, `<rect x="0.5" y="0.5" width="589" height="143" rx="18" fill="none" stroke="${r.c}" stroke-opacity="0.25"/>
 ${c1.svg}${chip(24 + c1.w + 8, 44, `SINCE ${r.since.replace("-", "/")}`, T.muted).svg}
-<text x="24" y="82" fill="${T.ink}" font-size="22" font-weight="700" letter-spacing="-0.3">${esc(r.role)}</text>
-${org.svg}<text x="${24 + org.w + 10}" y="110" fill="${T.muted}" font-size="16">${esc(r.site)} ↗</text>
-${r.lines.slice(0, 3).map((l, j) => `<text x="24" y="${146 + j * 25}" fill="${T.body}" font-size="18">${esc(l)}</text>`).join("")}
-<g opacity="0">${chipRow(24, 232, r.stack, r.c)}${fadeIn(0.3)}</g>
+<text x="24" y="88" fill="${T.ink}" font-size="23" font-weight="700" letter-spacing="-0.3">${esc(r.role)}</text>
+${org.svg}<text x="${24 + org.w + 10}" y="118" fill="${T.muted}" font-size="16">${esc(r.site)} ↗</text>
 <circle class="pulse" cx="560" cy="32" r="4" fill="${r.c}"/>`)); });
 }
 
-// 10. Project cards: one SVG per repo so each can be a link in the README, with live stars and last push
+// 10. Project cards: a painted cover, the name, one line and the stack, with live stars and last push
 const WORK = [
-  ["Eventarc", "QR access control, food tracking, live dashboards and bulk SMS for events of up to 60,000 attendees.", ["Go", "PostgreSQL", "Redis", "Convex", "React"]],
-  ["docmind", "Document Q&A API: ingest, retrieve, rerank and answer with grounded citations.", ["Vertex AI RAG", "Gemini", "Docling", "Qdrant"]],
-  ["flowcv-mcp", "MCP server and CLI giving AI assistants full control of the FlowCV resume builder. 50 tools.", ["MCP", "Node", "Chrome automation"]],
-  ["polashi", "Provably-fair LLM social-deduction benchmark with an anti-cheat firewall against secret leakage.", ["Python", "LLM eval"]],
-  ["ScholarHub", "272 spiders indexing 12,000+ scholarships daily, full-text search and an admin review flow.", ["React 19", "TanStack Start", "Convex", "Python"]],
-  ["kaajkormo", "Swipe-to-apply job portal with AI CV parsing and skill-match scoring.", ["React 19", "Rust/Axum", "PostgreSQL 17"]],
-  ["DoinikHishab", "Money tracker for Bangladesh: envelope budgeting, net worth, 325 tests. Android, iOS and web.", ["Expo", "React Native", "Convex"]],
-  ["Gaze-Tracker-Android", "Hands-free Android control: gaze navigation, dwell-to-click, 9-point calibration.", ["MediaPipe", "Accessibility Service"]],
+  ["Eventarc", "cover-eventarc.jpg", "Event ops for crowds of 60,000: QR gates, live dashboards.", ["Go", "PostgreSQL", "Convex", "React"]],
+  ["docmind", "cover-docmind.jpg", "Document Q&A API with grounded citations.", ["Vertex AI RAG", "Gemini", "Qdrant"]],
+  ["flowcv-mcp", "cover-flowcv.jpg", "50-tool MCP server driving the FlowCV resume builder.", ["MCP", "Node", "Chrome automation"]],
+  ["polashi", "cover-polashi.jpg", "Provably-fair LLM social-deduction benchmark.", ["Python", "LLM eval"]],
+  ["ScholarHub", "cover-scholarhub.jpg", "12,000+ scholarships indexed daily by 272 spiders.", ["React 19", "TanStack Start", "Convex"]],
+  ["kaajkormo", "cover-kaajkormo.jpg", "Swipe-to-apply jobs with AI CV parsing.", ["React 19", "Rust/Axum", "PostgreSQL"]],
 ];
-const LABEL = { Eventarc: "Eventarc", docmind: "DocMind", "flowcv-mcp": "FlowCV MCP", polashi: "Polashi", ScholarHub: "ScholarHub", kaajkormo: "KaajKormo", DoinikHishab: "DoinikHishab", "Gaze-Tracker-Android": "Gaze Tracker" };
-WORK.forEach(([name, desc, stack], i) => {
+const LABEL = { Eventarc: "Eventarc", docmind: "DocMind", "flowcv-mcp": "FlowCV MCP", polashi: "Polashi", ScholarHub: "ScholarHub", kaajkormo: "KaajKormo" };
+WORK.forEach(([name, cover, line, stack], i) => {
   const r = repoOf(name); const lang = r?.primaryLanguage; const accent = [C.cyan, C.violet, C.pink, C.mint][i % 4];
   const meta = [r?.stargazerCount ? `${r.stargazerCount} stars` : null, r ? `pushed ${ago(r.pushedAt)}` : null].filter(Boolean).join(" · ");
-  const lines = wrap(desc, 50).slice(0, 2);
-  writeFileSync(`${DIR}/work-${name.toLowerCase()}.svg`, card(590, 178, `
-<circle cx="32" cy="38" r="6" fill="${lang?.color || accent}"/><text x="48" y="44" fill="${T.ink}" font-size="21" font-weight="700" letter-spacing="-0.3">${esc(LABEL[name] || name)}</text>
-<text x="566" y="44" fill="${T.muted}" font-size="16" text-anchor="end">${esc(meta)}</text>
-${lines.map((l, j) => `<text x="24" y="${78 + j * 26}" fill="${T.body}" font-size="18">${esc(l)}</text>`).join("")}
-<g opacity="0">${chipRow(24, 148, stack, accent)}${fadeIn(0.3 + (i % 2) * 0.15)}</g>
-<rect x="0.5" y="0.5" width="589" height="177" rx="18" fill="none" stroke="${accent}" stroke-opacity="0.22"/>`));
+  writeFileSync(`${DIR}/work-${name.toLowerCase()}.svg`, card(590, 368, `
+<clipPath id="wc"><rect x="0.5" y="0.5" width="589" height="367" rx="18"/></clipPath>
+<image clip-path="url(#wc)" href="${img(cover)}" x="0" y="0" width="590" height="236" preserveAspectRatio="xMidYMid slice"/>
+<circle cx="32" cy="274" r="6" fill="${lang?.color || accent}"/><text x="48" y="280" fill="${T.ink}" font-size="22" font-weight="700" letter-spacing="-0.3">${esc(LABEL[name] || name)}</text>
+<text x="566" y="280" fill="${T.muted}" font-size="16" text-anchor="end">${esc(meta)}</text>
+<text x="24" y="310" fill="${T.body}" font-size="18">${esc(line)}</text>
+<g opacity="0">${chipRow(24, 343, stack, accent)}${fadeIn(0.3 + (i % 2) * 0.15)}</g>
+<rect x="0.5" y="0.5" width="589" height="367" rx="18" fill="none" stroke="${accent}" stroke-opacity="0.22"/>`));
 });
 
 // 11. Earlier roles: a timeline from the first role to today, with live "months ago" positioning
@@ -344,40 +315,25 @@ ${lines.map((l, j) => `<text x="24" y="${78 + j * 26}" fill="${T.body}" font-siz
     ["Team Lead, Game Development", "AIUB", "2024-10", "2024-12", "Led 5 developers shipping a 2D OpenGL platformer", C.violet],
   ];
   const start = "2024-10", span = months(start) + 1, x0 = 420, x1 = 1176, px = (ym) => x0 + ((span - 1 - months(ym)) / span) * (x1 - x0);
-  const rows = earlier.map(([role, org, a, b, what, c], i) => { const y = 74 + i * 64; const bx = px(a), bw = Math.max(18, px(b) + (x1 - x0) / span - bx);
+  const rows = earlier.map(([role, org, a, b, what, c], i) => { const y = 72 + i * 48; const bx = px(a), bw = Math.max(18, px(b) + (x1 - x0) / span - bx);
     const fmt = (ym) => new Date(ym + "-01T00:00:00Z").toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" });
     return `<g opacity="0"><text x="24" y="${y}" fill="${T.ink}" font-size="18" font-weight="700">${esc(role)}</text>${chip(24 + role.length * 10.6 + 12, y, org, c).svg}
-<text x="24" y="${y + 24}" fill="${T.muted}" font-size="17">${fmt(a)} to ${fmt(b)} · ${esc(what)}</text>
 <rect x="${x0}" y="${y - 6}" width="${x1 - x0}" height="10" rx="5" fill="${T.soft}"/><rect x="${bx.toFixed(1)}" y="${y - 6}" width="0" height="10" rx="5" fill="${c}"><animate attributeName="width" from="0" to="${bw.toFixed(1)}" begin="${(0.3 + i * 0.15).toFixed(2)}s" dur="0.9s" fill="freeze" ${EASE}/></rect>${fadeIn(0.1 + i * 0.12)}</g>`; }).join("");
-  const ticks = []; for (let k = 0; k <= span; k += 6) { const d = new Date(start + "-01T00:00:00Z"); d.setUTCMonth(d.getUTCMonth() + k); const ym = d.toISOString().slice(0, 7); if (x1 - px(ym) < 70) continue; ticks.push(`<text x="${px(ym).toFixed(1)}" y="${74 + earlier.length * 64 - 8}" fill="${T.faint}" font-size="16" text-anchor="middle">${d.toLocaleDateString("en-US", { month: "short", year: "2-digit", timeZone: "UTC" })}</text>`); }
-  ticks.push(`<text x="${x1}" y="${74 + earlier.length * 64 - 8}" fill="${C.cyan}" font-size="16" text-anchor="end" font-weight="700">TODAY</text>`);
-  writeFileSync(`${DIR}/earlier.svg`, card(1200, 74 + earlier.length * 64 + 40, `${title("Earlier")}<text x="1176" y="36" fill="${T.muted}" font-size="17" text-anchor="end">BSc CSE, AIUB (2022 to 2026) · CGPA 3.90 · 3x Dean's List · 1st Runner-Up, AIUB CS Fest 2024 · LinkedIn ↗</text>${rows}${ticks.join("")}`));
+  const ticks = []; for (let k = 0; k <= span; k += 6) { const d = new Date(start + "-01T00:00:00Z"); d.setUTCMonth(d.getUTCMonth() + k); const ym = d.toISOString().slice(0, 7); if (x1 - px(ym) < 70) continue; ticks.push(`<text x="${px(ym).toFixed(1)}" y="${72 + earlier.length * 48 - 6}" fill="${T.faint}" font-size="16" text-anchor="middle">${d.toLocaleDateString("en-US", { month: "short", year: "2-digit", timeZone: "UTC" })}</text>`); }
+  ticks.push(`<text x="${x1}" y="${72 + earlier.length * 48 - 6}" fill="${C.cyan}" font-size="16" text-anchor="end" font-weight="700">TODAY</text>`);
+  writeFileSync(`${DIR}/earlier.svg`, card(1200, 72 + earlier.length * 48 + 34, `${title("Earlier")}<text x="1176" y="36" fill="${T.muted}" font-size="17" text-anchor="end">BSc CSE, AIUB (2022 to 2026) · CGPA 3.90 · 3x Dean's List · 1st Runner-Up, AIUB CS Fest 2024 · LinkedIn ↗</text>${rows}${ticks.join("")}`));
 }
 
-// 12. Stack: labelled chip rows
+// 13. Research: one narrow card per item so each links to its DOI or listing
 {
-  const groups = [["AI", ["Gemini", "Vertex AI", "RAG", "LangChain", "Qdrant", "MCP", "BERT", "PyTorch", "scikit-learn"], C.cyan],
-    ["WEB & MOBILE", ["TypeScript", "React 19", "TanStack Start", "Convex", "Expo", "React Native", "Flutter", "Fastify", "FastAPI"], C.violet],
-    ["BACKEND & INFRA", ["PostgreSQL", "Go", "Rust", "Python", "Cloud Run", "Terraform", "GitHub Actions", "Solidity"], C.pink]];
-  const rows = groups.map(([label, items, c], i) => { const y = 54 + i * 54; return `<g opacity="0"><text x="24" y="${y}" fill="${T.muted}" font-size="14" font-weight="700" letter-spacing="0.8">${esc(label)}</text>${chipRow(186, y, items, c)}${fadeIn(0.1 + i * 0.2)}${spring(0.1 + i * 0.2, 12)}</g>`; }).join("");
-  writeFileSync(`${DIR}/stack.svg`, card(1200, 186, rows));
+  const papers = [["research-qpain", "PAPER", "IEEE QPAIN 2026", "Decoding Research Trends: a clustering based topic modeling framework", C.cyan],
+    ["research-idaa", "CHAPTER", "IDAA 2025 · Taylor & Francis", "Beyond NER: medical BERTs for multi-label adverse drug reaction classification", C.violet],
+    ["research-climate", "TALK", "South Asian Climate Conf. 2024", "Cyclones and Calamity: a statistical unmasking of losses in Bangladesh", C.pink]];
+  papers.forEach(([file, kind, venue, t, c]) => { const lines = wrap(t, 36).slice(0, 3); const k = chip(24, 42, kind, c);
+    writeFileSync(`${DIR}/${file}.svg`, card(392, 190, `<rect x="0.5" y="0.5" width="391" height="189" rx="18" fill="none" stroke="${c}" stroke-opacity="0.25"/>
+${k.svg}<text x="24" y="82" fill="${T.ink}" font-size="18" font-weight="700">${esc(venue)}</text>
+${lines.map((l, j) => `<text x="24" y="${112 + j * 24}" fill="${T.body}" font-size="17" font-style="italic">${esc(l)}</text>`).join("")}`)); });
 }
-
-// 13. Research: one card per paper so each can link to its DOI or listing
-{
-  const papers = [["research-qpain", "PAPER", "IEEE QPAIN 2026", "Decoding Research Trends: A Clustering Based Topic Modeling Framework", "IEEE Xplore, Scopus indexed · DOI 10.1109/QPAIN69676.2026.11545814 ↗", C.cyan],
-    ["research-idaa", "CHAPTER", "IDAA 2025 · Taylor & Francis", "Beyond NER: A Comparative Benchmark of Medical BERTs for Multi-Label Adverse Drug Reaction Classification", "Book chapter · BioBERT and PubMedBERT on PsyTAR · Google Scholar ↗", C.violet],
-    ["research-climate", "TALK", "South Asian Climate Conference 2024", "Cyclones and Calamity: A Historical and Statistical Unmasking of Losses in Bangladesh", "Statistical analysis and presentation · certificate on the portfolio ↗", C.pink]];
-  papers.forEach(([file, kind, venue, t, note, c]) => { const lines = wrap(t, 80); const k = chip(24, 38, kind, c);
-    writeFileSync(`${DIR}/${file}.svg`, card(1200, lines.length > 1 ? 122 : 98, `<rect x="0.5" y="0.5" width="1199" height="${lines.length > 1 ? 121 : 97}" rx="18" fill="none" stroke="${c}" stroke-opacity="0.25"/>
-${k.svg}<text x="${24 + k.w + 12}" y="38" fill="${T.ink}" font-size="18" font-weight="700">${esc(venue)}</text>
-${lines.map((l, j) => `<text x="24" y="${66 + j * 24}" fill="${T.body}" font-size="19" font-style="italic">${esc(l)}</text>`).join("")}
-<text x="1176" y="38" fill="${T.muted}" font-size="17" text-anchor="end">${esc(note)}</text>`)); });
-}
-
-// 13b. Navigation pills, one per section so each is a link
-["Now", "Work", "Research", "Earlier", "Stack", "Activity"].forEach((label) => { const w = label.length * 10 + 40;
-  writeFileSync(`${DIR}/nav-${label.toLowerCase()}.svg`, svg(w, 40, `<rect x="0.5" y="0.5" width="${w - 1}" height="39" rx="20" fill="${T.card}" stroke="${T.line}"/><text x="${w / 2}" y="25" fill="${T.ink}" font-size="15" font-weight="600" text-anchor="middle">${label}</text>`)); });
 
 // 14. Footer: the ask. The live status line lives in the header only, so nothing overlaps the heading.
 {
