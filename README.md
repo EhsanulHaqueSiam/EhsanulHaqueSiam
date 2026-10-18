@@ -2,20 +2,13 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=1000&color=FFFFFF&center=true&vCenter=true&width=760&lines=Building+AI+systems+that+reach+production;Published+in+IEEE+Xplore+and+Taylor+%26+Francis;Shipped+apps+serving+50%2C000%2B+users;React+19+%C2%B7+Convex+%C2%B7+Gemini+on+Vertex+AI+%C2%B7+MCP+%C2%B7+Go+%C2%B7+Rust" alt="Building AI systems that reach production" />
+<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/typing.svg" width="760" alt="Building AI systems that reach production"/>
 
-<br>
-
-<a href="https://ehsanulhaquesiam.netlify.app"><img src="https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=googlechrome&logoColor=fff"/></a>
-<a href="https://ehsanulhaquesiam.netlify.app/resume.pdf"><img src="https://img.shields.io/badge/Resume-000?style=for-the-badge&logo=readdotcv&logoColor=fff"/></a>
-<a href="https://www.linkedin.com/in/ehsanulhaquesiam/"><img src="https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=fff"/></a>
-<a href="https://scholar.google.com/citations?user=oX8D-pEAAAAJ&hl=en"><img src="https://img.shields.io/badge/Scholar-000?style=for-the-badge&logo=googlescholar&logoColor=fff"/></a>
-<a href="https://orcid.org/0009-0004-8811-1094"><img src="https://img.shields.io/badge/ORCID-000?style=for-the-badge&logo=orcid&logoColor=fff"/></a>
-<a href="mailto:ehsanul.siamdev@gmail.com"><img src="https://img.shields.io/badge/Email-000?style=for-the-badge&logo=gmail&logoColor=fff"/></a>
+<a href="https://ehsanulhaquesiam.netlify.app"><img src="https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=googlechrome&logoColor=fff"/></a> <a href="https://ehsanulhaquesiam.netlify.app/resume.pdf"><img src="https://img.shields.io/badge/Resume-000?style=for-the-badge&logo=readdotcv&logoColor=fff"/></a> <a href="https://www.linkedin.com/in/ehsanulhaquesiam/"><img src="https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=fff"/></a> <a href="https://scholar.google.com/citations?user=oX8D-pEAAAAJ&hl=en"><img src="https://img.shields.io/badge/Scholar-000?style=for-the-badge&logo=googlescholar&logoColor=fff"/></a> <a href="https://orcid.org/0009-0004-8811-1094"><img src="https://img.shields.io/badge/ORCID-000?style=for-the-badge&logo=orcid&logoColor=fff"/></a> <a href="https://x.com/siamships"><img src="https://img.shields.io/badge/X-000?style=for-the-badge&logo=x&logoColor=fff"/></a> <a href="mailto:ehsanul.siamdev@gmail.com"><img src="https://img.shields.io/badge/Email-000?style=for-the-badge&logo=gmail&logoColor=fff"/></a>
 
 <br><br>
 
-<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/stats.svg?v=2" width="100%" alt="50K+ users served, 1.5x client revenue growth, 3 papers and talks, 8+ production apps"/>
+<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/hero-stats.svg" width="100%" alt="50K+ users served, 1.5x client revenue growth, 3 papers and talks, 8+ production apps"/>
 
 </div>
 
@@ -43,17 +36,48 @@
 | 💰 | [**DoinikHishab**](https://github.com/EhsanulHaqueSiam/DoinikHishab) | Money tracker for Bangladesh: envelope budgeting, net worth, 325 tests. Android, iOS, web. | Expo · React Native · Convex |
 | 👁️ | [**Gaze Tracker**](https://github.com/EhsanulHaqueSiam/Gaze-Tracker-Android) | Hands-free Android control: gaze navigation, dwell-to-click, 9-point calibration. | MediaPipe · Accessibility Service |
 
+<details>
+<summary><b>More public work</b> (click to expand)</summary>
+<br>
+
+| | Project | What it does | Stack |
+|:--|:--|:--|:--|
+| 🎯 | [**getmyprof**](https://github.com/EhsanulHaqueSiam/getmyprof) | PhD hunt: finds professors who can fund you and the money behind them, then drafts the outreach. Mac, Linux, Windows releases. | TypeScript · desktop |
+| 🧾 | [**ScholarAssist**](https://github.com/EhsanulHaqueSiam/ScholarAssist) | Config-driven scholarship form filler with human-gated submissions. It fills, you review, you submit. | TypeScript |
+| 🎙️ | [**SayIt**](https://github.com/EhsanulHaqueSiam/sayit) | Hold Space, speak, get polished text. Web Speech API with bring-your-own-key AI polish. | TypeScript · Web Speech API |
+| 🧩 | [**AIUB Portal+**](https://github.com/EhsanulHaqueSiam/aiub-portal-plus) | Browser extension: clash-free routine generator, grade analytics, CGPA planner. Nothing leaves the browser. | TypeScript · extension |
+| 💊 | [**MediScrape**](https://github.com/EhsanulHaqueSiam/mediscrape) | Medicine database scraper across 26 Bangladeshi and international sources. | Python |
+| 🕌 | [**Jomi-Bhag**](https://github.com/EhsanulHaqueSiam/jomi-bhag) | Faraid inheritance calculator for land and property, strict Hanafi jurisprudence with sources. | TypeScript |
+| 🚗 | [**TagMe**](https://github.com/EhsanulHaqueSiam/TagMe) | Student ride-sharing: match by route and transport, chat, split fares. | Flutter |
+| ✅ | [**omarchy-ticktick**](https://github.com/EhsanulHaqueSiam/omarchy-ticktick) | TickTick in the Omarchy bar: local-first tasks, keyboard popup, natural-language quick add. | Python |
+| 🏠 | [**Mess Manager**](https://github.com/EhsanulHaqueSiam/Mess-Manager) | Shared-living expenses, meal planning and automated settlement reports. | Flutter |
+| ⚡ | [**BD Meter**](https://github.com/EhsanulHaqueSiam/bdmeter) | Prepaid electricity meter dashboard for NESCO and DESCO, installable PWA. | JavaScript · PWA |
+
+</details>
+
 <!-- ACTIVE-PROJECTS-START -->
-<sub>🔄 Building now (last 30 days): [**getmyprof**](https://github.com/EhsanulHaqueSiam/getmyprof) · [**isbdbannedhere**](https://github.com/EhsanulHaqueSiam/isbdbannedhere) · <i>updated Oct 18, 2026</i></sub>
+<sub>🔄 Building now (pushed in the last 30 days): [**getmyprof**](https://github.com/EhsanulHaqueSiam/getmyprof) · [**isbdbannedhere**](https://github.com/EhsanulHaqueSiam/isbdbannedhere) · <i>updated Oct 18, 2026</i></sub>
 <!-- ACTIVE-PROJECTS-END -->
 
 ## Research
 
 | | Venue | Paper |
 |:--|:--|:--|
-| 📄 | **IEEE QPAIN 2026** · [DOI 10.1109/QPAIN69676.2026.11545814](https://doi.org/10.1109/QPAIN69676.2026.11545814) | *Decoding Research Trends: A Clustering Based Topic Modeling Framework.* K-Means, hierarchical and DBSCAN over 10,000 arXiv AI abstracts. IEEE Xplore, Scopus. |
-| 📘 | **IDAA 2025** · Taylor & Francis book chapter | *Beyond NER: A Comparative Benchmark of Medical BERTs for Multi-Label Adverse Drug Reaction Classification.* BioBERT and PubMedBERT on PsyTAR. |
+| 📄 | **IEEE QPAIN 2026** · [DOI 10.1109/QPAIN69676.2026.11545814](https://doi.org/10.1109/QPAIN69676.2026.11545814) | *Decoding Research Trends: A Clustering Based Topic Modeling Framework.* IEEE Xplore, Scopus indexed. |
+| 📘 | **IDAA 2025** · Taylor & Francis book chapter | *Beyond NER: A Comparative Benchmark of Medical BERTs for Multi-Label Adverse Drug Reaction Classification.* |
 | 🎤 | **South Asian Climate Conference 2024** | *Cyclones and Calamity: A Historical and Statistical Unmasking of Losses in Bangladesh.* |
+
+<details>
+<summary><b>Abstracts</b></summary>
+<br>
+
+**Decoding Research Trends** compares K-Means, hierarchical clustering and DBSCAN for unsupervised topic modeling over 10,000 arXiv "Artificial Intelligence" abstracts (TF-IDF + PCA). The AI literature skews toward societal issues such as ethics and security, and no single method fits all: K-Means suits broad summaries while DBSCAN surfaces the core-periphery structure of emerging research. With A. P. Neteish and A. Salam.
+
+**Beyond NER** benchmarks domain-specific Medical BERT models for multi-label adverse drug reaction classification, fine-tuning BioBERT and PubMedBERT with multi-label heads on the PsyTAR dataset and showing improved performance over general BERT.
+
+**Cyclones and Calamity** is a historical and statistical analysis of cyclone losses in Bangladesh, collecting, modeling and visualizing climate data for an international audience.
+
+</details>
 
 ## Earlier
 
@@ -63,33 +87,30 @@
 | Feb – May 2026 | **AI Engineering Intern** · Unies | RAG pipelines (Pinecone, ChromaDB, LangChain, LlamaIndex), LLM evaluation, FastAPI |
 | Jan – May 2026 | **Solo Developer** · BetaScript LLC | 4 production React 19 + TanStack Start sites, 1.5x client revenue, 50K+ users |
 | Aug 2025 – May 2026 | **AI & Data Engineer** · [BDTracks](https://bdtracks.com) | 15+ scrapers; Gemini 2.5 Flash/Pro fine-tuned on Vertex AI for classification |
+| Oct – Dec 2024 | **Team Lead, Game Development** · AIUB | Led 5 developers shipping a 2D platformer on a custom OpenGL engine with SFML and SQLite |
 
 <sub>**BSc CSE, AIUB** (2022 – 2026) · CGPA 3.90 · 3x Dean's List · 1st Runner-Up, AIUB CS Fest 2024 App Showcase</sub>
 
 ## Stack
 
+<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/marquee.svg" width="100%" alt="TypeScript, React 19, Convex, Expo, Flutter, Go, Rust, Gemini, Vertex AI, RAG, MCP, PostgreSQL, Terraform and more"/>
+
 <div align="center">
-
-<img src="https://skillicons.dev/icons?i=typescript,react,tailwind,flutter,python,go,rust,java,cpp&theme=dark" />
-<br><br>
-<img src="https://skillicons.dev/icons?i=gcp,postgres,docker,terraform,githubactions,pytorch,sklearn,tensorflow,linux&theme=dark" />
-
-<br>
-
-<sub>**AI** Gemini · Vertex AI · RAG · LangChain · LlamaIndex · Qdrant · Pinecone · MCP · BERT · PyTorch · scikit-learn</sub><br>
-<sub>**Web & mobile** React 19 · TanStack Start · Convex · Expo · React Native · Flutter · Tailwind · Fastify · FastAPI</sub><br>
-<sub>**Infra** PostgreSQL · Drizzle · Cloud Run · Terraform · Docker · GitHub Actions · Solidity</sub>
-
+<sub><b>AI</b> Gemini · Vertex AI · RAG · LangChain · LlamaIndex · Qdrant · Pinecone · MCP · BERT · PyTorch · scikit-learn</sub><br>
+<sub><b>Web &amp; mobile</b> TypeScript · React 19 · TanStack Start · Convex · Expo · React Native · Flutter · Tailwind · Fastify · FastAPI</sub><br>
+<sub><b>Backend &amp; infra</b> PostgreSQL · Drizzle · Go · Rust · Java · Python · Cloud Run · Terraform · Docker · GitHub Actions · Solidity</sub>
 </div>
 
 ## Activity
 
-<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/3d-contrib/profile-night-green.svg" width="100%" alt="Contributions, last year"/>
-
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=EhsanulHaqueSiam&show_icons=true&hide_border=true&bg_color=00000000&title_color=ffffff&text_color=a1a1aa&icon_color=ffffff&include_all_commits=true&count_private=true" width="49%" alt="GitHub stats"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EhsanulHaqueSiam&layout=compact&hide_border=true&bg_color=00000000&title_color=ffffff&text_color=a1a1aa&langs_count=8" width="49%" alt="Top languages"/>
+<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/stats.svg" width="49%" alt="GitHub stats, last 12 months"/>
+<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/languages.svg" width="49%" alt="Languages across public repos"/>
 </p>
+
+<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/activity.svg" width="100%" alt="Contributions, last 90 days"/>
+
+<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/3d-contrib/profile-night-green.svg" width="100%" alt="Contribution calendar in 3D"/>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/output/github-contribution-grid-snake-dark.svg"/>
@@ -97,7 +118,9 @@
 </picture>
 
 <div align="center">
+<br>
 
 **Open to AI/ML engineering, full-stack and research roles.** [ehsanul.siamdev@gmail.com](mailto:ehsanul.siamdev@gmail.com)
 
+<sub>Every card above is rendered daily by <a href="scripts/render.mjs">one script</a> in this repo. No third-party stats services, nothing to time out.</sub>
 </div>
