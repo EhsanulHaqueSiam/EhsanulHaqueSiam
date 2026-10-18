@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#22d3ee"/><stop offset="0.5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" x2="1">
+      <stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1f1f1f" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="260" fill="#000"/>
+  <rect width="1200" height="260" fill="url(#grid)" opacity="0.9"/>
+  <rect width="700" height="260" fill="url(#fade)"/>
+  <g>
+    <text x="64" y="112" fill="#fff" font-size="54" font-weight="700" letter-spacing="-1">Ehsanul Haque Siam
+      <animate attributeName="opacity" from="0" to="1" dur="0.9s" fill="freeze"/>
+    </text>
+    <animateTransform attributeName="transform" type="translate" from="0 18" to="0 0" dur="0.9s" fill="freeze"/>
+  </g>
+  <g opacity="0">
+    <text x="64" y="156" fill="#a1a1aa" font-size="22">AI Engineer · Full-Stack Developer · Published Researcher</text>
+    <animate attributeName="opacity" from="0" to="1" begin="0.4s" dur="0.9s" fill="freeze"/>
+  </g>
+  <g opacity="0">
+    <text x="64" y="204" fill="#71717a" font-size="17">Software Engineer @ Ledgercross  ·  Lead Researcher (NLP &amp; LLMs) @ Arché Intelligence Lab  ·  Dhaka</text>
+    <animate attributeName="opacity" from="0" to="1" begin="0.8s" dur="0.9s" fill="freeze"/>
+  </g>
+  <rect x="64" y="226" width="0" height="3" rx="1.5" fill="url(#g)">
+    <animate attributeName="width" from="0" to="520" begin="0.6s" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
+  </rect>
+  <g transform="translate(1060 130)">
+    <circle r="78" fill="none" stroke="#27272a" stroke-width="1"/>
+    <circle r="78" fill="none" stroke="url(#g)" stroke-width="2" stroke-dasharray="120 370" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="52" fill="none" stroke="#27272a" stroke-width="1"/>
+    <circle r="52" fill="none" stroke="#fff" stroke-width="1.5" stroke-dasharray="40 290" stroke-linecap="round" opacity="0.7">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <text text-anchor="middle" y="-4" fill="#fff" font-size="15" font-weight="600">research</text>
+    <text text-anchor="middle" y="18" fill="#a1a1aa" font-size="13">→ production</text>
+  </g>
+</svg>
