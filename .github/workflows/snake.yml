@@ -27,12 +27,17 @@ jobs:
         with:
           github_user_name: EhsanulHaqueSiam
           outputs: |
-            dist/github-contribution-grid-snake-cream.svg?color_snake=%231C1A17&color_dots=%23EFE8DC,%23CFDDBE,%23A7C285,%236E8B4A,%233F5A24&hide_stack=true
-            dist/github-contribution-grid-snake-dark.svg?color_snake=%23F3EDE3&color_dots=%232E2A25,%233F5A24,%235F7F3A,%2386A85A,%23B5D08F&hide_stack=true
+            dist/github-contribution-grid-snake-cream.svg?color_snake=%231C1A17&color_dots=%23EFE8DC,%23CFDDBE,%23A7C285,%236E8B4A,%233F5A24
+            dist/github-contribution-grid-snake-dark.svg?color_snake=%23F3EDE3&color_dots=%232E2A25,%233F5A24,%235F7F3A,%2386A85A,%23B5D08F
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-          
+
+      # snk always draws an "eaten cells" stack under the grid; strip it and trim the empty rows it occupied
+      - name: remove the stack bar
+        run: |
+          sed -i -E 's#<rect class="u u[0-9]+"[^>]*/>##g; s#viewBox="(-?[0-9.]+) (-?[0-9.]+) ([0-9.]+) [0-9.]+" width="([0-9.]+)" height="[0-9.]+"#viewBox="\1 \2 \3 160" width="\4" height="160"#' dist/*.svg
+          grep -c 'class="u u' dist/*.svg || true
+
       # push the content of <build_dir> to a branch
       # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
       - name: push github-contribution-grid-snake.svg to the output branch
