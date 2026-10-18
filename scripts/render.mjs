@@ -294,20 +294,19 @@ const chipRow = (x, y, items, color) => items.map((t) => { const c = chip(x, y, 
 const months = (from) => { const a = new Date(from + "-01T00:00:00Z"), b = new Date(); return (b.getUTCFullYear() - a.getUTCFullYear()) * 12 + b.getUTCMonth() - a.getUTCMonth(); };
 const repoOf = (name) => repos.find((r) => r.name.toLowerCase() === name.toLowerCase());
 
-// 9. Current roles: two cards with live tenure
+// 9. Current roles: one card per role (so each can be a link), with live tenure
 {
   const roles = [
-    { role: "Software Engineer", org: "Ledgercross", since: "2026-06", c: C.cyan, lines: wrap("Full-stack and platform. Built InvoicePilot: React 19, Fastify, PostgreSQL, FastAPI OCR, Solidity, a 700-test backend and QuickBooks, Xero, NetSuite and Sage integrations. Rebuilt Veritas KYC on Cloud Run with Document AI + Gemini and Terraform.", 62) },
-    { role: "Lead Researcher, NLP & LLMs", org: "Arché Intelligence Lab · arche-lab.org", since: "2026-06", c: C.violet, lines: wrap("Leading LLM and Bengali NLP research toward peer-reviewed publication with a distributed team of researchers across AIUB, BUET, BRAC and RUET.", 62) },
+    { file: "role-ledgercross", role: "Software Engineer", org: "Ledgercross", site: "ledgercross.com", since: "2026-06", c: C.cyan, lines: wrap("Full-stack and platform. Built InvoicePilot: React 19, Fastify, PostgreSQL, FastAPI OCR, Solidity, a 700-test backend and QuickBooks, Xero, NetSuite and Sage integrations. Rebuilt Veritas KYC on Cloud Run with Document AI + Gemini and Terraform.", 62) },
+    { file: "role-arche", role: "Lead Researcher, NLP & LLMs", org: "Arché Intelligence Lab", site: "arche-lab.org", since: "2026-06", c: C.violet, lines: wrap("Leading LLM and Bengali NLP research toward peer-reviewed publication with a distributed team of researchers across AIUB, BUET, BRAC and RUET.", 62) },
   ];
-  const cards = roles.map((r, i) => { const x = i * 600; const m = months(r.since); const tenure = `NOW · ${m < 1 ? "THIS MONTH" : m === 1 ? "1 MO" : `${m} MO`}`;
-    return `<g opacity="0" transform="translate(${x} 0)"><rect x="8" y="8" width="584" height="236" rx="18" fill="${T.card}" stroke="${T.line}"/><rect x="8" y="8" width="584" height="236" rx="18" fill="none" stroke="${r.c}" stroke-opacity="0.25"/>
-${chip(24, 44, tenure, r.c).svg}${chip(24 + chip(24, 44, tenure, r.c).w + 8, 44, `SINCE ${r.since.replace("-", "/")}`, T.muted).svg}
+  roles.forEach((r) => { const m = months(r.since); const tenure = `NOW · ${m < 1 ? "THIS MONTH" : m === 1 ? "1 MO" : `${m} MO`}`; const c1 = chip(24, 44, tenure, r.c);
+    writeFileSync(`${DIR}/${r.file}.svg`, card(590, 236, `<rect x="0.5" y="0.5" width="589" height="235" rx="18" fill="none" stroke="${r.c}" stroke-opacity="0.25"/>
+${c1.svg}${chip(24 + c1.w + 8, 44, `SINCE ${r.since.replace("-", "/")}`, T.muted).svg}
 <text x="24" y="82" fill="${T.ink}" font-size="21" font-weight="700" letter-spacing="-0.3">${esc(r.role)}</text>
-<text x="24" y="104" fill="${T.muted}" font-size="15">${esc(r.org)}</text>
-${r.lines.slice(0, 5).map((l, j) => `<text x="24" y="${134 + j * 23}" fill="${T.body}" font-size="15">${esc(l)}</text>`).join("")}
-<circle class="pulse" cx="568" cy="32" r="4" fill="${r.c}"/>${fadeIn(0.1 + i * 0.2)}<animateTransform attributeName="transform" type="translate" values="${x} 24;${x} -4;${x} 0" keyTimes="0;0.7;1" begin="${(0.1 + i * 0.2).toFixed(2)}s" dur="0.9s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.3 1;0.3 0 0.4 1"/></g>`; }).join("");
-  writeFileSync(`${DIR}/roles.svg`, svg(1200, 252, cards));
+${chip(24, 108, r.org, r.c, 13).svg}<text x="${24 + chip(24, 108, r.org, r.c, 13).w + 10}" y="108" fill="${T.muted}" font-size="14">${esc(r.site)} ↗</text>
+${r.lines.slice(0, 5).map((l, j) => `<text x="24" y="${138 + j * 22}" fill="${T.body}" font-size="15">${esc(l)}</text>`).join("")}
+<circle class="pulse" cx="560" cy="32" r="4" fill="${r.c}"/>`)); });
 }
 
 // 10. Project cards: one SVG per repo so each can be a link in the README, with live stars and last push
@@ -338,20 +337,20 @@ ${lines.map((l, j) => `<text x="24" y="${76 + j * 23}" fill="${T.body}" font-siz
 {
   const earlier = [
     ["Research Assistant", "Deepchain Labs", "2026-04", "2026-05", "Blockchain, cybersecurity and quantum cryptography R&D", C.pink],
-    ["AI Engineering Intern", "Unies", "2026-02", "2026-05", "RAG pipelines with Pinecone, ChromaDB, LangChain, LlamaIndex. LLM evaluation, FastAPI", C.mint],
-    ["Solo Developer", "BetaScript LLC", "2026-01", "2026-05", "4 production React 19 + TanStack Start sites, 1.5x client revenue, 50K+ users", C.violet],
-    ["AI & Data Engineer", "BDTracks", "2025-08", "2026-05", "15+ scrapers; Gemini 2.5 Flash/Pro fine-tuned on Vertex AI for classification", C.cyan],
-    ["Team Lead, Game Development", "AIUB", "2024-10", "2024-12", "Led 5 developers shipping a 2D platformer on a custom OpenGL engine", C.violet],
+    ["AI Engineering Intern", "Unies", "2026-02", "2026-05", "RAG pipelines, LLM evaluation, FastAPI backends", C.mint],
+    ["Solo Developer", "BetaScript LLC", "2026-01", "2026-05", "4 production React 19 sites, 1.5x revenue, 50K+ users", C.violet],
+    ["AI & Data Engineer", "BDTracks", "2025-08", "2026-05", "15+ scrapers, Gemini 2.5 fine-tuned on Vertex AI", C.cyan],
+    ["Team Lead, Game Development", "AIUB", "2024-10", "2024-12", "Led 5 developers shipping a 2D OpenGL platformer", C.violet],
   ];
   const start = "2024-10", span = months(start) + 1, x0 = 420, x1 = 1176, px = (ym) => x0 + ((span - 1 - months(ym)) / span) * (x1 - x0);
   const rows = earlier.map(([role, org, a, b, what, c], i) => { const y = 72 + i * 62; const bx = px(a), bw = Math.max(18, px(b) + (x1 - x0) / span - bx);
     const fmt = (ym) => new Date(ym + "-01T00:00:00Z").toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" });
-    return `<g opacity="0"><text x="24" y="${y}" fill="${T.ink}" font-size="16" font-weight="700">${esc(role)}</text><text x="${24 + role.length * 9.6 + 10}" y="${y}" fill="${T.muted}" font-size="14">${esc(org)}</text>
-<text x="24" y="${y + 20}" fill="${T.muted}" font-size="13">${fmt(a)} to ${fmt(b)} · ${esc(what.length > 54 ? what.slice(0, 52) + "..." : what)}</text>
+    return `<g opacity="0"><text x="24" y="${y}" fill="${T.ink}" font-size="16" font-weight="700">${esc(role)}</text>${chip(24 + role.length * 9.6 + 12, y, org, c, 12).svg}
+<text x="24" y="${y + 20}" fill="${T.muted}" font-size="13">${fmt(a)} to ${fmt(b)} · ${esc(what)}</text>
 <rect x="${x0}" y="${y - 6}" width="${x1 - x0}" height="10" rx="5" fill="${T.soft}"/><rect x="${bx.toFixed(1)}" y="${y - 6}" width="0" height="10" rx="5" fill="${c}"><animate attributeName="width" from="0" to="${bw.toFixed(1)}" begin="${(0.3 + i * 0.15).toFixed(2)}s" dur="0.9s" fill="freeze" ${EASE}/></rect>${fadeIn(0.1 + i * 0.12)}</g>`; }).join("");
   const ticks = []; for (let k = 0; k <= span; k += 6) { const d = new Date(start + "-01T00:00:00Z"); d.setUTCMonth(d.getUTCMonth() + k); const ym = d.toISOString().slice(0, 7); if (x1 - px(ym) < 70) continue; ticks.push(`<text x="${px(ym).toFixed(1)}" y="${72 + earlier.length * 62 - 8}" fill="${T.faint}" font-size="12" text-anchor="middle">${d.toLocaleDateString("en-US", { month: "short", year: "2-digit", timeZone: "UTC" })}</text>`); }
   ticks.push(`<text x="${x1}" y="${72 + earlier.length * 62 - 8}" fill="${C.cyan}" font-size="12" text-anchor="end" font-weight="700">TODAY</text>`);
-  writeFileSync(`${DIR}/earlier.svg`, card(1200, 72 + earlier.length * 62 + 40, `${title("Earlier")}<text x="1176" y="36" fill="${T.muted}" font-size="14" text-anchor="end">BSc CSE, AIUB (2022 to 2026) · CGPA 3.90 · 3x Dean's List · 1st Runner-Up, AIUB CS Fest 2024</text>${rows}${ticks.join("")}`));
+  writeFileSync(`${DIR}/earlier.svg`, card(1200, 72 + earlier.length * 62 + 40, `${title("Earlier")}<text x="1176" y="36" fill="${T.muted}" font-size="14" text-anchor="end">BSc CSE, AIUB (2022 to 2026) · CGPA 3.90 · 3x Dean's List · 1st Runner-Up, AIUB CS Fest 2024 · full history on LinkedIn ↗</text>${rows}${ticks.join("")}`));
 }
 
 // 12. Stack: labelled chip rows
@@ -363,17 +362,21 @@ ${lines.map((l, j) => `<text x="24" y="${76 + j * 23}" fill="${T.body}" font-siz
   writeFileSync(`${DIR}/stack.svg`, card(1200, 180, rows));
 }
 
-// 13. Research: three rows with type chips
+// 13. Research: one card per paper so each can link to its DOI or listing
 {
-  const papers = [["PAPER", "IEEE QPAIN 2026", "Decoding Research Trends: A Clustering Based Topic Modeling Framework", "IEEE Xplore, Scopus indexed · DOI 10.1109/QPAIN69676.2026.11545814", C.cyan],
-    ["CHAPTER", "IDAA 2025 · Taylor & Francis", "Beyond NER: A Comparative Benchmark of Medical BERTs for Multi-Label Adverse Drug Reaction Classification", "Book chapter · BioBERT and PubMedBERT on PsyTAR", C.violet],
-    ["TALK", "South Asian Climate Conference 2024", "Cyclones and Calamity: A Historical and Statistical Unmasking of Losses in Bangladesh", "Statistical analysis and presentation", C.pink]];
-  const rows = papers.map(([kind, venue, t, note, c], i) => { const y = 70 + i * 74; const lines = wrap(t, 96);
-    return `<g opacity="0">${chip(24, y, kind, c).svg}<text x="${24 + chip(24, y, kind, c).w + 12}" y="${y}" fill="${T.ink}" font-size="16" font-weight="700">${esc(venue)}</text>
-<text x="24" y="${y + 24}" fill="${T.body}" font-size="15" font-style="italic">${esc(lines[0])}</text>
-<text x="24" y="${y + 44}" fill="${T.muted}" font-size="13">${esc(lines[1] ? lines[1] + " · " + note : note)}</text>${i < 2 ? `<line x1="24" x2="1176" y1="${y + 56}" y2="${y + 56}" stroke="${T.line}"/>` : ""}${fadeIn(0.1 + i * 0.2)}${spring(0.1 + i * 0.2, 12)}</g>`; }).join("");
-  writeFileSync(`${DIR}/research.svg`, card(1200, 70 + papers.length * 74, `${title("Research")}<text x="1176" y="36" fill="${T.muted}" font-size="14" text-anchor="end">2 peer-reviewed papers · 1 conference talk · Google Scholar and ORCID linked above</text>${rows}`));
+  const papers = [["research-qpain", "PAPER", "IEEE QPAIN 2026", "Decoding Research Trends: A Clustering Based Topic Modeling Framework", "IEEE Xplore, Scopus indexed · DOI 10.1109/QPAIN69676.2026.11545814 ↗", C.cyan],
+    ["research-idaa", "CHAPTER", "IDAA 2025 · Taylor & Francis", "Beyond NER: A Comparative Benchmark of Medical BERTs for Multi-Label Adverse Drug Reaction Classification", "Book chapter · BioBERT and PubMedBERT on PsyTAR · Google Scholar ↗", C.violet],
+    ["research-climate", "TALK", "South Asian Climate Conference 2024", "Cyclones and Calamity: A Historical and Statistical Unmasking of Losses in Bangladesh", "Statistical analysis and presentation · certificate on the portfolio ↗", C.pink]];
+  papers.forEach(([file, kind, venue, t, note, c]) => { const lines = wrap(t, 100); const k = chip(24, 38, kind, c);
+    writeFileSync(`${DIR}/${file}.svg`, card(1200, lines.length > 1 ? 112 : 92, `<rect x="0.5" y="0.5" width="1199" height="${lines.length > 1 ? 111 : 91}" rx="18" fill="none" stroke="${c}" stroke-opacity="0.25"/>
+${k.svg}<text x="${24 + k.w + 12}" y="38" fill="${T.ink}" font-size="16" font-weight="700">${esc(venue)}</text>
+${lines.map((l, j) => `<text x="24" y="${62 + j * 20}" fill="${T.body}" font-size="15" font-style="italic">${esc(l)}</text>`).join("")}
+<text x="1176" y="38" fill="${T.muted}" font-size="13" text-anchor="end">${esc(note)}</text>`)); });
 }
+
+// 13b. Navigation pills, one per section so each is a link
+["Now", "Work", "Research", "Earlier", "Stack", "Activity"].forEach((label) => { const w = label.length * 10 + 40;
+  writeFileSync(`${DIR}/nav-${label.toLowerCase()}.svg`, svg(w, 40, `<rect x="0.5" y="0.5" width="${w - 1}" height="39" rx="20" fill="${T.card}" stroke="${T.line}"/><text x="${w / 2}" y="25" fill="${T.ink}" font-size="15" font-weight="600" text-anchor="middle">${label}</text>`)); });
 
 // 14. Footer: the ask, with the live status again
 {
