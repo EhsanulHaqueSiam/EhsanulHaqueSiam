@@ -6,7 +6,11 @@
 
 <a href="https://ehsanulhaquesiam.netlify.app"><img src="https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=googlechrome&logoColor=fff"/></a> <a href="https://ehsanulhaquesiam.netlify.app/resume.pdf"><img src="https://img.shields.io/badge/Resume-000?style=for-the-badge&logo=readdotcv&logoColor=fff"/></a> <a href="https://www.linkedin.com/in/ehsanulhaquesiam/"><img src="https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=fff"/></a> <a href="https://scholar.google.com/citations?user=oX8D-pEAAAAJ&hl=en"><img src="https://img.shields.io/badge/Scholar-000?style=for-the-badge&logo=googlescholar&logoColor=fff"/></a> <a href="https://orcid.org/0009-0004-8811-1094"><img src="https://img.shields.io/badge/ORCID-000?style=for-the-badge&logo=orcid&logoColor=fff"/></a> <a href="https://x.com/siamships"><img src="https://img.shields.io/badge/X-000?style=for-the-badge&logo=x&logoColor=fff"/></a> <a href="mailto:ehsanul.siamdev@gmail.com"><img src="https://img.shields.io/badge/Email-000?style=for-the-badge&logo=gmail&logoColor=fff"/></a>
 
-<br><br>
+<br>
+
+<sub><a href="#now">Now</a> · <a href="#selected-work">Work</a> · <a href="#research">Research</a> · <a href="#stack">Stack</a> · <a href="#activity">Activity</a></sub>
+
+<br>
 
 <img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/hero-stats.svg" width="100%" alt="50K+ users served, 1.5x client revenue growth, 3 papers and talks, 8+ production apps"/>
 
@@ -18,7 +22,9 @@
 
 ## Now
 
-| | | |
+<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/now.svg" width="100%" alt="Right now: most recently pushed repositories and their last commits"/>
+
+| | Role | What I own |
 |:--|:--|:--|
 | 🏢 | **Software Engineer** · Ledgercross · Jun 2026 → | InvoicePilot: React 19, Fastify, PostgreSQL, FastAPI OCR, Solidity, a 700-test backend and QuickBooks, Xero, NetSuite and Sage integrations. Veritas KYC rebuilt on Cloud Run with Document AI + Gemini and Terraform. |
 | 🔬 | **Lead Researcher (NLP & LLMs)** · [Arché Intelligence Lab](https://arche-lab.org) · Jun 2026 → | LLM and Bengali NLP research toward publication, with researchers across AIUB, BUET, BRAC and RUET. |
@@ -54,10 +60,6 @@
 | ⚡ | [**BD Meter**](https://github.com/EhsanulHaqueSiam/bdmeter) | Prepaid electricity meter dashboard for NESCO and DESCO, installable PWA. | JavaScript · PWA |
 
 </details>
-
-<!-- ACTIVE-PROJECTS-START -->
-<sub>🔄 Building now (pushed in the last 30 days): [**getmyprof**](https://github.com/EhsanulHaqueSiam/getmyprof) · [**isbdbannedhere**](https://github.com/EhsanulHaqueSiam/isbdbannedhere) · <i>updated Oct 18, 2026</i></sub>
-<!-- ACTIVE-PROJECTS-END -->
 
 ## Research
 
@@ -120,7 +122,7 @@
 <div align="center">
 <br>
 
-**Open to AI/ML engineering, full-stack and research roles.** [ehsanul.siamdev@gmail.com](mailto:ehsanul.siamdev@gmail.com)
+**Open to AI/ML engineering, full-stack and research roles.** If you ship AI features and care whether they work, we should talk.<br>[ehsanul.siamdev@gmail.com](mailto:ehsanul.siamdev@gmail.com)
 
 <sub>Every card above is rendered daily by <a href="scripts/render.mjs">one script</a> in this repo. No third-party stats services, nothing to time out.</sub>
 </div>
