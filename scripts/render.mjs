@@ -378,13 +378,12 @@ ${lines.map((l, j) => `<text x="24" y="${62 + j * 20}" fill="${T.body}" font-siz
 ["Now", "Work", "Research", "Earlier", "Stack", "Activity"].forEach((label) => { const w = label.length * 10 + 40;
   writeFileSync(`${DIR}/nav-${label.toLowerCase()}.svg`, svg(w, 40, `<rect x="0.5" y="0.5" width="${w - 1}" height="39" rx="20" fill="${T.card}" stroke="${T.line}"/><text x="${w / 2}" y="25" fill="${T.ink}" font-size="15" font-weight="600" text-anchor="middle">${label}</text>`)); });
 
-// 14. Footer: the ask, with the live status again
+// 14. Footer: the ask. The live status line lives in the header only, so nothing overlaps the heading.
 {
-  writeFileSync(`${DIR}/footer.svg`, card(1200, 150, `
-<text x="600" y="54" fill="${T.ink}" font-size="24" font-weight="700" text-anchor="middle" letter-spacing="-0.4">Open to AI/ML engineering, full-stack and research roles.</text>
-<text x="600" y="84" fill="${T.body}" font-size="16" text-anchor="middle">If you ship AI features and care whether they work, we should talk.</text>
-<g opacity="0"><rect x="430" y="100" width="340" height="34" rx="17" fill="${C.cyan}" fill-opacity="0.16"/><text x="600" y="123" fill="${C.cyan}" font-size="16" font-weight="700" text-anchor="middle" font-family="${MONO}">ehsanul.siamdev@gmail.com</text>${fadeIn(0.4)}${spring(0.4, 10)}</g>
-<circle class="pulse" cx="36" cy="36" r="4" fill="${C.cyan}"/><text x="48" y="40" fill="${T.muted}" font-size="12">${esc(status)}</text>`));
+  writeFileSync(`${DIR}/footer.svg`, card(1200, 140, `
+<text x="600" y="50" fill="${T.ink}" font-size="24" font-weight="700" text-anchor="middle" letter-spacing="-0.4">Open to AI/ML engineering, full-stack and research roles.</text>
+<text x="600" y="80" fill="${T.body}" font-size="16" text-anchor="middle">If you ship AI features and care whether they work, we should talk.</text>
+<g opacity="0"><rect x="430" y="94" width="340" height="34" rx="17" fill="${C.cyan}" fill-opacity="0.16"/><text x="600" y="117" fill="${C.cyan}" font-size="16" font-weight="700" text-anchor="middle" font-family="${MONO}">ehsanul.siamdev@gmail.com</text>${fadeIn(0.4)}${spring(0.4, 10)}</g>`));
 }
 
 // 8. Typing banner: lines type in and erase in a loop, pure SMIL

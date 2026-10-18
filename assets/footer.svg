@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" ><defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" ><defs>
 <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2"/></filter>
 <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0 0.05 0 0 0 0.05 0"/></filter>
@@ -17,8 +17,7 @@
 .pulse{animation:pulse 2.4s ease-in-out infinite}.rise{animation:rise 9s linear infinite}.marquee{animation:marquee 28s linear infinite}
 .spin{animation:spin 30s linear infinite;transform-origin:center;transform-box:fill-box}.blink{animation:blink 1s step-end infinite}.breathe{animation:breathe 3s ease-in-out infinite}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
-</style><rect x="0.5" y="0.5" width="1199" height="149" rx="18" fill="#FBF8F3" stroke="#E4DCCE"/>
-<text x="600" y="54" fill="#1C1A17" font-size="24" font-weight="700" text-anchor="middle" letter-spacing="-0.4">Open to AI/ML engineering, full-stack and research roles.</text>
-<text x="600" y="84" fill="#4A443D" font-size="16" text-anchor="middle">If you ship AI features and care whether they work, we should talk.</text>
-<g opacity="0"><rect x="430" y="100" width="340" height="34" rx="17" fill="#6E8B4A" fill-opacity="0.16"/><text x="600" y="123" fill="#6E8B4A" font-size="16" font-weight="700" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">ehsanul.siamdev@gmail.com</text><animate attributeName="opacity" from="0" to="1" begin="0.40s" dur="0.8s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 10;0 -4;0 0" keyTimes="0;0.7;1" begin="0.40s" dur="1s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.3 1;0.3 0 0.4 1"/></g>
-<circle class="pulse" cx="36" cy="36" r="4" fill="#6E8B4A"/><text x="48" y="40" fill="#7A7268" font-size="12">pushing getmyprof 14h ago · 22-day streak · 5,301 commits this year</text></svg>
+</style><rect x="0.5" y="0.5" width="1199" height="139" rx="18" fill="#FBF8F3" stroke="#E4DCCE"/>
+<text x="600" y="50" fill="#1C1A17" font-size="24" font-weight="700" text-anchor="middle" letter-spacing="-0.4">Open to AI/ML engineering, full-stack and research roles.</text>
+<text x="600" y="80" fill="#4A443D" font-size="16" text-anchor="middle">If you ship AI features and care whether they work, we should talk.</text>
+<g opacity="0"><rect x="430" y="94" width="340" height="34" rx="17" fill="#6E8B4A" fill-opacity="0.16"/><text x="600" y="117" fill="#6E8B4A" font-size="16" font-weight="700" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">ehsanul.siamdev@gmail.com</text><animate attributeName="opacity" from="0" to="1" begin="0.40s" dur="0.8s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 10;0 -4;0 0" keyTimes="0;0.7;1" begin="0.40s" dur="1s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.3 1;0.3 0 0.4 1"/></g></svg>
