@@ -20,13 +20,13 @@
 </style><rect x="0.5" y="0.5" width="1199" height="189" rx="18" fill="#FBF8F3" stroke="#E4DCCE"/><text x="24" y="36" fill="#1C1A17" font-size="18" font-weight="700" letter-spacing="-0.2">Right now</text><text x="1140" y="36" fill="#7A7268" font-size="15" text-anchor="end">LIVE · pushed in the last 30 days · rendered Oct 19</text><g transform="translate(1152 32)"><circle r="4" fill="#6E8B4A"/><circle r="4" fill="none" stroke="#6E8B4A"><animate attributeName="r" values="4;12" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0" dur="1.8s" repeatCount="indefinite"/></circle></g><g opacity="0">
   <circle cx="34" cy="68" r="5" fill="#3178c6"/>
   <text x="50" y="73" fill="#1C1A17" font-size="19" font-weight="700">getmyprof</text>
-  <text x="144.8" y="73" fill="#7A7268" font-size="15">TypeScript</text>
+  <text x="161" y="73" fill="#7A7268" font-size="15">TypeScript</text>
   <text x="50" y="94" fill="#7A7268" font-size="16" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">feat(web): one control kit everywhere, and the shell works on a phone (#71)</text>
   <rect x="1093.6" y="59" width="70.4" height="20" rx="10" fill="#DDE8CF"/><text x="1128.8" y="73" fill="#3F5A24" font-size="14" font-weight="600" text-anchor="middle">14h ago</text>
   <animate attributeName="opacity" from="0" to="1" begin="0.20s" dur="0.8s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 14;0 -4;0 0" keyTimes="0;0.7;1" begin="0.20s" dur="1s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.3 1;0.3 0 0.4 1"/></g><g opacity="0">
   <circle cx="34" cy="122" r="5" fill="#3178c6"/>
   <text x="50" y="127" fill="#1C1A17" font-size="19" font-weight="700">isbdbannedhere</text>
-  <text x="190.79999999999998" y="127" fill="#7A7268" font-size="15">TypeScript</text>
+  <text x="216" y="127" fill="#7A7268" font-size="15">TypeScript</text>
   <text x="50" y="148" fill="#7A7268" font-size="16" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">chore(ci): manual dispatch, deploy on main pushes and dispatches</text>
   <rect x="1100.8" y="113" width="63.2" height="20" rx="10" fill="#F6E5B5"/><text x="1132.4" y="127" fill="#7A5A12" font-size="14" font-weight="600" text-anchor="middle">2d ago</text>
   <animate attributeName="opacity" from="0" to="1" begin="0.35s" dur="0.8s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 14;0 -4;0 0" keyTimes="0;0.7;1" begin="0.35s" dur="1s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.3 1;0.3 0 0.4 1"/></g></svg>

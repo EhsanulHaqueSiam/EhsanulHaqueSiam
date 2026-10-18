@@ -110,7 +110,7 @@ for (let i = days.length - 1; i >= 0; i--) { if (days[i].contributionCount) curr
 
 
 // Relative time, e.g. "2h ago", "3d ago"
-const ago = (iso) => { const m = (Date.now() - new Date(iso)) / 6e4; return m < 60 ? `${Math.max(1, m | 0)}m ago` : m < 1440 ? `${(m / 60) | 0}h ago` : `${(m / 1440) | 0}d ago`; };
+const ago = (iso) => { const m = (Date.now() - new Date(iso)) / 6e4, d = m / 1440; return m < 60 ? `${Math.max(1, m | 0)}m ago` : m < 1440 ? `${(m / 60) | 0}h ago` : d < 45 ? `${d | 0}d ago` : d < 365 ? `${Math.round(d / 30)} mo ago` : `${Math.round(d / 365)} yr ago`; };
 const recent = repos.filter((r) => !HOBBY.test(r.name) && r.defaultBranchRef && Date.now() - new Date(r.pushedAt) < 30 * 864e5).slice(0, 4);
 const lastMsg = (r) => (r.defaultBranchRef.target.history.nodes.find((c) => !/^Merge /.test(c.message)) || r.defaultBranchRef.target.history.nodes[0]).message.split("\n")[0];
 const status = `${recent[0] ? `pushing ${recent[0].name} ${ago(recent[0].pushedAt)}` : "quiet day"} · ${current}-day streak · ${commits.toLocaleString("en-US")} commits this year`;
@@ -189,7 +189,7 @@ for (const [name, theme] of Object.entries(THEMES)) {
     return `<g opacity="0">
   <circle cx="34" cy="${y}" r="5" fill="${r.primaryLanguage?.color || "#71717a"}"/>
   <text x="50" y="${y + 5}" fill="${T.ink}" font-size="19" font-weight="700">${esc(r.name)}</text>
-  <text x="${50 + r.name.length * 9.2 + 12}" y="${y + 5}" fill="${T.muted}" font-size="15">${esc(r.primaryLanguage?.name || "")}</text>
+  <text x="${50 + r.name.length * 11 + 12}" y="${y + 5}" fill="${T.muted}" font-size="15">${esc(r.primaryLanguage?.name || "")}</text>
   <text x="50" y="${y + 26}" fill="${T.muted}" font-size="16" font-family="${MONO}">${esc(msg.length > 88 ? msg.slice(0, 85) + "..." : msg)}</text>
   ${(() => { const d = (Date.now() - new Date(r.pushedAt)) / 864e5; const [bg, fg] = d < 1 ? CHIP.green : d < 7 ? CHIP.amber : CHIP.coral; const t = ago(r.pushedAt); const w = t.length * 7.2 + 20; return `<rect x="${1164 - w}" y="${y - 9}" width="${w}" height="20" rx="10" fill="${bg}"/><text x="${1164 - w / 2}" y="${y + 5}" fill="${fg}" font-size="14" font-weight="600" text-anchor="middle">${t}</text>`; })()}
   ${fadeIn(0.2 + i * 0.15)}${spring(0.2 + i * 0.15, 14)}</g>`; }).join("");
@@ -284,6 +284,104 @@ ${ticks}`));
 <text x="1176" y="36" fill="${T.muted}" font-size="15" text-anchor="end">${total.toLocaleString("en-US")} contributions · longest streak ${longest} days · ${stars} stars</text>
 ${bars}${labels}
 <text x="1030" y="538" fill="${T.faint}" font-size="12" text-anchor="end">LESS</text>${legend}<text x="1148" y="538" fill="${T.faint}" font-size="12">MORE</text>`));
+}
+
+
+// Text wrapping by character budget (system fonts, so an estimate is all we can do)
+const wrap = (text, max) => { const out = []; let line = ""; for (const w of text.split(" ")) { if ((line + " " + w).trim().length > max) { out.push(line.trim()); line = w; } else line += " " + w; } if (line.trim()) out.push(line.trim()); return out; };
+const chip = (x, y, text, color, size = 12) => { const w = text.length * (size * 0.62) + 22; return { w, svg: `<rect x="${x}" y="${y - 15}" width="${w.toFixed(0)}" height="22" rx="11" fill="${color}" fill-opacity="0.16"/><text x="${(x + w / 2).toFixed(1)}" y="${y}" fill="${color}" font-size="${size}" font-weight="700" text-anchor="middle">${esc(text)}</text>` }; };
+const chipRow = (x, y, items, color) => items.map((t) => { const c = chip(x, y, t, color); x += c.w + 8; return c.svg; }).join("");
+const months = (from) => { const a = new Date(from + "-01T00:00:00Z"), b = new Date(); return (b.getUTCFullYear() - a.getUTCFullYear()) * 12 + b.getUTCMonth() - a.getUTCMonth(); };
+const repoOf = (name) => repos.find((r) => r.name.toLowerCase() === name.toLowerCase());
+
+// 9. Current roles: two cards with live tenure
+{
+  const roles = [
+    { role: "Software Engineer", org: "Ledgercross", since: "2026-06", c: C.cyan, lines: wrap("Full-stack and platform. Built InvoicePilot: React 19, Fastify, PostgreSQL, FastAPI OCR, Solidity, a 700-test backend and QuickBooks, Xero, NetSuite and Sage integrations. Rebuilt Veritas KYC on Cloud Run with Document AI + Gemini and Terraform.", 62) },
+    { role: "Lead Researcher, NLP & LLMs", org: "Arché Intelligence Lab · arche-lab.org", since: "2026-06", c: C.violet, lines: wrap("Leading LLM and Bengali NLP research toward peer-reviewed publication with a distributed team of researchers across AIUB, BUET, BRAC and RUET.", 62) },
+  ];
+  const cards = roles.map((r, i) => { const x = i * 600; const m = months(r.since); const tenure = `NOW · ${m < 1 ? "THIS MONTH" : m === 1 ? "1 MO" : `${m} MO`}`;
+    return `<g opacity="0" transform="translate(${x} 0)"><rect x="8" y="8" width="584" height="236" rx="18" fill="${T.card}" stroke="${T.line}"/><rect x="8" y="8" width="584" height="236" rx="18" fill="none" stroke="${r.c}" stroke-opacity="0.25"/>
+${chip(24, 44, tenure, r.c).svg}${chip(24 + chip(24, 44, tenure, r.c).w + 8, 44, `SINCE ${r.since.replace("-", "/")}`, T.muted).svg}
+<text x="24" y="82" fill="${T.ink}" font-size="21" font-weight="700" letter-spacing="-0.3">${esc(r.role)}</text>
+<text x="24" y="104" fill="${T.muted}" font-size="15">${esc(r.org)}</text>
+${r.lines.slice(0, 5).map((l, j) => `<text x="24" y="${134 + j * 23}" fill="${T.body}" font-size="15">${esc(l)}</text>`).join("")}
+<circle class="pulse" cx="568" cy="32" r="4" fill="${r.c}"/>${fadeIn(0.1 + i * 0.2)}<animateTransform attributeName="transform" type="translate" values="${x} 24;${x} -4;${x} 0" keyTimes="0;0.7;1" begin="${(0.1 + i * 0.2).toFixed(2)}s" dur="0.9s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.3 1;0.3 0 0.4 1"/></g>`; }).join("");
+  writeFileSync(`${DIR}/roles.svg`, svg(1200, 252, cards));
+}
+
+// 10. Project cards: one SVG per repo so each can be a link in the README, with live stars and last push
+const WORK = [
+  ["Eventarc", "QR access control, food tracking, live dashboards and bulk SMS for events of up to 60,000 attendees.", ["Go", "PostgreSQL", "Redis", "Convex", "React"]],
+  ["docmind", "Document Q&A API: ingest, retrieve, rerank and answer with grounded citations.", ["Vertex AI RAG", "Gemini", "Docling", "Qdrant"]],
+  ["flowcv-mcp", "MCP server and CLI giving AI assistants full control of the FlowCV resume builder. 50 tools.", ["MCP", "Node", "Chrome automation"]],
+  ["polashi", "Provably-fair LLM social-deduction benchmark. An anti-cheat firewall makes secret leakage structurally impossible.", ["Python", "LLM eval"]],
+  ["ScholarHub", "272 spiders indexing 12,000+ scholarships daily, full-text search and an admin review flow.", ["React 19", "TanStack Start", "Convex", "Python"]],
+  ["kaajkormo", "Swipe-to-apply job portal with AI CV parsing and skill-match scoring.", ["React 19", "Rust/Axum", "PostgreSQL 17"]],
+  ["DoinikHishab", "Money tracker for Bangladesh: envelope budgeting, net worth, 325 tests. Android, iOS and web.", ["Expo", "React Native", "Convex"]],
+  ["Gaze-Tracker-Android", "Hands-free Android control: gaze navigation, dwell-to-click, 9-point calibration.", ["MediaPipe", "Accessibility Service"]],
+];
+const LABEL = { Eventarc: "Eventarc", docmind: "DocMind", "flowcv-mcp": "FlowCV MCP", polashi: "Polashi", ScholarHub: "ScholarHub", kaajkormo: "KaajKormo", DoinikHishab: "DoinikHishab", "Gaze-Tracker-Android": "Gaze Tracker" };
+WORK.forEach(([name, desc, stack], i) => {
+  const r = repoOf(name); const lang = r?.primaryLanguage; const accent = [C.cyan, C.violet, C.pink, C.mint][i % 4];
+  const meta = [r?.stargazerCount ? `${r.stargazerCount} stars` : null, r ? `pushed ${ago(r.pushedAt)}` : null].filter(Boolean).join(" · ");
+  const lines = wrap(desc, 60).slice(0, 2);
+  writeFileSync(`${DIR}/work-${name.toLowerCase()}.svg`, card(590, 170, `
+<circle cx="32" cy="38" r="6" fill="${lang?.color || accent}"/><text x="48" y="44" fill="${T.ink}" font-size="20" font-weight="700" letter-spacing="-0.3">${esc(LABEL[name] || name)}</text>
+<text x="566" y="44" fill="${T.muted}" font-size="13" text-anchor="end">${esc(meta)}</text>
+${lines.map((l, j) => `<text x="24" y="${76 + j * 23}" fill="${T.body}" font-size="15">${esc(l)}</text>`).join("")}
+<g opacity="0">${chipRow(24, 140, stack, accent)}${fadeIn(0.3 + (i % 2) * 0.15)}</g>
+<rect x="0.5" y="0.5" width="589" height="169" rx="18" fill="none" stroke="${accent}" stroke-opacity="0.22"/>`));
+});
+
+// 11. Earlier roles: a timeline from the first role to today, with live "months ago" positioning
+{
+  const earlier = [
+    ["Research Assistant", "Deepchain Labs", "2026-04", "2026-05", "Blockchain, cybersecurity and quantum cryptography R&D", C.pink],
+    ["AI Engineering Intern", "Unies", "2026-02", "2026-05", "RAG pipelines with Pinecone, ChromaDB, LangChain, LlamaIndex. LLM evaluation, FastAPI", C.mint],
+    ["Solo Developer", "BetaScript LLC", "2026-01", "2026-05", "4 production React 19 + TanStack Start sites, 1.5x client revenue, 50K+ users", C.violet],
+    ["AI & Data Engineer", "BDTracks", "2025-08", "2026-05", "15+ scrapers; Gemini 2.5 Flash/Pro fine-tuned on Vertex AI for classification", C.cyan],
+    ["Team Lead, Game Development", "AIUB", "2024-10", "2024-12", "Led 5 developers shipping a 2D platformer on a custom OpenGL engine", C.violet],
+  ];
+  const start = "2024-10", span = months(start) + 1, x0 = 420, x1 = 1176, px = (ym) => x0 + ((span - 1 - months(ym)) / span) * (x1 - x0);
+  const rows = earlier.map(([role, org, a, b, what, c], i) => { const y = 72 + i * 62; const bx = px(a), bw = Math.max(18, px(b) + (x1 - x0) / span - bx);
+    const fmt = (ym) => new Date(ym + "-01T00:00:00Z").toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" });
+    return `<g opacity="0"><text x="24" y="${y}" fill="${T.ink}" font-size="16" font-weight="700">${esc(role)}</text><text x="${24 + role.length * 9.6 + 10}" y="${y}" fill="${T.muted}" font-size="14">${esc(org)}</text>
+<text x="24" y="${y + 20}" fill="${T.muted}" font-size="13">${fmt(a)} to ${fmt(b)} · ${esc(what.length > 54 ? what.slice(0, 52) + "..." : what)}</text>
+<rect x="${x0}" y="${y - 6}" width="${x1 - x0}" height="10" rx="5" fill="${T.soft}"/><rect x="${bx.toFixed(1)}" y="${y - 6}" width="0" height="10" rx="5" fill="${c}"><animate attributeName="width" from="0" to="${bw.toFixed(1)}" begin="${(0.3 + i * 0.15).toFixed(2)}s" dur="0.9s" fill="freeze" ${EASE}/></rect>${fadeIn(0.1 + i * 0.12)}</g>`; }).join("");
+  const ticks = []; for (let k = 0; k <= span; k += 6) { const d = new Date(start + "-01T00:00:00Z"); d.setUTCMonth(d.getUTCMonth() + k); const ym = d.toISOString().slice(0, 7); if (x1 - px(ym) < 70) continue; ticks.push(`<text x="${px(ym).toFixed(1)}" y="${72 + earlier.length * 62 - 8}" fill="${T.faint}" font-size="12" text-anchor="middle">${d.toLocaleDateString("en-US", { month: "short", year: "2-digit", timeZone: "UTC" })}</text>`); }
+  ticks.push(`<text x="${x1}" y="${72 + earlier.length * 62 - 8}" fill="${C.cyan}" font-size="12" text-anchor="end" font-weight="700">TODAY</text>`);
+  writeFileSync(`${DIR}/earlier.svg`, card(1200, 72 + earlier.length * 62 + 40, `${title("Earlier")}<text x="1176" y="36" fill="${T.muted}" font-size="14" text-anchor="end">BSc CSE, AIUB (2022 to 2026) · CGPA 3.90 · 3x Dean's List · 1st Runner-Up, AIUB CS Fest 2024</text>${rows}${ticks.join("")}`));
+}
+
+// 12. Stack: labelled chip rows
+{
+  const groups = [["AI", ["Gemini", "Vertex AI", "RAG", "LangChain", "LlamaIndex", "Qdrant", "Pinecone", "MCP", "BERT", "PyTorch", "scikit-learn"], C.cyan],
+    ["WEB & MOBILE", ["TypeScript", "React 19", "TanStack Start", "Convex", "Expo", "React Native", "Flutter", "Tailwind", "Fastify", "FastAPI"], C.violet],
+    ["BACKEND & INFRA", ["PostgreSQL", "Drizzle", "Go", "Rust", "Java", "Python", "Cloud Run", "Terraform", "Docker", "GitHub Actions", "Solidity"], C.pink]];
+  const rows = groups.map(([label, items, c], i) => { const y = 52 + i * 52; return `<g opacity="0"><text x="24" y="${y}" fill="${T.muted}" font-size="12" font-weight="700" letter-spacing="1.2">${esc(label)}</text>${chipRow(170, y, items, c)}${fadeIn(0.1 + i * 0.2)}${spring(0.1 + i * 0.2, 12)}</g>`; }).join("");
+  writeFileSync(`${DIR}/stack.svg`, card(1200, 180, rows));
+}
+
+// 13. Research: three rows with type chips
+{
+  const papers = [["PAPER", "IEEE QPAIN 2026", "Decoding Research Trends: A Clustering Based Topic Modeling Framework", "IEEE Xplore, Scopus indexed · DOI 10.1109/QPAIN69676.2026.11545814", C.cyan],
+    ["CHAPTER", "IDAA 2025 · Taylor & Francis", "Beyond NER: A Comparative Benchmark of Medical BERTs for Multi-Label Adverse Drug Reaction Classification", "Book chapter · BioBERT and PubMedBERT on PsyTAR", C.violet],
+    ["TALK", "South Asian Climate Conference 2024", "Cyclones and Calamity: A Historical and Statistical Unmasking of Losses in Bangladesh", "Statistical analysis and presentation", C.pink]];
+  const rows = papers.map(([kind, venue, t, note, c], i) => { const y = 70 + i * 74; const lines = wrap(t, 96);
+    return `<g opacity="0">${chip(24, y, kind, c).svg}<text x="${24 + chip(24, y, kind, c).w + 12}" y="${y}" fill="${T.ink}" font-size="16" font-weight="700">${esc(venue)}</text>
+<text x="24" y="${y + 24}" fill="${T.body}" font-size="15" font-style="italic">${esc(lines[0])}</text>
+<text x="24" y="${y + 44}" fill="${T.muted}" font-size="13">${esc(lines[1] ? lines[1] + " · " + note : note)}</text>${i < 2 ? `<line x1="24" x2="1176" y1="${y + 56}" y2="${y + 56}" stroke="${T.line}"/>` : ""}${fadeIn(0.1 + i * 0.2)}${spring(0.1 + i * 0.2, 12)}</g>`; }).join("");
+  writeFileSync(`${DIR}/research.svg`, card(1200, 70 + papers.length * 74, `${title("Research")}<text x="1176" y="36" fill="${T.muted}" font-size="14" text-anchor="end">2 peer-reviewed papers · 1 conference talk · Google Scholar and ORCID linked above</text>${rows}`));
+}
+
+// 14. Footer: the ask, with the live status again
+{
+  writeFileSync(`${DIR}/footer.svg`, card(1200, 150, `
+<text x="600" y="54" fill="${T.ink}" font-size="24" font-weight="700" text-anchor="middle" letter-spacing="-0.4">Open to AI/ML engineering, full-stack and research roles.</text>
+<text x="600" y="84" fill="${T.body}" font-size="16" text-anchor="middle">If you ship AI features and care whether they work, we should talk.</text>
+<g opacity="0"><rect x="430" y="100" width="340" height="34" rx="17" fill="${C.cyan}" fill-opacity="0.16"/><text x="600" y="123" fill="${C.cyan}" font-size="16" font-weight="700" text-anchor="middle" font-family="${MONO}">ehsanul.siamdev@gmail.com</text>${fadeIn(0.4)}${spring(0.4, 10)}</g>
+<circle class="pulse" cx="36" cy="36" r="4" fill="${C.cyan}"/><text x="48" y="40" fill="${T.muted}" font-size="12">${esc(status)}</text>`));
 }
 
 // 8. Typing banner: lines type in and erase in a loop, pure SMIL

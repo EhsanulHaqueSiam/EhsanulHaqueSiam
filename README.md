@@ -24,23 +24,21 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/now.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/now.svg" width="100%" alt="Right now: most recently pushed repositories and their last commits"/></picture>
 
-| | Role | What I own |
-|:--|:--|:--|
-| 🏢 | **Software Engineer** · Ledgercross · Jun 2026 → | InvoicePilot: React 19, Fastify, PostgreSQL, FastAPI OCR, Solidity, a 700-test backend and QuickBooks, Xero, NetSuite and Sage integrations. Veritas KYC rebuilt on Cloud Run with Document AI + Gemini and Terraform. |
-| 🔬 | **Lead Researcher (NLP & LLMs)** · [Arché Intelligence Lab](https://arche-lab.org) · Jun 2026 → | LLM and Bengali NLP research toward publication, with researchers across AIUB, BUET, BRAC and RUET. |
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/roles.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/roles.svg" width="100%" alt="Current roles: Software Engineer at Ledgercross and Lead Researcher at Arché Intelligence Lab"/></picture>
 
 ## Selected work
 
-| | Project | What it does | Stack |
-|:--|:--|:--|:--|
-| 🎟️ | [**Eventarc**](https://github.com/EhsanulHaqueSiam/Eventarc) | QR access control, food tracking, live dashboards and bulk SMS for events of up to 60,000 attendees. | Go · PostgreSQL · Redis · Convex · React |
-| 📄 | [**DocMind**](https://github.com/EhsanulHaqueSiam/docmind) | Document Q&A API: ingest, retrieve, rerank, answer with grounded citations. | Vertex AI RAG Engine · Gemini · Docling · Qdrant |
-| 🔌 | [**FlowCV MCP**](https://github.com/EhsanulHaqueSiam/flowcv-mcp) | MCP server + CLI giving AI assistants full control of the FlowCV resume builder. 50 tools. | MCP · Node · Chrome automation |
-| 🎭 | [**Polashi**](https://github.com/EhsanulHaqueSiam/polashi) | Provably-fair LLM social-deduction benchmark: an anti-cheat firewall makes secret leakage structurally impossible; 7-axis behavioral radar. | Python · LLM eval |
-| 🎓 | [**ScholarHub**](https://github.com/EhsanulHaqueSiam/ScholarHub) | 272 spiders indexing 12,000+ scholarships daily, full-text search, admin review. | React 19 · TanStack Start · Convex · Python |
-| 💼 | [**KaajKormo**](https://github.com/EhsanulHaqueSiam/kaajkormo) | Swipe-to-apply job portal with AI CV parsing and skill-match scoring. | React 19 · Rust/Axum · PostgreSQL 17 |
-| 💰 | [**DoinikHishab**](https://github.com/EhsanulHaqueSiam/DoinikHishab) | Money tracker for Bangladesh: envelope budgeting, net worth, 325 tests. Android, iOS, web. | Expo · React Native · Convex |
-| 👁️ | [**Gaze Tracker**](https://github.com/EhsanulHaqueSiam/Gaze-Tracker-Android) | Hands-free Android control: gaze navigation, dwell-to-click, 9-point calibration. | MediaPipe · Accessibility Service |
+<p align="center">
+<a href="https://github.com/EhsanulHaqueSiam/Eventarc"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/work-eventarc.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/work-eventarc.svg" width="49%" alt="Eventarc"/></picture></a>
+<a href="https://github.com/EhsanulHaqueSiam/docmind"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/work-docmind.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/work-docmind.svg" width="49%" alt="docmind"/></picture></a>
+<a href="https://github.com/EhsanulHaqueSiam/flowcv-mcp"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/work-flowcv-mcp.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/work-flowcv-mcp.svg" width="49%" alt="flowcv-mcp"/></picture></a>
+<a href="https://github.com/EhsanulHaqueSiam/polashi"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/work-polashi.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/work-polashi.svg" width="49%" alt="polashi"/></picture></a>
+<a href="https://github.com/EhsanulHaqueSiam/ScholarHub"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/work-scholarhub.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/work-scholarhub.svg" width="49%" alt="ScholarHub"/></picture></a>
+<a href="https://github.com/EhsanulHaqueSiam/kaajkormo"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/work-kaajkormo.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/work-kaajkormo.svg" width="49%" alt="kaajkormo"/></picture></a>
+<a href="https://github.com/EhsanulHaqueSiam/DoinikHishab"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/work-doinikhishab.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/work-doinikhishab.svg" width="49%" alt="DoinikHishab"/></picture></a>
+<a href="https://github.com/EhsanulHaqueSiam/Gaze-Tracker-Android"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/work-gaze-tracker-android.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/work-gaze-tracker-android.svg" width="49%" alt="Gaze-Tracker-Android"/></picture></a>
+</p>
 
 <details>
 <summary><b>More public work</b> (click to expand)</summary>
@@ -63,11 +61,7 @@
 
 ## Research
 
-| | Venue | Paper |
-|:--|:--|:--|
-| 📄 | **IEEE QPAIN 2026** · [DOI 10.1109/QPAIN69676.2026.11545814](https://doi.org/10.1109/QPAIN69676.2026.11545814) | *Decoding Research Trends: A Clustering Based Topic Modeling Framework.* IEEE Xplore, Scopus indexed. |
-| 📘 | **IDAA 2025** · Taylor & Francis book chapter | *Beyond NER: A Comparative Benchmark of Medical BERTs for Multi-Label Adverse Drug Reaction Classification.* |
-| 🎤 | **South Asian Climate Conference 2024** | *Cyclones and Calamity: A Historical and Statistical Unmasking of Losses in Bangladesh.* |
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/research.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/research.svg" width="100%" alt="Research: IEEE QPAIN 2026 paper, IDAA 2025 Taylor and Francis chapter, South Asian Climate Conference 2024 talk"/></picture>
 
 <details>
 <summary><b>Abstracts</b></summary>
@@ -83,25 +77,13 @@
 
 ## Earlier
 
-| When | Role | What |
-|:--|:--|:--|
-| Apr – May 2026 | **Research Assistant** · [Deepchain Labs](https://deepchainlabs.com) | Blockchain, cybersecurity and quantum cryptography R&D |
-| Feb – May 2026 | **AI Engineering Intern** · Unies | RAG pipelines (Pinecone, ChromaDB, LangChain, LlamaIndex), LLM evaluation, FastAPI |
-| Jan – May 2026 | **Solo Developer** · BetaScript LLC | 4 production React 19 + TanStack Start sites, 1.5x client revenue, 50K+ users |
-| Aug 2025 – May 2026 | **AI & Data Engineer** · [BDTracks](https://bdtracks.com) | 15+ scrapers; Gemini 2.5 Flash/Pro fine-tuned on Vertex AI for classification |
-| Oct – Dec 2024 | **Team Lead, Game Development** · AIUB | Led 5 developers shipping a 2D platformer on a custom OpenGL engine with SFML and SQLite |
-
-<sub>**BSc CSE, AIUB** (2022 – 2026) · CGPA 3.90 · 3x Dean's List · 1st Runner-Up, AIUB CS Fest 2024 App Showcase</sub>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/earlier.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/earlier.svg" width="100%" alt="Earlier roles timeline: Deepchain Labs, Unies, BetaScript LLC, BDTracks, AIUB"/></picture>
 
 ## Stack
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/marquee.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/marquee.svg" width="100%" alt="TypeScript, React 19, Convex, Expo, Flutter, Go, Rust, Gemini, Vertex AI, RAG, MCP, PostgreSQL, Terraform and more"/></picture>
 
-<div align="center">
-<sub><b>AI</b> Gemini · Vertex AI · RAG · LangChain · LlamaIndex · Qdrant · Pinecone · MCP · BERT · PyTorch · scikit-learn</sub><br>
-<sub><b>Web &amp; mobile</b> TypeScript · React 19 · TanStack Start · Convex · Expo · React Native · Flutter · Tailwind · Fastify · FastAPI</sub><br>
-<sub><b>Backend &amp; infra</b> PostgreSQL · Drizzle · Go · Rust · Java · Python · Cloud Run · Terraform · Docker · GitHub Actions · Solidity</sub>
-</div>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/stack.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/stack.svg" width="100%" alt="Stack: AI, web and mobile, backend and infra"/></picture>
 
 ## Activity
 
@@ -116,10 +98,6 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/output/github-contribution-grid-snake-dark.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/output/github-contribution-grid-snake-cream.svg" width="100%" alt="Contribution snake"/></picture>
 
-<div align="center">
-<br>
+<a href="mailto:ehsanul.siamdev@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/footer.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/footer.svg" width="100%" alt="Open to AI/ML engineering, full-stack and research roles. Email ehsanul.siamdev@gmail.com"/></picture></a>
 
-**Open to AI/ML engineering, full-stack and research roles.** If you ship AI features and care whether they work, we should talk.<br>[ehsanul.siamdev@gmail.com](mailto:ehsanul.siamdev@gmail.com)
-
-<sub>Every card above is rendered daily by <a href="scripts/render.mjs">one script</a> in this repo. No third-party stats services, nothing to time out.</sub>
-</div>
+<p align="center"><sub>Every card on this page is rendered daily by <a href="scripts/render.mjs">one script</a> in this repo. No third-party stats services, nothing to time out.</sub></p>
