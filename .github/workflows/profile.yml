@@ -3,9 +3,6 @@ name: Render profile cards
 on:
   schedule:
     - cron: "0 6 * * *"
-  push:
-    branches: [main]
-    paths: [scripts/render.mjs]
   workflow_dispatch:
 
 jobs:
