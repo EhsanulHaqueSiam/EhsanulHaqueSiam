@@ -1,0 +1,11 @@
+{
+  "type": "normal",
+  "fileName": "profile-cream.svg",
+  "backgroundColor": "#FBF8F3",
+  "foregroundColor": "#4A443D",
+  "strongColor": "#1C1A17",
+  "weakColor": "#E4DCCE",
+  "radarColor": "#D9A441",
+  "growingAnimation": true,
+  "contribColors": ["#EFE8DC", "#CFDDBE", "#A7C285", "#6E8B4A", "#3F5A24"]
+}

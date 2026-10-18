@@ -112,12 +112,9 @@
 
 <img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/activity.svg" width="100%" alt="Contributions, last 90 days"/>
 
-<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/3d-contrib/profile-night-green.svg" width="100%" alt="Contribution calendar in 3D"/>
+<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/3d-contrib/profile-cream.svg" width="100%" alt="Contribution calendar in 3D"/>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/output/github-contribution-grid-snake-dark.svg"/>
-  <img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/output/github-contribution-grid-snake.svg" width="100%" alt="Contribution snake"/>
-</picture>
+<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/output/github-contribution-grid-snake-cream.svg" width="100%" alt="Contribution snake"/>
 
 <div align="center">
 <br>
