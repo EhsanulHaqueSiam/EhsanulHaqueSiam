@@ -112,7 +112,7 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/activity.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/activity.svg" width="100%" alt="Contributions, last 90 days"/></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/3d-contrib/profile-cream-dark.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/3d-contrib/profile-cream.svg" width="100%" alt="Contribution calendar in 3D"/></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/calendar.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/calendar.svg" width="100%" alt="Contribution calendar, last 12 months"/></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/output/github-contribution-grid-snake-dark.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/output/github-contribution-grid-snake-cream.svg" width="100%" alt="Contribution snake"/></picture>
 

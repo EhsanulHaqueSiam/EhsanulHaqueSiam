@@ -255,6 +255,37 @@ ${[0.25, 0.5, 0.75].map((f) => `<line x1="${L}" x2="${W - R}" y1="${(H - B - (H 
 ${ticks}`));
 }
 
+
+// 7b. Isometric calendar: 53 weeks x 7 days of contributions as bars, drawn from the same data
+{
+  const weeks = cc.contributionCalendar.weeks; const t = 16, cos = 0.9, sin = 0.32;
+  const maxC = Math.max(1, ...days.map((d) => d.contributionCount)); const hOf = (c) => (c ? 5 + Math.sqrt(c / maxC) * 120 : 0);
+  const shades = T.ink === "#1C1A17" ? ["#E6DFD2", "#CFDDBE", "#A7C285", "#6E8B4A", "#3F5A24"] : ["#2E2A25", "#3F5A24", "#5F7F3A", "#86A85A", "#B5D08F"];
+  const level = (c) => (c === 0 ? 0 : c < 4 ? 1 : c < 10 ? 2 : c < 20 ? 3 : 4);
+  const mix = (hex, to, k) => { const a = hex.match(/\w\w/g).map((v) => parseInt(v, 16)), b = to.match(/\w\w/g).map((v) => parseInt(v, 16)); return "#" + a.map((v, i) => Math.round(v + (b[i] - v) * k).toString(16).padStart(2, "0")).join(""); };
+  const ox = 330, oy = 190; let bars = "";
+  weeks.forEach((w, wi) => { let g = "";
+    w.contributionDays.forEach((d, di) => { const c = d.contributionCount, h = hOf(c), top = shades[level(c)];
+      const x = ox + (wi - di) * cos * t, y = oy + (wi + di) * sin * t;
+      const p = (dx, dy) => `${(x + dx).toFixed(1)},${(y + dy).toFixed(1)}`;
+      const topF = `${p(0, -h)} ${p(cos * t, -h - sin * t)} ${p(0, -h - t)} ${p(-cos * t, -h - sin * t)}`;
+      if (!h) { g += `<polygon points="${topF}" fill="${T.soft}" stroke="${T.card}" stroke-width="0.6"/>`; return; }
+      const left = `${p(-cos * t, -sin * t)} ${p(0, 0)} ${p(0, -h)} ${p(-cos * t, -h - sin * t)}`;
+      const right = `${p(0, 0)} ${p(cos * t, -sin * t)} ${p(cos * t, -h - sin * t)} ${p(0, -h)}`;
+      g += `<polygon points="${left}" fill="${mix(top, "#000000", 0.28)}"/><polygon points="${right}" fill="${mix(top, "#000000", 0.14)}"/><polygon points="${topF}" fill="${top}"/>`;
+    });
+    bars += `<g opacity="0">${g}<animate attributeName="opacity" from="0" to="1" begin="${(0.1 + wi * 0.03).toFixed(2)}s" dur="0.5s" fill="freeze"/><animateTransform attributeName="transform" type="translate" from="0 40" to="0 0" begin="${(0.1 + wi * 0.03).toFixed(2)}s" dur="0.7s" fill="freeze" ${EASE}/></g>`;
+  });
+  const months = []; weeks.forEach((w, wi) => { const d = new Date(w.contributionDays[0].date + "T00:00:00Z"); if (d.getUTCDate() <= 7) months.push([wi, d.toLocaleDateString("en-US", { month: "short", timeZone: "UTC" })]); });
+  const labels = months.map(([wi, m]) => `<text x="${(ox + (wi - 7.6) * cos * t).toFixed(1)}" y="${(oy + (wi + 7.6) * sin * t + 6).toFixed(1)}" fill="${T.faint}" font-size="12" letter-spacing="0.5" text-anchor="end">${m.toUpperCase()}</text>`).join("");
+  const legend = shades.map((c, i) => `<rect x="${1040 + i * 20}" y="526" width="14" height="14" rx="3" fill="${i ? c : T.soft}"/>`).join("");
+  const total = cc.contributionCalendar.totalContributions;
+  writeFileSync(`${DIR}/calendar.svg`, card(1200, 560, `${title("Contributions, last 12 months")}
+<text x="1176" y="36" fill="${T.muted}" font-size="15" text-anchor="end">${total.toLocaleString("en-US")} contributions · longest streak ${longest} days · ${stars} stars</text>
+${bars}${labels}
+<text x="1030" y="538" fill="${T.faint}" font-size="12" text-anchor="end">LESS</text>${legend}<text x="1148" y="538" fill="${T.faint}" font-size="12">MORE</text>`));
+}
+
 // 8. Typing banner: lines type in and erase in a loop, pure SMIL
 {
   const lines = ["Building AI systems that reach production", "Published in IEEE Xplore and Taylor & Francis", "Shipped apps serving 50,000+ users", "React 19 · Convex · Gemini on Vertex AI · MCP · Go · Rust"];
