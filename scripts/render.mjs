@@ -3,6 +3,7 @@
 // keyframes (continuous loops, which honour prefers-reduced-motion). GitHub's image proxy serves
 // them with no third-party service in the path.
 import { writeFileSync, readFileSync } from "node:fs";
+const img = (f) => `data:image/jpeg;base64,${readFileSync(`assets/img/${f}`).toString("base64")}`;
 
 const LOGIN = "EhsanulHaqueSiam";
 const TOKEN = process.env.GH_TOKEN || process.env.GITHUB_TOKEN;
@@ -102,16 +103,16 @@ function pipeline(ox, oy) {
   const body = cards.map((k, i) => { const x = i * 400, gid = id("gb"); const lines = k.lines.map((l, j) => { const cid = id("wp");
       return `<clipPath id="${cid}"><rect x="24" y="${70 + j * 24}" width="0" height="24"><animate attributeName="width" from="0" to="360" begin="${(0.7 + i * 0.25 + j * 0.18).toFixed(2)}s" dur="0.8s" fill="freeze" ${EASE}/></rect></clipPath><text clip-path="url(#${cid})" x="24" y="${86 + j * 24}" fill="${T.body}" font-size="14">${l}</text>`; }).join("");
     return `<g opacity="0" transform="translate(${x} 0)">
-  <rect x="8" y="8" width="384" height="204" rx="18" fill="${T.card}" stroke="${T.line}"/>
-  <rect x="8" y="8" width="384" height="204" rx="18" fill="none" stroke="${k.c}" stroke-opacity="0.25"/>
-  <rect x="8" y="8" width="384" height="204" rx="18" fill="none" stroke="${k.c}" stroke-width="1.5" pathLength="100" stroke-dasharray="14 86" stroke-linecap="round"><animate attributeName="stroke-dashoffset" from="0" to="-100" dur="6s" begin="${i * 2}s" repeatCount="indefinite"/></rect>
+  <rect x="8" y="8" width="384" height="220" rx="18" fill="${T.card}" stroke="${T.line}"/>
+  <rect x="8" y="8" width="384" height="220" rx="18" fill="none" stroke="${k.c}" stroke-opacity="0.25"/>
+  <rect x="8" y="8" width="384" height="220" rx="18" fill="none" stroke="${k.c}" stroke-width="1.5" pathLength="100" stroke-dasharray="14 86" stroke-linecap="round"><animate attributeName="stroke-dashoffset" from="0" to="-100" dur="6s" begin="${i * 2}s" repeatCount="indefinite"/></rect>
   <rect x="24" y="24" width="${24 + k.t.length * 0}" height="0"/><rect x="24" y="26" width="34" height="18" rx="9" fill="${k.c}" fill-opacity="0.18"/><text x="41" y="39" fill="${k.c}" font-size="11" font-weight="700" text-anchor="middle">0${i + 1}</text>
   <text x="24" y="66" fill="${T.ink}" font-size="19" font-weight="700" letter-spacing="-0.3">${k.t}</text>
-  ${k.icon}${lines}
-  <text x="24" y="190" fill="${k.c}" font-size="12.5" font-weight="600" opacity="0">${k.proof}${fadeIn(1.5 + i * 0.25)}</text>
+  <clipPath id="sp${i}"><rect x="300" y="20" width="80" height="80" rx="14"/></clipPath><image clip-path="url(#sp${i})" href="${img(`spot${i + 1}.jpg`)}" x="300" y="20" width="80" height="80" preserveAspectRatio="xMidYMid slice" opacity="0">${fadeIn(0.5 + i * 0.25)}</image>${lines}
+  <text x="24" y="206" fill="${k.c}" font-size="12.5" font-weight="600" opacity="0">${k.proof}${fadeIn(1.5 + i * 0.25)}</text>
   ${fadeIn(0.15 + i * 0.25)}<animateTransform attributeName="transform" type="translate" values="${x} 28;${x} -5;${x} 0" keyTimes="0;0.7;1" begin="${(0.15 + i * 0.25).toFixed(2)}s" dur="1s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.3 1;0.3 0 0.4 1"/>
 </g>`; }).join("");
-  writeFileSync("assets/strengths.svg", svg(1200, 220, body));
+  writeFileSync("assets/strengths.svg", svg(1200, 236, body));
 }
 
 // 4. Marquee: the stack scrolling forever, two copies for a seamless loop
@@ -149,29 +150,26 @@ const recent = repos.filter((r) => !HOBBY.test(r.name) && r.defaultBranchRef && 
 const lastMsg = (r) => (r.defaultBranchRef.target.history.nodes.find((c) => !/^Merge /.test(c.message)) || r.defaultBranchRef.target.history.nodes[0]).message.split("\n")[0];
 const status = `${recent[0] ? `pushing ${recent[0].name} ${ago(recent[0].pushedAt)}` : "quiet day"} · ${current}-day streak · ${commits.toLocaleString("en-US")} commits this year`;
 
-// 1. Header: grain over grid, kinetic name, pipeline figure, live status line
+// 1. Header: the painted studio with a scalloped edge, then name, roles and the live status line
 {
-  const particles = Array.from({ length: 18 }, (_, i) => `<circle class="rise" cx="${60 + i * 64}" cy="340" r="${1 + (i % 3)}" fill="${[C.cyan, C.violet, C.pink][i % 3]}" style="animation-delay:${(-i * 0.7).toFixed(1)}s;animation-duration:${(8 + (i % 4) * 2)}s"/>`).join("");
-  writeFileSync("assets/header.svg", svg(1200, 340, `
-<clipPath id="hdr"><rect width="1200" height="340" rx="16"/></clipPath>
+  const scallops = Array.from({ length: 30 }, (_, i) => `a20,20 0 0,1 40,0`).join(" ");
+  const wave = `M0 0 H1200 V400 ${scallops.replace(/a20,20 0 0,1 40,0/g, "a20,14 0 0,0 -40,0").replace("M0 0", "")} Z`;
+  writeFileSync("assets/header.svg", svg(1200, 690, `
+<clipPath id="hdr"><rect width="1200" height="690" rx="18"/></clipPath>
+<clipPath id="pic"><path d="M0 0 H1200 V404 ${Array.from({ length: 30 }, () => "a20,14 0 0,0 -40,0").join(" ")} Z"/></clipPath>
 <g clip-path="url(#hdr)">
-  <rect width="1200" height="340" fill="${T.bg}"/>
-  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="${T.ink}" stroke-opacity="0.05"/></pattern>
-  <rect width="1200" height="340" fill="url(#grid)"/>
-  <rect width="1200" height="340" filter="url(#grain)" opacity="0.5"/>
-  ${particles}
-  ${kinetic("Ehsanul Haque Siam", 64, 128, 60, T.ink, 0.1)}
-  <g opacity="0"><text x="66" y="172" fill="${T.body}" font-size="22" font-weight="500">AI Engineer · Full-Stack Developer · Published Researcher</text>${fadeIn(0.7)}${spring(0.7, 16)}</g>
-  <g opacity="0"><text x="66" y="212" fill="${T.muted}" font-size="16">Software Engineer @ Ledgercross  ·  Lead Researcher (NLP &amp; LLMs) @ Arché Intelligence Lab</text>${fadeIn(1.0)}${spring(1.0, 12)}</g>
-  <rect x="66" y="236" width="0" height="3" rx="1.5" fill="${T.line}"><animate attributeName="width" from="0" to="560" begin="0.9s" dur="1.4s" fill="freeze" ${EASE}/></rect>
-  <rect x="66" y="236" width="90" height="3" rx="1.5" fill="${T.ink}" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="2.2s" dur="0.4s" fill="freeze"/><animate attributeName="x" values="66;536;66" dur="5s" begin="2.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/></rect>
-  <g opacity="0"><text x="66" y="276" fill="${T.muted}" font-size="14">I turn papers into products that people use. Dhaka, UTC+6, usually online.</text>${fadeIn(1.4)}</g>
-  <g opacity="0"><text x="66" y="308" fill="${T.muted}" font-size="13" font-family="${MONO}">$ status <tspan fill="${T.ink}">${esc(status)}</tspan> <tspan class="blink" fill="${C.cyan}">▍</tspan></text>${fadeIn(1.8)}</g>
-  ${pipeline(850, 160)}
-  <rect x="0.5" y="0.5" width="1199" height="339" rx="16" fill="none" stroke="${T.line}"/>
+  <rect width="1200" height="690" fill="${T.bg}"/>
+  <g clip-path="url(#pic)" opacity="0"><image href="${img("hero.jpg")}" x="0" y="-40" width="1200" height="510" preserveAspectRatio="xMidYMid slice"/>${fadeIn(0.05, 1.2)}</g>
+  <rect width="1200" height="404" filter="url(#grain)" opacity="0.35" clip-path="url(#pic)"/>
+  ${kinetic("Ehsanul Haque Siam", 64, 500, 60, T.ink, 0.5)}
+  <g opacity="0"><text x="66" y="544" fill="${T.body}" font-size="22" font-weight="500">AI Engineer · Full-Stack Developer · Published Researcher</text>${fadeIn(1.0)}${spring(1.0, 16)}</g>
+  <g opacity="0"><text x="66" y="580" fill="${T.muted}" font-size="16">Software Engineer @ Ledgercross  ·  Lead Researcher (NLP &amp; LLMs) @ Arché Intelligence Lab  ·  Dhaka</text>${fadeIn(1.2)}${spring(1.2, 12)}</g>
+  <g opacity="0"><text x="66" y="616" fill="${T.body}" font-size="14">I turn papers into products that people use. Dhaka, UTC+6, usually online.</text>${fadeIn(1.5)}</g>
+  <g opacity="0"><text x="66" y="650" fill="${T.muted}" font-size="13" font-family="${MONO}">$ status <tspan fill="${T.ink}">${esc(status)}</tspan> <tspan class="blink" fill="${C.cyan}">▍</tspan></text>${fadeIn(1.8)}</g>
+  <g transform="translate(846 636)" opacity="0">${["research", "models", "production"].map((t, i) => `<rect x="${i * 100}" y="0" width="92" height="26" rx="13" fill="${[C.cyan, C.violet, C.pink][i]}" fill-opacity="0.16"/><text x="${i * 100 + 46}" y="17" fill="${[C.cyan, C.violet, C.pink][i]}" font-size="11" font-weight="700" letter-spacing="1" text-anchor="middle">${t.toUpperCase()}</text>${i < 2 ? `<circle r="2.5" fill="${[C.cyan, C.violet][i]}"><animateMotion dur="2.4s" begin="${i * 1.2}s" repeatCount="indefinite" path="M${i * 100 + 92} 13 L${i * 100 + 100} 13"/></circle>` : ""}`).join("")}${fadeIn(2.0)}</g>
+  <rect x="0.5" y="0.5" width="1199" height="689" rx="18" fill="none" stroke="${T.line}"/>
 </g>`));
 }
-
 
 // 1b. Right now: the four most recently pushed public repos with their last commit, live
 {
