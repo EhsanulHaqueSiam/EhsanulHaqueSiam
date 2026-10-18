@@ -10,17 +10,24 @@ const TOKEN = process.env.GH_TOKEN || process.env.GITHUB_TOKEN;
 const FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif";
 const MONO = "ui-monospace,SFMono-Regular,Menlo,Consolas,monospace";
 const HOBBY = /^(nuvio-|bd-live-tv|homebrew-tap|macarchy|gradcode-releases|Portfolio_|pretext-demo|Antigravity|claude-skills$|skills$|dev$|EhsanulHaqueSiam$)/;
-const C = { cyan: "#6E8B4A", violet: "#D9A441", pink: "#D86C57", mint: "#5F86B4", amber: "#D9A441" };
-const T = { bg: "#F3EDE3", card: "#FBF8F3", ink: "#1C1A17", body: "#4A443D", muted: "#7A7268", faint: "#A8A094", line: "#E4DCCE", soft: "#EFE8DC" };
-const CHIP = { green: ["#DDE8CF", "#3F5A24"], amber: ["#F6E5B5", "#7A5A12"], coral: ["#F6D3CA", "#8A3524"], sky: ["#D7E3F0", "#2F4D73"] };
+const C = {}, T = {}, CHIP = {};
+const THEMES = {
+  light: { C: { cyan: "#6E8B4A", violet: "#D9A441", pink: "#D86C57", mint: "#5F86B4", amber: "#D9A441" },
+    T: { bg: "#F3EDE3", card: "#FBF8F3", ink: "#1C1A17", body: "#4A443D", muted: "#7A7268", faint: "#A8A094", line: "#E4DCCE", soft: "#EFE8DC" },
+    CHIP: { green: ["#DDE8CF", "#3F5A24"], amber: ["#F6E5B5", "#7A5A12"], coral: ["#F6D3CA", "#8A3524"], sky: ["#D7E3F0", "#2F4D73"] } },
+  dark: { C: { cyan: "#9DBB76", violet: "#E6B964", pink: "#E88C78", mint: "#86A9D2", amber: "#E6B964" },
+    T: { bg: "#1B1917", card: "#24211D", ink: "#F3EDE3", body: "#D4CCC0", muted: "#9A9185", faint: "#6E675E", line: "#36312B", soft: "#2E2A25" },
+    CHIP: { green: ["#2F4420", "#CFE3BD"], amber: ["#4A3A12", "#F1D89A"], coral: ["#4A2219", "#F3C2B6"], sky: ["#1F3550", "#C9DBF0"] } },
+};
+let DIR = "assets";
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 let uid = 0; const id = (p) => `${p}${(uid++).toString(36)}`;
 
 // Shared defs: glow filter, grain, gradients, and the CSS loops with a reduced-motion switch
-const DEFS = `<defs>
+let DEFS = ""; const makeDefs = () => `<defs>
 <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2"/></filter>
-<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0 0.05 0 0 0 0.05 0"/></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 ${T.ink === "#1C1A17" ? 0.1 : 0.95} 0 0 0 0 ${T.ink === "#1C1A17" ? 0.08 : 0.93} 0 0 0 0 ${T.ink === "#1C1A17" ? 0.05 : 0.89} 0 0 0 0.05 0"/></filter>
 </defs>
 <style>
 @keyframes drift1{0%{transform:translate(0,0)}50%{transform:translate(90px,40px)}100%{transform:translate(0,0)}}
@@ -81,48 +88,6 @@ function pipeline(ox, oy) {
   return `<g transform="translate(${ox} ${oy})">${edges}${nodes}${packets}${caps}</g>`;
 }
 
-// 2. Hero numbers: the four proof points from hq as odometers with glow dividers
-{
-  const stats = [["50K+", "USERS SERVED"], ["1.5x", "CLIENT REVENUE GROWTH"], ["3", "PAPERS &amp; TALKS"], ["8+", "PRODUCTION APPS"]];
-  const cells = stats.map(([n, l], i) => { const cx = i * 300 + 150; const w = [...n].reduce((a, ch) => a + (/\d/.test(ch) ? 24.8 : ch === "." ? 11 : ch === "+" ? 23.5 : 27), 0);
-    return `<g opacity="0">${odometer(n, cx - w / 2, 62, 40, T.ink, 0.2 + i * 0.15)}${label(l, cx, 92, T.muted, "middle")}${fadeIn(0.2 + i * 0.15)}${spring(0.2 + i * 0.15, 14)}</g>`; }).join("");
-  const divs = [1, 2, 3].map((i) => `<line x1="${i * 300}" y1="26" x2="${i * 300}" y2="98" stroke="${T.line}"/><line class="breathe" x1="${i * 300}" y1="40" x2="${i * 300}" y2="84" stroke="${[C.cyan, C.violet, C.pink][i - 1]}" stroke-opacity="0.7" style="animation-delay:${i}s"/>`).join("");
-  writeFileSync("assets/hero-stats.svg", card(1200, 124, divs + cells));
-}
-
-// 3. Strength cards: animated gradient border, icon motion, lines wipe in
-{
-  const cards = [
-    { t: "LLM systems in production", c: C.cyan, lines: ["RAG on Vertex AI (Document AI + Gemini)", "Gemini 2.5 fine-tuning, LLM eval pipelines", "MCP servers, serverless GCP, Terraform"], proof: "DocMind · FlowCV MCP · Polashi · Veritas KYC",
-      icon: `<g transform="translate(340 44)"><circle r="16" fill="none" stroke="${C.cyan}" stroke-opacity="0.4"/><circle class="spin" r="16" fill="none" stroke="${C.cyan}" stroke-dasharray="20 80" stroke-linecap="round"/><circle class="pulse" r="4" fill="${C.cyan}"/></g>` },
-    { t: "Full-stack product", c: C.violet, lines: ["React 19, TanStack Start, Convex, Expo", "Flutter, Fastify, FastAPI, PostgreSQL, Go, Rust", "Design to CI/CD to cloud, end to end"], proof: "InvoicePilot · Eventarc · 4 BetaScript sites",
-      icon: `<g transform="translate(324 30)">${[0, 1, 2].map((k) => `<rect x="0" y="${k * 10}" width="32" height="6" rx="2" fill="${C.violet}" fill-opacity="${0.35 + k * 0.3}"><animate attributeName="x" values="0;${k % 2 ? -4 : 4};0" dur="${3 + k}s" repeatCount="indefinite"/></rect>`).join("")}</g>` },
-    { t: "Research", c: C.pink, lines: ["NLP and LLMs: topic modeling, medical BERTs", "Bengali NLP toward publication", "IEEE Xplore (Scopus), Taylor &amp; Francis"], proof: "2 papers · 1 conference talk",
-      icon: `<g transform="translate(322 28)"><rect width="36" height="40" rx="4" fill="none" stroke="${C.pink}" stroke-opacity="0.6"/>${[0, 1, 2, 3].map((k) => `<rect x="7" y="${9 + k * 8}" width="0" height="2.5" rx="1" fill="${C.pink}"><animate attributeName="width" values="0;${k === 3 ? 12 : 22};${k === 3 ? 12 : 22};0" keyTimes="0;0.3;0.8;1" begin="${k * 0.25}s" dur="4s" repeatCount="indefinite"/></rect>`).join("")}</g>` },
-  ];
-  const body = cards.map((k, i) => { const x = i * 400, gid = id("gb"); const lines = k.lines.map((l, j) => { const cid = id("wp");
-      return `<clipPath id="${cid}"><rect x="24" y="${70 + j * 24}" width="0" height="24"><animate attributeName="width" from="0" to="360" begin="${(0.7 + i * 0.25 + j * 0.18).toFixed(2)}s" dur="0.8s" fill="freeze" ${EASE}/></rect></clipPath><text clip-path="url(#${cid})" x="24" y="${86 + j * 24}" fill="${T.body}" font-size="14">${l}</text>`; }).join("");
-    return `<g opacity="0" transform="translate(${x} 0)">
-  <rect x="8" y="8" width="384" height="220" rx="18" fill="${T.card}" stroke="${T.line}"/>
-  <rect x="8" y="8" width="384" height="220" rx="18" fill="none" stroke="${k.c}" stroke-opacity="0.25"/>
-  <rect x="8" y="8" width="384" height="220" rx="18" fill="none" stroke="${k.c}" stroke-width="1.5" pathLength="100" stroke-dasharray="14 86" stroke-linecap="round"><animate attributeName="stroke-dashoffset" from="0" to="-100" dur="6s" begin="${i * 2}s" repeatCount="indefinite"/></rect>
-  <rect x="24" y="24" width="${24 + k.t.length * 0}" height="0"/><rect x="24" y="26" width="34" height="18" rx="9" fill="${k.c}" fill-opacity="0.18"/><text x="41" y="39" fill="${k.c}" font-size="11" font-weight="700" text-anchor="middle">0${i + 1}</text>
-  <text x="24" y="66" fill="${T.ink}" font-size="19" font-weight="700" letter-spacing="-0.3">${k.t}</text>
-  <clipPath id="sp${i}"><rect x="300" y="20" width="80" height="80" rx="14"/></clipPath><image clip-path="url(#sp${i})" href="${img(`spot${i + 1}.jpg`)}" x="300" y="20" width="80" height="80" preserveAspectRatio="xMidYMid slice" opacity="0">${fadeIn(0.5 + i * 0.25)}</image>${lines}
-  <text x="24" y="206" fill="${k.c}" font-size="12.5" font-weight="600" opacity="0">${k.proof}${fadeIn(1.5 + i * 0.25)}</text>
-  ${fadeIn(0.15 + i * 0.25)}<animateTransform attributeName="transform" type="translate" values="${x} 28;${x} -5;${x} 0" keyTimes="0;0.7;1" begin="${(0.15 + i * 0.25).toFixed(2)}s" dur="1s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.3 1;0.3 0 0.4 1"/>
-</g>`; }).join("");
-  writeFileSync("assets/strengths.svg", svg(1200, 236, body));
-}
-
-// 4. Marquee: the stack scrolling forever, two copies for a seamless loop
-{
-  const items = ["TypeScript", "React 19", "TanStack Start", "Convex", "Expo", "React Native", "Flutter", "Tailwind", "Fastify", "FastAPI", "PostgreSQL", "Drizzle", "Go", "Rust", "Java", "Python", "Gemini", "Vertex AI", "RAG", "LangChain", "LlamaIndex", "Qdrant", "Pinecone", "MCP", "PyTorch", "scikit-learn", "BERT", "Cloud Run", "Terraform", "Docker", "GitHub Actions", "Solidity"];
-  let x = 0; const one = items.map((t, i) => { const w = t.length * 9.5 + 44; const g = `<g transform="translate(${x} 0)"><rect x="0" y="8" width="${w - 12}" height="30" rx="15" fill="${T.card}" stroke="${T.line}"/><circle cx="16" cy="23" r="3" fill="${i % 2 ? C.cyan : "#e4e4e7"}"/><text x="28" y="28" fill="${T.body}" font-size="13" font-family="${MONO}">${esc(t)}</text></g>`; x += w; return g; }).join("");
-  const W = x;
-  writeFileSync("assets/marquee.svg", svg(1200, 46, `<clipPath id="mq"><rect width="1200" height="46"/></clipPath><g clip-path="url(#mq)"><g class="marquee" style="animation-duration:${(W / 60).toFixed(0)}s">${one}<g transform="translate(${W} 0)">${one}</g></g></g>`));
-}
-
 // ---- Live data ----
 const since = new Date(Date.now() - 365 * 864e5).toISOString();
 const query = `query($login:String!,$since:DateTime!){ user(login:$login){
@@ -150,11 +115,58 @@ const recent = repos.filter((r) => !HOBBY.test(r.name) && r.defaultBranchRef && 
 const lastMsg = (r) => (r.defaultBranchRef.target.history.nodes.find((c) => !/^Merge /.test(c.message)) || r.defaultBranchRef.target.history.nodes[0]).message.split("\n")[0];
 const status = `${recent[0] ? `pushing ${recent[0].name} ${ago(recent[0].pushedAt)}` : "quiet day"} · ${current}-day streak · ${commits.toLocaleString("en-US")} commits this year`;
 
+// Render every card twice: cream for light GitHub, warm charcoal for dark GitHub
+import { mkdirSync } from "node:fs";
+for (const [name, theme] of Object.entries(THEMES)) {
+  Object.assign(C, theme.C); Object.assign(T, theme.T); Object.assign(CHIP, theme.CHIP);
+  DIR = name === "light" ? "assets" : "assets/dark"; mkdirSync(DIR, { recursive: true }); DEFS = makeDefs();
+// 2. Hero numbers: the four proof points from hq as odometers with glow dividers
+{
+  const stats = [["50K+", "USERS SERVED"], ["1.5x", "CLIENT REVENUE GROWTH"], ["3", "PAPERS &amp; TALKS"], ["8+", "PRODUCTION APPS"]];
+  const cells = stats.map(([n, l], i) => { const cx = i * 300 + 150; const w = [...n].reduce((a, ch) => a + (/\d/.test(ch) ? 24.8 : ch === "." ? 11 : ch === "+" ? 23.5 : 27), 0);
+    return `<g opacity="0">${odometer(n, cx - w / 2, 62, 40, T.ink, 0.2 + i * 0.15)}${label(l, cx, 92, T.muted, "middle")}${fadeIn(0.2 + i * 0.15)}${spring(0.2 + i * 0.15, 14)}</g>`; }).join("");
+  const divs = [1, 2, 3].map((i) => `<line x1="${i * 300}" y1="26" x2="${i * 300}" y2="98" stroke="${T.line}"/><line class="breathe" x1="${i * 300}" y1="40" x2="${i * 300}" y2="84" stroke="${[C.cyan, C.violet, C.pink][i - 1]}" stroke-opacity="0.7" style="animation-delay:${i}s"/>`).join("");
+  writeFileSync(`${DIR}/hero-stats.svg`, card(1200, 124, divs + cells));
+}
+
+// 3. Strength cards: animated gradient border, icon motion, lines wipe in
+{
+  const cards = [
+    { t: "LLM systems in production", c: C.cyan, lines: ["RAG on Vertex AI (Document AI + Gemini)", "Gemini 2.5 fine-tuning, LLM eval pipelines", "MCP servers, serverless GCP, Terraform"], proof: "DocMind · FlowCV MCP · Polashi · Veritas KYC",
+      icon: `<g transform="translate(340 44)"><circle r="16" fill="none" stroke="${C.cyan}" stroke-opacity="0.4"/><circle class="spin" r="16" fill="none" stroke="${C.cyan}" stroke-dasharray="20 80" stroke-linecap="round"/><circle class="pulse" r="4" fill="${C.cyan}"/></g>` },
+    { t: "Full-stack product", c: C.violet, lines: ["React 19, TanStack Start, Convex, Expo", "Flutter, Fastify, FastAPI, PostgreSQL, Go, Rust", "Design to CI/CD to cloud, end to end"], proof: "InvoicePilot · Eventarc · 4 BetaScript sites",
+      icon: `<g transform="translate(324 30)">${[0, 1, 2].map((k) => `<rect x="0" y="${k * 10}" width="32" height="6" rx="2" fill="${C.violet}" fill-opacity="${0.35 + k * 0.3}"><animate attributeName="x" values="0;${k % 2 ? -4 : 4};0" dur="${3 + k}s" repeatCount="indefinite"/></rect>`).join("")}</g>` },
+    { t: "Research", c: C.pink, lines: ["NLP and LLMs: topic modeling, medical BERTs", "Bengali NLP toward publication", "IEEE Xplore (Scopus), Taylor &amp; Francis"], proof: "2 papers · 1 conference talk",
+      icon: `<g transform="translate(322 28)"><rect width="36" height="40" rx="4" fill="none" stroke="${C.pink}" stroke-opacity="0.6"/>${[0, 1, 2, 3].map((k) => `<rect x="7" y="${9 + k * 8}" width="0" height="2.5" rx="1" fill="${C.pink}"><animate attributeName="width" values="0;${k === 3 ? 12 : 22};${k === 3 ? 12 : 22};0" keyTimes="0;0.3;0.8;1" begin="${k * 0.25}s" dur="4s" repeatCount="indefinite"/></rect>`).join("")}</g>` },
+  ];
+  const body = cards.map((k, i) => { const x = i * 400, gid = id("gb"); const lines = k.lines.map((l, j) => { const cid = id("wp");
+      return `<clipPath id="${cid}"><rect x="24" y="${70 + j * 24}" width="0" height="24"><animate attributeName="width" from="0" to="360" begin="${(0.7 + i * 0.25 + j * 0.18).toFixed(2)}s" dur="0.8s" fill="freeze" ${EASE}/></rect></clipPath><text clip-path="url(#${cid})" x="24" y="${86 + j * 24}" fill="${T.body}" font-size="14">${l}</text>`; }).join("");
+    return `<g opacity="0" transform="translate(${x} 0)">
+  <rect x="8" y="8" width="384" height="220" rx="18" fill="${T.card}" stroke="${T.line}"/>
+  <rect x="8" y="8" width="384" height="220" rx="18" fill="none" stroke="${k.c}" stroke-opacity="0.25"/>
+  <rect x="8" y="8" width="384" height="220" rx="18" fill="none" stroke="${k.c}" stroke-width="1.5" pathLength="100" stroke-dasharray="14 86" stroke-linecap="round"><animate attributeName="stroke-dashoffset" from="0" to="-100" dur="6s" begin="${i * 2}s" repeatCount="indefinite"/></rect>
+  <rect x="24" y="24" width="${24 + k.t.length * 0}" height="0"/><rect x="24" y="26" width="34" height="18" rx="9" fill="${k.c}" fill-opacity="0.18"/><text x="41" y="39" fill="${k.c}" font-size="11" font-weight="700" text-anchor="middle">0${i + 1}</text>
+  <text x="24" y="66" fill="${T.ink}" font-size="19" font-weight="700" letter-spacing="-0.3">${k.t}</text>
+  <clipPath id="sp${i}"><rect x="300" y="20" width="80" height="80" rx="14"/></clipPath><image clip-path="url(#sp${i})" href="${img(`spot${i + 1}.jpg`)}" x="300" y="20" width="80" height="80" preserveAspectRatio="xMidYMid slice" opacity="0">${fadeIn(0.5 + i * 0.25)}</image>${lines}
+  <text x="24" y="206" fill="${k.c}" font-size="12.5" font-weight="600" opacity="0">${k.proof}${fadeIn(1.5 + i * 0.25)}</text>
+  ${fadeIn(0.15 + i * 0.25)}<animateTransform attributeName="transform" type="translate" values="${x} 28;${x} -5;${x} 0" keyTimes="0;0.7;1" begin="${(0.15 + i * 0.25).toFixed(2)}s" dur="1s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.3 1;0.3 0 0.4 1"/>
+</g>`; }).join("");
+  writeFileSync(`${DIR}/strengths.svg`, svg(1200, 236, body));
+}
+
+// 4. Marquee: the stack scrolling forever, two copies for a seamless loop
+{
+  const items = ["TypeScript", "React 19", "TanStack Start", "Convex", "Expo", "React Native", "Flutter", "Tailwind", "Fastify", "FastAPI", "PostgreSQL", "Drizzle", "Go", "Rust", "Java", "Python", "Gemini", "Vertex AI", "RAG", "LangChain", "LlamaIndex", "Qdrant", "Pinecone", "MCP", "PyTorch", "scikit-learn", "BERT", "Cloud Run", "Terraform", "Docker", "GitHub Actions", "Solidity"];
+  let x = 0; const one = items.map((t, i) => { const w = t.length * 9.5 + 44; const g = `<g transform="translate(${x} 0)"><rect x="0" y="8" width="${w - 12}" height="30" rx="15" fill="${T.card}" stroke="${T.line}"/><circle cx="16" cy="23" r="3" fill="${i % 2 ? C.cyan : "#e4e4e7"}"/><text x="28" y="28" fill="${T.body}" font-size="13" font-family="${MONO}">${esc(t)}</text></g>`; x += w; return g; }).join("");
+  const W = x;
+  writeFileSync(`${DIR}/marquee.svg`, svg(1200, 46, `<clipPath id="mq"><rect width="1200" height="46"/></clipPath><g clip-path="url(#mq)"><g class="marquee" style="animation-duration:${(W / 60).toFixed(0)}s">${one}<g transform="translate(${W} 0)">${one}</g></g></g>`));
+}
+
 // 1. Header: the painted studio with a scalloped edge, then name, roles and the live status line
 {
   const scallops = Array.from({ length: 30 }, (_, i) => `a20,20 0 0,1 40,0`).join(" ");
   const wave = `M0 0 H1200 V400 ${scallops.replace(/a20,20 0 0,1 40,0/g, "a20,14 0 0,0 -40,0").replace("M0 0", "")} Z`;
-  writeFileSync("assets/header.svg", svg(1200, 690, `
+  writeFileSync(`${DIR}/header.svg`, svg(1200, 690, `
 <clipPath id="hdr"><rect width="1200" height="690" rx="18"/></clipPath>
 <clipPath id="pic"><path d="M0 0 H1200 V404 ${Array.from({ length: 30 }, () => "a20,14 0 0,0 -40,0").join(" ")} Z"/></clipPath>
 <g clip-path="url(#hdr)">
@@ -182,7 +194,7 @@ const status = `${recent[0] ? `pushing ${recent[0].name} ${ago(recent[0].pushedA
   ${(() => { const d = (Date.now() - new Date(r.pushedAt)) / 864e5; const [bg, fg] = d < 1 ? CHIP.green : d < 7 ? CHIP.amber : CHIP.coral; const t = ago(r.pushedAt); const w = t.length * 7.2 + 20; return `<rect x="${1164 - w}" y="${y - 9}" width="${w}" height="20" rx="10" fill="${bg}"/><text x="${1164 - w / 2}" y="${y + 5}" fill="${fg}" font-size="11.5" font-weight="600" text-anchor="middle">${t}</text>`; })()}
   ${fadeIn(0.2 + i * 0.15)}${spring(0.2 + i * 0.15, 14)}</g>`; }).join("");
   const live = `<g transform="translate(1152 32)"><circle r="4" fill="${C.cyan}"/><circle r="4" fill="none" stroke="${C.cyan}"><animate attributeName="r" values="4;12" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0" dur="1.8s" repeatCount="indefinite"/></circle></g>`;
-  writeFileSync("assets/now.svg", card(1200, 64 + recent.length * 46 + 14, `${title("Right now")}<text x="1140" y="36" fill="${T.muted}" font-size="12" text-anchor="end">LIVE · pushed in the last 30 days · rendered ${new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "Asia/Dhaka" })}</text>${live}${rows}`));
+  writeFileSync(`${DIR}/now.svg`, card(1200, 64 + recent.length * 46 + 14, `${title("Right now")}<text x="1140" y="36" fill="${T.muted}" font-size="12" text-anchor="end">LIVE · pushed in the last 30 days · rendered ${new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "Asia/Dhaka" })}</text>${live}${rows}`));
 }
 
 // 5. Stats card: glowing ring of this year's contributions plus odometer counters
@@ -192,7 +204,7 @@ const status = `${recent[0] ? `pushing ${recent[0].name} ${ago(recent[0].pushedA
   const grid = stats.map(([l, v], i) => { const x = 240 + (i % 2) * 170, y = 92 + Math.floor(i / 2) * 84;
     return `<g opacity="0">${odometer(v.toLocaleString("en-US"), x, y, 34, T.ink, 0.3 + i * 0.1)}${label(l.toUpperCase(), x, y + 22)}${fadeIn(0.1 + i * 0.15)}${spring(0.1 + i * 0.15, 16)}</g>`; }).join("");
   const orbit = [0, 1, 2].map((i) => `<circle r="2.5" fill="${[C.cyan, C.violet, C.pink][i]}" filter="url(#glow)"><animateMotion dur="${6 + i * 2}s" repeatCount="indefinite" path="M${r + 11},0 a${r + 11},${r + 11} 0 1,1 -${(r + 11) * 2},0 a${r + 11},${r + 11} 0 1,1 ${(r + 11) * 2},0"/></circle>`).join("");
-  writeFileSync("assets/stats.svg", card(590, 260, `${title("GitHub, last 12 months")}
+  writeFileSync(`${DIR}/stats.svg`, card(590, 260, `${title("GitHub, last 12 months")}
 <g transform="translate(120 148)">
   <circle r="${r}" fill="none" stroke="${T.soft}" stroke-width="10"/>
   <circle r="${r}" fill="none" stroke="${C.cyan}" stroke-width="10" stroke-linecap="round" stroke-dasharray="${c}" stroke-dashoffset="${c}" transform="rotate(-90)" filter="url(#glow)">
@@ -219,7 +231,7 @@ ${grid}
     legend += `<g opacity="0"><circle cx="${lx + 6}" cy="${ly - 4}" r="6" fill="${v.color}" filter="url(#glow)"/><text x="${lx + 20}" y="${ly}" fill="${T.ink}" font-size="14" font-weight="600">${esc(name)}</text><text x="${lx + 250}" y="${ly}" fill="${T.muted}" font-size="13" text-anchor="end">${pct}%</text>
 <rect x="${lx + 20}" y="${ly + 8}" width="230" height="2" fill="${T.soft}"/><rect x="${lx + 20}" y="${ly + 8}" width="0" height="2" fill="${v.color}"><animate attributeName="width" from="0" to="${((v.size / max) * 230).toFixed(1)}" begin="${(0.4 + i * 0.1).toFixed(2)}s" dur="0.9s" fill="freeze" ${EASE}/></rect>${fadeIn(0.2 + i * 0.1)}${spring(0.2 + i * 0.1, 10)}</g>`;
   });
-  writeFileSync("assets/languages.svg", card(590, 260, `${title("Languages across public repos")}<clipPath id="bar"><rect x="24" y="56" width="542" height="14" rx="7"/></clipPath><g clip-path="url(#bar)"><rect x="24" y="56" width="542" height="14" fill="${T.soft}"/>${bar}</g>${legend}`));
+  writeFileSync(`${DIR}/languages.svg`, card(590, 260, `${title("Languages across public repos")}<clipPath id="bar"><rect x="24" y="56" width="542" height="14" rx="7"/></clipPath><g clip-path="url(#bar)"><rect x="24" y="56" width="542" height="14" fill="${T.soft}"/>${bar}</g>${legend}`));
 }
 
 // 7. Activity: last 90 days drawn on as a glowing area chart with a live dot at today
@@ -233,7 +245,7 @@ ${grid}
   const fmt = (s) => new Date(s + "T00:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
   const ticks = [0, 30, 60, 89].map((i) => `<text x="${pts[i][0].toFixed(1)}" y="${H - 12}" fill="${T.faint}" font-size="11" text-anchor="${i === 0 ? "start" : i === 89 ? "end" : "middle"}">${fmt(last[i].date)}</text>`).join("");
   const [ex, ey] = pts.at(-1);
-  writeFileSync("assets/activity.svg", card(W, H, `${title("Contributions, last 90 days")}
+  writeFileSync(`${DIR}/activity.svg`, card(W, H, `${title("Contributions, last 90 days")}
 <text x="${W - 24}" y="36" fill="${T.muted}" font-size="13" text-anchor="end">${total90.toLocaleString("en-US")} total · peak ${peak.contributionCount} on ${fmt(peak.date)}</text>
 ${[0.25, 0.5, 0.75].map((f) => `<line x1="${L}" x2="${W - R}" y1="${(H - B - (H - TOP - B) * f).toFixed(1)}" y2="${(H - B - (H - TOP - B) * f).toFixed(1)}" stroke="${T.soft}"/>`).join("")}
 <path d="${area}" fill="${C.cyan}" fill-opacity="0.12" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.2s" dur="0.8s" fill="freeze"/></path>
@@ -253,7 +265,8 @@ ${ticks}`));
 <g clip-path="url(#t${i})"><text x="0" y="28" fill="${T.ink}" font-size="18" font-family="${MONO}">${esc(t)}</text></g>`; }).join("");
   const cur = lines.map((t, i) => { const w = t.length * cw; return `0 0;${w} 0;${w} 0;0 0;0 0`; }).join(";");
   const curT = lines.flatMap((_, i) => kt(i)).join(";");
-  writeFileSync("assets/typing.svg", svg(760, 44, `<rect x="0.5" y="0.5" width="759" height="43" rx="22" fill="${T.card}" stroke="${T.line}"/><g transform="translate(24 2)">${body}<rect y="8" width="2" height="26" fill="${C.cyan}"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="${cur}" keyTimes="${curT}" dur="${CYC}s" repeatCount="indefinite"/></rect></g>`));
+  writeFileSync(`${DIR}/typing.svg`, svg(760, 44, `<rect x="0.5" y="0.5" width="759" height="43" rx="22" fill="${T.card}" stroke="${T.line}"/><g transform="translate(24 2)">${body}<rect y="8" width="2" height="26" fill="${C.cyan}"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="${cur}" keyTimes="${curT}" dur="${CYC}s" repeatCount="indefinite"/></rect></g>`));
 }
 
+}
 console.log(`rendered: ${stars} stars, ${commits} commits, ${repos.length} repos, streak ${current}/${longest}`);

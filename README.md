@@ -1,8 +1,8 @@
-<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/header.svg" width="100%" alt="Ehsanul Haque Siam. AI Engineer, Full-Stack Developer, Published Researcher"/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/header.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/header.svg" width="100%" alt="Ehsanul Haque Siam. AI Engineer, Full-Stack Developer, Published Researcher"/></picture>
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/typing.svg" width="760" height="44" alt="Building AI systems that reach production"/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/typing.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/typing.svg" width="760" height="44" alt="Building AI systems that reach production"/></picture>
 
 <a href="https://ehsanulhaquesiam.netlify.app"><img src="https://img.shields.io/badge/Portfolio-F3EDE3?style=for-the-badge&logo=googlechrome&logoColor=1C1A17"/></a> <a href="https://ehsanulhaquesiam.netlify.app/resume.pdf"><img src="https://img.shields.io/badge/Resume-F3EDE3?style=for-the-badge&logo=readdotcv&logoColor=1C1A17"/></a> <a href="https://www.linkedin.com/in/ehsanulhaquesiam/"><img src="https://img.shields.io/badge/LinkedIn-F3EDE3?style=for-the-badge&logo=linkedin&logoColor=1C1A17"/></a> <a href="https://scholar.google.com/citations?user=oX8D-pEAAAAJ&hl=en"><img src="https://img.shields.io/badge/Scholar-F3EDE3?style=for-the-badge&logo=googlescholar&logoColor=1C1A17"/></a> <a href="https://orcid.org/0009-0004-8811-1094"><img src="https://img.shields.io/badge/ORCID-F3EDE3?style=for-the-badge&logo=orcid&logoColor=1C1A17"/></a> <a href="https://x.com/siamships"><img src="https://img.shields.io/badge/X-F3EDE3?style=for-the-badge&logo=x&logoColor=1C1A17"/></a> <a href="mailto:ehsanul.siamdev@gmail.com"><img src="https://img.shields.io/badge/Email-F3EDE3?style=for-the-badge&logo=gmail&logoColor=1C1A17"/></a>
 
@@ -12,17 +12,17 @@
 
 <br>
 
-<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/hero-stats.svg" width="100%" alt="50K+ users served, 1.5x client revenue growth, 3 papers and talks, 8+ production apps"/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/hero-stats.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/hero-stats.svg" width="100%" alt="50K+ users served, 1.5x client revenue growth, 3 papers and talks, 8+ production apps"/></picture>
 
 </div>
 
 <br>
 
-<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/strengths.svg" width="100%" alt="LLM systems in production, full-stack product, research"/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/strengths.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/strengths.svg" width="100%" alt="LLM systems in production, full-stack product, research"/></picture>
 
 ## Now
 
-<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/now.svg" width="100%" alt="Right now: most recently pushed repositories and their last commits"/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/now.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/now.svg" width="100%" alt="Right now: most recently pushed repositories and their last commits"/></picture>
 
 | | Role | What I own |
 |:--|:--|:--|
@@ -95,7 +95,7 @@
 
 ## Stack
 
-<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/marquee.svg" width="100%" alt="TypeScript, React 19, Convex, Expo, Flutter, Go, Rust, Gemini, Vertex AI, RAG, MCP, PostgreSQL, Terraform and more"/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/marquee.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/marquee.svg" width="100%" alt="TypeScript, React 19, Convex, Expo, Flutter, Go, Rust, Gemini, Vertex AI, RAG, MCP, PostgreSQL, Terraform and more"/></picture>
 
 <div align="center">
 <sub><b>AI</b> Gemini · Vertex AI · RAG · LangChain · LlamaIndex · Qdrant · Pinecone · MCP · BERT · PyTorch · scikit-learn</sub><br>
@@ -106,15 +106,15 @@
 ## Activity
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/stats.svg" width="49%" alt="GitHub stats, last 12 months"/>
-<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/languages.svg" width="49%" alt="Languages across public repos"/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/stats.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/stats.svg" width="49%" alt="GitHub stats, last 12 months"/></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/languages.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/languages.svg" width="49%" alt="Languages across public repos"/></picture>
 </p>
 
-<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/activity.svg" width="100%" alt="Contributions, last 90 days"/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/dark/activity.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/activity.svg" width="100%" alt="Contributions, last 90 days"/></picture>
 
-<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/3d-contrib/profile-cream.svg" width="100%" alt="Contribution calendar in 3D"/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/3d-contrib/profile-cream-dark.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/3d-contrib/profile-cream.svg" width="100%" alt="Contribution calendar in 3D"/></picture>
 
-<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/output/github-contribution-grid-snake-cream.svg" width="100%" alt="Contribution snake"/>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/output/github-contribution-grid-snake-dark.svg"><img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/output/github-contribution-grid-snake-cream.svg" width="100%" alt="Contribution snake"/></picture>
 
 <div align="center">
 <br>

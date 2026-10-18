@@ -28,6 +28,7 @@ jobs:
           github_user_name: EhsanulHaqueSiam
           outputs: |
             dist/github-contribution-grid-snake-cream.svg?color_snake=%231C1A17&color_dots=%23EFE8DC,%23CFDDBE,%23A7C285,%236E8B4A,%233F5A24
+            dist/github-contribution-grid-snake-dark.svg?color_snake=%23F3EDE3&color_dots=%232E2A25,%233F5A24,%235F7F3A,%2386A85A,%23B5D08F
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
