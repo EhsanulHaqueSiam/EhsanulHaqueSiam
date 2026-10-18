@@ -48,7 +48,7 @@ let DEFS = ""; const makeDefs = () => `<defs>
 const svg = (w, h, body, extra = "") => `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" font-family="${FONT}" ${extra}>${DEFS}${body}</svg>`;
 const card = (w, h, body) => svg(w, h, `<rect x="0.5" y="0.5" width="${w - 1}" height="${h - 1}" rx="18" fill="${T.card}" stroke="${T.line}"/>${body}`);
 const title = (t, x = 24, y = 36) => `<text x="${x}" y="${y}" fill="${T.ink}" font-size="18" font-weight="700" letter-spacing="-0.2">${t}</text>`;
-const label = (t, x, y, c = T.muted, a = "start") => `<text x="${x}" y="${y}" fill="${c}" font-size="15" letter-spacing="0.8" text-anchor="${a}">${t}</text>`;
+const label = (t, x, y, c = T.muted, a = "start") => `<text x="${x}" y="${y}" fill="${c}" font-size="16" letter-spacing="0.8" text-anchor="${a}">${t}</text>`;
 const fadeIn = (begin, dur = 0.8) => `<animate attributeName="opacity" from="0" to="1" begin="${begin.toFixed(2)}s" dur="${dur}s" fill="freeze"/>`;
 const EASE = `calcMode="spline" keySplines="0.16 1 0.3 1"`;
 // Entrance that overshoots slightly before settling, like a spring
@@ -145,10 +145,10 @@ for (const [name, theme] of Object.entries(THEMES)) {
   <rect x="8" y="8" width="384" height="220" rx="18" fill="${T.card}" stroke="${T.line}"/>
   <rect x="8" y="8" width="384" height="220" rx="18" fill="none" stroke="${k.c}" stroke-opacity="0.25"/>
   <rect x="8" y="8" width="384" height="220" rx="18" fill="none" stroke="${k.c}" stroke-width="1.5" pathLength="100" stroke-dasharray="14 86" stroke-linecap="round"><animate attributeName="stroke-dashoffset" from="0" to="-100" dur="6s" begin="${i * 2}s" repeatCount="indefinite"/></rect>
-  <rect x="24" y="24" width="${24 + k.t.length * 0}" height="0"/><rect x="24" y="26" width="34" height="18" rx="9" fill="${k.c}" fill-opacity="0.18"/><text x="41" y="39" fill="${k.c}" font-size="14" font-weight="700" text-anchor="middle">0${i + 1}</text>
+  <rect x="24" y="24" width="${24 + k.t.length * 0}" height="0"/><rect x="24" y="26" width="34" height="18" rx="9" fill="${k.c}" fill-opacity="0.18"/><text x="41" y="39" fill="${k.c}" font-size="15" font-weight="700" text-anchor="middle">0${i + 1}</text>
   <text x="24" y="70" fill="${T.ink}" font-size="21" font-weight="700" letter-spacing="-0.3">${k.t}</text>
   <clipPath id="sp${i}"><rect x="306" y="22" width="72" height="72" rx="14"/></clipPath><image clip-path="url(#sp${i})" href="${img(`spot${i + 1}.jpg`)}" x="306" y="22" width="72" height="72" preserveAspectRatio="xMidYMid slice" opacity="0">${fadeIn(0.5 + i * 0.25)}</image>${lines}
-  <text x="24" y="208" fill="${k.c}" font-size="16" font-weight="600" opacity="0">${k.proof}${fadeIn(1.5 + i * 0.25)}</text>
+  <text x="24" y="208" fill="${k.c}" font-size="17" font-weight="600" opacity="0">${k.proof}${fadeIn(1.5 + i * 0.25)}</text>
   ${fadeIn(0.15 + i * 0.25)}<animateTransform attributeName="transform" type="translate" values="${x} 28;${x} -5;${x} 0" keyTimes="0;0.7;1" begin="${(0.15 + i * 0.25).toFixed(2)}s" dur="1s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.3 1;0.3 0 0.4 1"/>
 </g>`; }).join("");
   writeFileSync(`${DIR}/strengths.svg`, svg(1200, 236, body));
@@ -157,7 +157,7 @@ for (const [name, theme] of Object.entries(THEMES)) {
 // 4. Marquee: the stack scrolling forever, two copies for a seamless loop
 {
   const items = ["TypeScript", "React 19", "TanStack Start", "Convex", "Expo", "React Native", "Flutter", "Tailwind", "Fastify", "FastAPI", "PostgreSQL", "Drizzle", "Go", "Rust", "Java", "Python", "Gemini", "Vertex AI", "RAG", "LangChain", "LlamaIndex", "Qdrant", "Pinecone", "MCP", "PyTorch", "scikit-learn", "BERT", "Cloud Run", "Terraform", "Docker", "GitHub Actions", "Solidity"];
-  let x = 0; const one = items.map((t, i) => { const w = t.length * 10.5 + 48; const g = `<g transform="translate(${x} 0)"><rect x="0" y="8" width="${w - 12}" height="30" rx="15" fill="${T.card}" stroke="${T.line}"/><circle cx="16" cy="23" r="3" fill="${i % 2 ? C.cyan : "#e4e4e7"}"/><text x="28" y="28" fill="${T.body}" font-size="16" font-family="${MONO}">${esc(t)}</text></g>`; x += w; return g; }).join("");
+  let x = 0; const one = items.map((t, i) => { const w = t.length * 11 + 48; const g = `<g transform="translate(${x} 0)"><rect x="0" y="8" width="${w - 12}" height="30" rx="15" fill="${T.card}" stroke="${T.line}"/><circle cx="16" cy="23" r="3" fill="${i % 2 ? C.cyan : "#e4e4e7"}"/><text x="28" y="28" fill="${T.body}" font-size="17" font-family="${MONO}">${esc(t)}</text></g>`; x += w; return g; }).join("");
   const W = x;
   writeFileSync(`${DIR}/marquee.svg`, svg(1200, 46, `<clipPath id="mq"><rect width="1200" height="46"/></clipPath><g clip-path="url(#mq)"><g class="marquee" style="animation-duration:${(W / 60).toFixed(0)}s">${one}<g transform="translate(${W} 0)">${one}</g></g></g>`));
 }
@@ -174,11 +174,11 @@ for (const [name, theme] of Object.entries(THEMES)) {
   <g clip-path="url(#pic)" opacity="0"><image href="${img("hero.jpg")}" x="0" y="-40" width="1200" height="510" preserveAspectRatio="xMidYMid slice"/>${fadeIn(0.05, 1.2)}</g>
   <rect width="1200" height="404" filter="url(#grain)" opacity="0.35" clip-path="url(#pic)"/>
   ${kinetic("Ehsanul Haque Siam", 64, 500, 60, T.ink, 0.5)}
-  <g opacity="0"><text x="66" y="544" fill="${T.body}" font-size="25" font-weight="500">AI Engineer · Full-Stack Developer · Published Researcher</text>${fadeIn(1.0)}${spring(1.0, 16)}</g>
-  <g opacity="0"><text x="66" y="580" fill="${T.muted}" font-size="18">Software Engineer @ Ledgercross  ·  Lead Researcher (NLP &amp; LLMs) @ Arché Intelligence Lab  ·  Dhaka</text>${fadeIn(1.2)}${spring(1.2, 12)}</g>
-  <g opacity="0"><text x="66" y="616" fill="${T.body}" font-size="18">I turn papers into products that people use. Dhaka, UTC+6, usually online.</text>${fadeIn(1.5)}</g>
-  <g opacity="0"><text x="66" y="650" fill="${T.muted}" font-size="16" font-family="${MONO}">$ status <tspan fill="${T.ink}">${esc(status)}</tspan> <tspan class="blink" fill="${C.cyan}">▍</tspan></text>${fadeIn(1.8)}</g>
-  <g transform="translate(828 634)" opacity="0">${["research", "models", "production"].map((t, i) => `<rect x="${i * 122}" y="0" width="110" height="28" rx="14" fill="${[C.cyan, C.violet, C.pink][i]}" fill-opacity="0.16"/><text x="${i * 122 + 55}" y="19" fill="${[C.cyan, C.violet, C.pink][i]}" font-size="14" font-weight="700" letter-spacing="1" text-anchor="middle">${t.toUpperCase()}</text>${i < 2 ? `<circle r="2.5" fill="${[C.cyan, C.violet][i]}"><animateMotion dur="2.4s" begin="${i * 1.2}s" repeatCount="indefinite" path="M${i * 122 + 110} 14 L${i * 122 + 122} 14"/></circle>` : ""}`).join("")}${fadeIn(2.0)}</g>
+  <g opacity="0"><text x="66" y="544" fill="${T.body}" font-size="26" font-weight="500">AI Engineer · Full-Stack Developer · Published Researcher</text>${fadeIn(1.0)}${spring(1.0, 16)}</g>
+  <g opacity="0"><text x="66" y="580" fill="${T.muted}" font-size="20">Software Engineer @ Ledgercross  ·  Lead Researcher (NLP &amp; LLMs) @ Arché Intelligence Lab  ·  Dhaka</text>${fadeIn(1.2)}${spring(1.2, 12)}</g>
+  <g opacity="0"><text x="66" y="616" fill="${T.body}" font-size="20">I turn papers into products that people use. Dhaka, UTC+6, usually online.</text>${fadeIn(1.5)}</g>
+  <g opacity="0"><text x="66" y="652" fill="${T.muted}" font-size="18" font-family="${MONO}">$ status <tspan fill="${T.ink}">${esc(status)}</tspan> <tspan class="blink" fill="${C.cyan}">▍</tspan></text>${fadeIn(1.8)}</g>
+  <g transform="translate(756 462)" opacity="0">${["research", "models", "production"].map((t, i) => `<rect x="${i * 138}" y="0" width="126" height="30" rx="15" fill="${[C.cyan, C.violet, C.pink][i]}" fill-opacity="0.16"/><text x="${i * 138 + 63}" y="20" fill="${[C.cyan, C.violet, C.pink][i]}" font-size="15" font-weight="700" letter-spacing="1" text-anchor="middle">${t.toUpperCase()}</text>${i < 2 ? `<circle r="2.5" fill="${[C.cyan, C.violet][i]}"><animateMotion dur="2.4s" begin="${i * 1.2}s" repeatCount="indefinite" path="M${i * 138 + 126} 15 L${i * 138 + 138} 15"/></circle>` : ""}`).join("")}${fadeIn(2.0)}</g>
   <rect x="0.5" y="0.5" width="1199" height="689" rx="18" fill="none" stroke="${T.line}"/>
 </g>`));
 }
@@ -188,13 +188,13 @@ for (const [name, theme] of Object.entries(THEMES)) {
   const rows = recent.map((r, i) => { const y = 68 + i * 54; const msg = lastMsg(r);
     return `<g opacity="0">
   <circle cx="34" cy="${y}" r="5" fill="${r.primaryLanguage?.color || "#71717a"}"/>
-  <text x="50" y="${y + 5}" fill="${T.ink}" font-size="19" font-weight="700">${esc(r.name)}</text>
-  <text x="${50 + r.name.length * 11 + 12}" y="${y + 5}" fill="${T.muted}" font-size="16">${esc(r.primaryLanguage?.name || "")}</text>
-  <text x="50" y="${y + 26}" fill="${T.muted}" font-size="17" font-family="${MONO}">${esc(msg.length > 84 ? msg.slice(0, 81) + "..." : msg)}</text>
-  ${(() => { const d = (Date.now() - new Date(r.pushedAt)) / 864e5; const [bg, fg] = d < 1 ? CHIP.green : d < 7 ? CHIP.amber : CHIP.coral; const t = ago(r.pushedAt); const w = t.length * 7.2 + 20; return `<rect x="${1164 - w}" y="${y - 9}" width="${w}" height="20" rx="10" fill="${bg}"/><text x="${1164 - w / 2}" y="${y + 5}" fill="${fg}" font-size="14" font-weight="600" text-anchor="middle">${t}</text>`; })()}
+  <text x="50" y="${y + 5}" fill="${T.ink}" font-size="20" font-weight="700">${esc(r.name)}</text>
+  <text x="${50 + r.name.length * 11 + 12}" y="${y + 5}" fill="${T.muted}" font-size="17">${esc(r.primaryLanguage?.name || "")}</text>
+  <text x="50" y="${y + 27}" fill="${T.muted}" font-size="18" font-family="${MONO}">${esc(msg.length > 78 ? msg.slice(0, 75) + "..." : msg)}</text>
+  ${(() => { const d = (Date.now() - new Date(r.pushedAt)) / 864e5; const [bg, fg] = d < 1 ? CHIP.green : d < 7 ? CHIP.amber : CHIP.coral; const t = ago(r.pushedAt); const w = t.length * 8.4 + 22; return `<rect x="${1164 - w}" y="${y - 11}" width="${w}" height="24" rx="12" fill="${bg}"/><text x="${1164 - w / 2}" y="${y + 6}" fill="${fg}" font-size="16" font-weight="600" text-anchor="middle">${t}</text>`; })()}
   ${fadeIn(0.2 + i * 0.15)}${spring(0.2 + i * 0.15, 14)}</g>`; }).join("");
   const live = `<g transform="translate(1152 32)"><circle r="4" fill="${C.cyan}"/><circle r="4" fill="none" stroke="${C.cyan}"><animate attributeName="r" values="4;12" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0" dur="1.8s" repeatCount="indefinite"/></circle></g>`;
-  writeFileSync(`${DIR}/now.svg`, card(1200, 68 + recent.length * 54 + 14, `${title("Right now")}<text x="1140" y="36" fill="${T.muted}" font-size="16" text-anchor="end">LIVE · pushed in the last 30 days · rendered ${new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "Asia/Dhaka" })}</text>${live}${rows}`));
+  writeFileSync(`${DIR}/now.svg`, card(1200, 68 + recent.length * 54 + 14, `${title("Right now")}<text x="1140" y="36" fill="${T.muted}" font-size="17" text-anchor="end">LIVE · pushed in the last 30 days · rendered ${new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "Asia/Dhaka" })}</text>${live}${rows}`));
 }
 
 // 5. Stats card: glowing ring of this year's contributions plus odometer counters
@@ -211,7 +211,7 @@ for (const [name, theme] of Object.entries(THEMES)) {
     <animate attributeName="stroke-dashoffset" from="${c}" to="${c * 0.08}" begin="0.2s" dur="1.8s" fill="freeze" ${EASE}/></circle>
   <circle r="${r + 11}" fill="none" stroke="${T.line}" stroke-dasharray="2 6"/>${orbit}
   ${odometer(total.toLocaleString("en-US"), -([...total.toLocaleString("en-US")].reduce((a, ch) => a + (/\d/.test(ch) ? 18.6 : 7.8), 0) / 2), 10, 30, T.ink, 0.4)}
-  <text x="0" y="34" fill="${T.muted}" font-size="13" letter-spacing="0.6" text-anchor="middle">CONTRIBUTIONS</text>
+  <text x="0" y="34" fill="${T.muted}" font-size="14" letter-spacing="0.6" text-anchor="middle">CONTRIBUTIONS</text>
 </g>
 ${grid}
 <g opacity="0">${label(`STREAK ${current} DAYS · LONGEST ${longest} · ${repos.length} PUBLIC REPOS`, 24, 244, T.muted)}${fadeIn(0.9)}</g>`));
@@ -228,7 +228,7 @@ ${grid}
     const w = (v.size / sum) * 542, pct = ((v.size / sum) * 100).toFixed(1);
     bar += `<rect x="${x.toFixed(1)}" y="56" width="0" height="14" fill="${v.color}"><animate attributeName="width" from="0" to="${w.toFixed(1)}" begin="${(0.1 + i * 0.1).toFixed(2)}s" dur="0.9s" fill="freeze" ${EASE}/></rect>`; x += w;
     const lx = 24 + (i % 2) * 280, ly = 112 + Math.floor(i / 2) * 34;
-    legend += `<g opacity="0"><circle cx="${lx + 6}" cy="${ly - 4}" r="6" fill="${v.color}" filter="url(#glow)"/><text x="${lx + 20}" y="${ly}" fill="${T.ink}" font-size="18" font-weight="600">${esc(name)}</text><text x="${lx + 250}" y="${ly}" fill="${T.muted}" font-size="16" text-anchor="end">${pct}%</text>
+    legend += `<g opacity="0"><circle cx="${lx + 6}" cy="${ly - 4}" r="6" fill="${v.color}" filter="url(#glow)"/><text x="${lx + 20}" y="${ly}" fill="${T.ink}" font-size="18" font-weight="600">${esc(name)}</text><text x="${lx + 250}" y="${ly}" fill="${T.muted}" font-size="17" text-anchor="end">${pct}%</text>
 <rect x="${lx + 20}" y="${ly + 8}" width="230" height="2" fill="${T.soft}"/><rect x="${lx + 20}" y="${ly + 8}" width="0" height="2" fill="${v.color}"><animate attributeName="width" from="0" to="${((v.size / max) * 230).toFixed(1)}" begin="${(0.4 + i * 0.1).toFixed(2)}s" dur="0.9s" fill="freeze" ${EASE}/></rect>${fadeIn(0.2 + i * 0.1)}${spring(0.2 + i * 0.1, 10)}</g>`;
   });
   writeFileSync(`${DIR}/languages.svg`, card(590, 260, `${title("Languages across public repos")}<clipPath id="bar"><rect x="24" y="56" width="542" height="14" rx="7"/></clipPath><g clip-path="url(#bar)"><rect x="24" y="56" width="542" height="14" fill="${T.soft}"/>${bar}</g>${legend}`));
@@ -243,10 +243,10 @@ ${grid}
   const area = `${line} L${pts.at(-1)[0].toFixed(1)} ${H - B} L${L} ${H - B} Z`;
   const total90 = last.reduce((n, d) => n + d.contributionCount, 0), peak = last.reduce((a, b) => (b.contributionCount > a.contributionCount ? b : a));
   const fmt = (s) => new Date(s + "T00:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
-  const ticks = [0, 30, 60, 89].map((i) => `<text x="${pts[i][0].toFixed(1)}" y="${H - 12}" fill="${T.faint}" font-size="14" text-anchor="${i === 0 ? "start" : i === 89 ? "end" : "middle"}">${fmt(last[i].date)}</text>`).join("");
+  const ticks = [0, 30, 60, 89].map((i) => `<text x="${pts[i][0].toFixed(1)}" y="${H - 12}" fill="${T.faint}" font-size="16" text-anchor="${i === 0 ? "start" : i === 89 ? "end" : "middle"}">${fmt(last[i].date)}</text>`).join("");
   const [ex, ey] = pts.at(-1);
   writeFileSync(`${DIR}/activity.svg`, card(W, H, `${title("Contributions, last 90 days")}
-<text x="${W - 24}" y="36" fill="${T.muted}" font-size="16" text-anchor="end">${total90.toLocaleString("en-US")} total · peak ${peak.contributionCount} on ${fmt(peak.date)}</text>
+<text x="${W - 24}" y="36" fill="${T.muted}" font-size="17" text-anchor="end">${total90.toLocaleString("en-US")} total · peak ${peak.contributionCount} on ${fmt(peak.date)}</text>
 ${[0.25, 0.5, 0.75].map((f) => `<line x1="${L}" x2="${W - R}" y1="${(H - B - (H - TOP - B) * f).toFixed(1)}" y2="${(H - B - (H - TOP - B) * f).toFixed(1)}" stroke="${T.soft}"/>`).join("")}
 <path d="${area}" fill="${C.cyan}" fill-opacity="0.12" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.2s" dur="0.8s" fill="freeze"/></path>
 <path d="${line}" fill="none" stroke="${C.cyan}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" filter="url(#glow)"><animate attributeName="stroke-dashoffset" from="1" to="0" begin="0.1s" dur="2s" fill="freeze" calcMode="spline" keySplines="0.3 0 0.2 1"/></path>
@@ -277,35 +277,36 @@ ${ticks}`));
     bars += `<g opacity="0">${g}<animate attributeName="opacity" from="0" to="1" begin="${(0.1 + wi * 0.03).toFixed(2)}s" dur="0.5s" fill="freeze"/><animateTransform attributeName="transform" type="translate" from="0 40" to="0 0" begin="${(0.1 + wi * 0.03).toFixed(2)}s" dur="0.7s" fill="freeze" ${EASE}/></g>`;
   });
   const months = []; weeks.forEach((w, wi) => { const d = new Date(w.contributionDays[0].date + "T00:00:00Z"); if (d.getUTCDate() <= 7) months.push([wi, d.toLocaleDateString("en-US", { month: "short", timeZone: "UTC" })]); });
-  const labels = months.map(([wi, m]) => `<text x="${(ox + (wi - 7.6) * cos * t).toFixed(1)}" y="${(oy + (wi + 7.6) * sin * t + 6).toFixed(1)}" fill="${T.faint}" font-size="14" letter-spacing="0.5" text-anchor="end">${m.toUpperCase()}</text>`).join("");
+  const labels = months.map(([wi, m]) => `<text x="${(ox + (wi - 7.6) * cos * t).toFixed(1)}" y="${(oy + (wi + 7.6) * sin * t + 6).toFixed(1)}" fill="${T.faint}" font-size="16" letter-spacing="0.5" text-anchor="end">${m.toUpperCase()}</text>`).join("");
   const legend = shades.map((c, i) => `<rect x="${1040 + i * 20}" y="526" width="14" height="14" rx="3" fill="${i ? c : T.soft}"/>`).join("");
   const total = cc.contributionCalendar.totalContributions;
   writeFileSync(`${DIR}/calendar.svg`, card(1200, 560, `${title("Contributions, last 12 months")}
-<text x="1176" y="36" fill="${T.muted}" font-size="16" text-anchor="end">${total.toLocaleString("en-US")} contributions · longest streak ${longest} days · ${stars} stars</text>
+<text x="1176" y="36" fill="${T.muted}" font-size="17" text-anchor="end">${total.toLocaleString("en-US")} contributions · longest streak ${longest} days · ${stars} stars</text>
 ${bars}${labels}
-<text x="1030" y="538" fill="${T.faint}" font-size="13" text-anchor="end">LESS</text>${legend}<text x="1148" y="538" fill="${T.faint}" font-size="13">MORE</text>`));
+<text x="1030" y="538" fill="${T.faint}" font-size="14" text-anchor="end">LESS</text>${legend}<text x="1148" y="538" fill="${T.faint}" font-size="14">MORE</text>`));
 }
 
 
 // Text wrapping by character budget (system fonts, so an estimate is all we can do)
 const wrap = (text, max) => { const out = []; let line = ""; for (const w of text.split(" ")) { if ((line + " " + w).trim().length > max) { out.push(line.trim()); line = w; } else line += " " + w; } if (line.trim()) out.push(line.trim()); return out; };
-const chip = (x, y, text, color, size = 14) => { const w = text.length * (size * 0.62) + 20, h = size + 10; return { w, svg: `<rect x="${x}" y="${y - h / 2 - 4}" width="${w.toFixed(0)}" height="${h}" rx="${h / 2}" fill="${color}" fill-opacity="0.16"/><text x="${(x + w / 2).toFixed(1)}" y="${y}" fill="${color}" font-size="${size}" font-weight="700" text-anchor="middle">${esc(text)}</text>` }; };
+const chip = (x, y, text, color, size = 16) => { const w = text.length * (size * 0.62) + 20, h = size + 10; return { w, svg: `<rect x="${x}" y="${y - h / 2 - 4}" width="${w.toFixed(0)}" height="${h}" rx="${h / 2}" fill="${color}" fill-opacity="0.16"/><text x="${(x + w / 2).toFixed(1)}" y="${y}" fill="${color}" font-size="${size}" font-weight="700" text-anchor="middle">${esc(text)}</text>` }; };
 const chipRow = (x, y, items, color) => items.map((t) => { const c = chip(x, y, t, color); x += c.w + 8; return c.svg; }).join("");
 const months = (from) => { const a = new Date(from + "-01T00:00:00Z"), b = new Date(); return (b.getUTCFullYear() - a.getUTCFullYear()) * 12 + b.getUTCMonth() - a.getUTCMonth(); };
 const repoOf = (name) => repos.find((r) => r.name.toLowerCase() === name.toLowerCase());
 
-// 9. Current roles: one card per role (so each can be a link), with live tenure
+// 9. Current roles: one card per role (so each can be a link), with live tenure, a short summary and the stack as chips
 {
   const roles = [
-    { file: "role-ledgercross", role: "Software Engineer", org: "Ledgercross", site: "ledgercross.com", since: "2026-06", c: C.cyan, lines: wrap("Full-stack and platform. Built InvoicePilot: React 19, Fastify, PostgreSQL, FastAPI OCR, Solidity, a 700-test backend and QuickBooks, Xero, NetSuite and Sage integrations. Rebuilt Veritas KYC on Cloud Run with Document AI + Gemini and Terraform.", 54) },
-    { file: "role-arche", role: "Lead Researcher, NLP & LLMs", org: "Arché Intelligence Lab", site: "arche-lab.org", since: "2026-06", c: C.violet, lines: wrap("Leading LLM and Bengali NLP research toward peer-reviewed publication with a distributed team of researchers across AIUB, BUET, BRAC and RUET.", 54) },
+    { file: "role-ledgercross", role: "Software Engineer", org: "Ledgercross", site: "ledgercross.com", since: "2026-06", c: C.cyan, lines: wrap("Full-stack and platform: InvoicePilot (700-test backend, QuickBooks, Xero, NetSuite and Sage) and Veritas KYC on Cloud Run.", 52), stack: ["React 19", "Fastify", "PostgreSQL", "Gemini"] },
+    { file: "role-arche", role: "Lead Researcher, NLP & LLMs", org: "Arché Intelligence Lab", site: "arche-lab.org", since: "2026-06", c: C.violet, lines: wrap("Leading LLM and Bengali NLP research toward publication with researchers across AIUB, BUET, BRAC and RUET.", 52), stack: ["LLMs", "Bengali NLP", "BERT", "PyTorch"] },
   ];
-  roles.forEach((r) => { const m = months(r.since); const tenure = `NOW · ${m < 1 ? "THIS MONTH" : m === 1 ? "1 MO" : `${m} MO`}`; const c1 = chip(24, 44, tenure, r.c);
-    writeFileSync(`${DIR}/${r.file}.svg`, card(590, 262, `<rect x="0.5" y="0.5" width="589" height="261" rx="18" fill="none" stroke="${r.c}" stroke-opacity="0.25"/>
+  roles.forEach((r) => { const m = months(r.since); const tenure = `NOW · ${m < 1 ? "THIS MONTH" : m === 1 ? "1 MO" : `${m} MO`}`; const c1 = chip(24, 44, tenure, r.c); const org = chip(24, 110, r.org, r.c);
+    writeFileSync(`${DIR}/${r.file}.svg`, card(590, 258, `<rect x="0.5" y="0.5" width="589" height="257" rx="18" fill="none" stroke="${r.c}" stroke-opacity="0.25"/>
 ${c1.svg}${chip(24 + c1.w + 8, 44, `SINCE ${r.since.replace("-", "/")}`, T.muted).svg}
-<text x="24" y="82" fill="${T.ink}" font-size="21" font-weight="700" letter-spacing="-0.3">${esc(r.role)}</text>
-${chip(24, 108, r.org, r.c, 15).svg}<text x="${24 + chip(24, 108, r.org, r.c, 15).w + 10}" y="108" fill="${T.muted}" font-size="15">${esc(r.site)} ↗</text>
-${r.lines.slice(0, 5).map((l, j) => `<text x="24" y="${140 + j * 24}" fill="${T.body}" font-size="17">${esc(l)}</text>`).join("")}
+<text x="24" y="82" fill="${T.ink}" font-size="22" font-weight="700" letter-spacing="-0.3">${esc(r.role)}</text>
+${org.svg}<text x="${24 + org.w + 10}" y="110" fill="${T.muted}" font-size="16">${esc(r.site)} ↗</text>
+${r.lines.slice(0, 3).map((l, j) => `<text x="24" y="${146 + j * 25}" fill="${T.body}" font-size="18">${esc(l)}</text>`).join("")}
+<g opacity="0">${chipRow(24, 232, r.stack, r.c)}${fadeIn(0.3)}</g>
 <circle class="pulse" cx="560" cy="32" r="4" fill="${r.c}"/>`)); });
 }
 
@@ -324,13 +325,13 @@ const LABEL = { Eventarc: "Eventarc", docmind: "DocMind", "flowcv-mcp": "FlowCV 
 WORK.forEach(([name, desc, stack], i) => {
   const r = repoOf(name); const lang = r?.primaryLanguage; const accent = [C.cyan, C.violet, C.pink, C.mint][i % 4];
   const meta = [r?.stargazerCount ? `${r.stargazerCount} stars` : null, r ? `pushed ${ago(r.pushedAt)}` : null].filter(Boolean).join(" · ");
-  const lines = wrap(desc, 54).slice(0, 2);
-  writeFileSync(`${DIR}/work-${name.toLowerCase()}.svg`, card(590, 170, `
-<circle cx="32" cy="38" r="6" fill="${lang?.color || accent}"/><text x="48" y="44" fill="${T.ink}" font-size="20" font-weight="700" letter-spacing="-0.3">${esc(LABEL[name] || name)}</text>
-<text x="566" y="44" fill="${T.muted}" font-size="15" text-anchor="end">${esc(meta)}</text>
-${lines.map((l, j) => `<text x="24" y="${76 + j * 25}" fill="${T.body}" font-size="17">${esc(l)}</text>`).join("")}
-<g opacity="0">${chipRow(24, 140, stack, accent)}${fadeIn(0.3 + (i % 2) * 0.15)}</g>
-<rect x="0.5" y="0.5" width="589" height="169" rx="18" fill="none" stroke="${accent}" stroke-opacity="0.22"/>`));
+  const lines = wrap(desc, 50).slice(0, 2);
+  writeFileSync(`${DIR}/work-${name.toLowerCase()}.svg`, card(590, 178, `
+<circle cx="32" cy="38" r="6" fill="${lang?.color || accent}"/><text x="48" y="44" fill="${T.ink}" font-size="21" font-weight="700" letter-spacing="-0.3">${esc(LABEL[name] || name)}</text>
+<text x="566" y="44" fill="${T.muted}" font-size="16" text-anchor="end">${esc(meta)}</text>
+${lines.map((l, j) => `<text x="24" y="${78 + j * 26}" fill="${T.body}" font-size="18">${esc(l)}</text>`).join("")}
+<g opacity="0">${chipRow(24, 148, stack, accent)}${fadeIn(0.3 + (i % 2) * 0.15)}</g>
+<rect x="0.5" y="0.5" width="589" height="177" rx="18" fill="none" stroke="${accent}" stroke-opacity="0.22"/>`));
 });
 
 // 11. Earlier roles: a timeline from the first role to today, with live "months ago" positioning
@@ -343,23 +344,23 @@ ${lines.map((l, j) => `<text x="24" y="${76 + j * 25}" fill="${T.body}" font-siz
     ["Team Lead, Game Development", "AIUB", "2024-10", "2024-12", "Led 5 developers shipping a 2D OpenGL platformer", C.violet],
   ];
   const start = "2024-10", span = months(start) + 1, x0 = 420, x1 = 1176, px = (ym) => x0 + ((span - 1 - months(ym)) / span) * (x1 - x0);
-  const rows = earlier.map(([role, org, a, b, what, c], i) => { const y = 72 + i * 62; const bx = px(a), bw = Math.max(18, px(b) + (x1 - x0) / span - bx);
+  const rows = earlier.map(([role, org, a, b, what, c], i) => { const y = 74 + i * 64; const bx = px(a), bw = Math.max(18, px(b) + (x1 - x0) / span - bx);
     const fmt = (ym) => new Date(ym + "-01T00:00:00Z").toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" });
-    return `<g opacity="0"><text x="24" y="${y}" fill="${T.ink}" font-size="17" font-weight="700">${esc(role)}</text>${chip(24 + role.length * 10 + 12, y, org, c, 14).svg}
-<text x="24" y="${y + 22}" fill="${T.muted}" font-size="15">${fmt(a)} to ${fmt(b)} · ${esc(what)}</text>
+    return `<g opacity="0"><text x="24" y="${y}" fill="${T.ink}" font-size="18" font-weight="700">${esc(role)}</text>${chip(24 + role.length * 10.6 + 12, y, org, c).svg}
+<text x="24" y="${y + 24}" fill="${T.muted}" font-size="17">${fmt(a)} to ${fmt(b)} · ${esc(what)}</text>
 <rect x="${x0}" y="${y - 6}" width="${x1 - x0}" height="10" rx="5" fill="${T.soft}"/><rect x="${bx.toFixed(1)}" y="${y - 6}" width="0" height="10" rx="5" fill="${c}"><animate attributeName="width" from="0" to="${bw.toFixed(1)}" begin="${(0.3 + i * 0.15).toFixed(2)}s" dur="0.9s" fill="freeze" ${EASE}/></rect>${fadeIn(0.1 + i * 0.12)}</g>`; }).join("");
-  const ticks = []; for (let k = 0; k <= span; k += 6) { const d = new Date(start + "-01T00:00:00Z"); d.setUTCMonth(d.getUTCMonth() + k); const ym = d.toISOString().slice(0, 7); if (x1 - px(ym) < 70) continue; ticks.push(`<text x="${px(ym).toFixed(1)}" y="${72 + earlier.length * 62 - 8}" fill="${T.faint}" font-size="14" text-anchor="middle">${d.toLocaleDateString("en-US", { month: "short", year: "2-digit", timeZone: "UTC" })}</text>`); }
-  ticks.push(`<text x="${x1}" y="${72 + earlier.length * 62 - 8}" fill="${C.cyan}" font-size="14" text-anchor="end" font-weight="700">TODAY</text>`);
-  writeFileSync(`${DIR}/earlier.svg`, card(1200, 72 + earlier.length * 62 + 40, `${title("Earlier")}<text x="1176" y="36" fill="${T.muted}" font-size="15" text-anchor="end">BSc CSE, AIUB (2022 to 2026) · CGPA 3.90 · 3x Dean's List · 1st Runner-Up, AIUB CS Fest 2024 · full history on LinkedIn ↗</text>${rows}${ticks.join("")}`));
+  const ticks = []; for (let k = 0; k <= span; k += 6) { const d = new Date(start + "-01T00:00:00Z"); d.setUTCMonth(d.getUTCMonth() + k); const ym = d.toISOString().slice(0, 7); if (x1 - px(ym) < 70) continue; ticks.push(`<text x="${px(ym).toFixed(1)}" y="${74 + earlier.length * 64 - 8}" fill="${T.faint}" font-size="16" text-anchor="middle">${d.toLocaleDateString("en-US", { month: "short", year: "2-digit", timeZone: "UTC" })}</text>`); }
+  ticks.push(`<text x="${x1}" y="${74 + earlier.length * 64 - 8}" fill="${C.cyan}" font-size="16" text-anchor="end" font-weight="700">TODAY</text>`);
+  writeFileSync(`${DIR}/earlier.svg`, card(1200, 74 + earlier.length * 64 + 40, `${title("Earlier")}<text x="1176" y="36" fill="${T.muted}" font-size="17" text-anchor="end">BSc CSE, AIUB (2022 to 2026) · CGPA 3.90 · 3x Dean's List · 1st Runner-Up, AIUB CS Fest 2024 · LinkedIn ↗</text>${rows}${ticks.join("")}`));
 }
 
 // 12. Stack: labelled chip rows
 {
-  const groups = [["AI", ["Gemini", "Vertex AI", "RAG", "LangChain", "LlamaIndex", "Qdrant", "Pinecone", "MCP", "BERT", "PyTorch", "scikit-learn"], C.cyan],
-    ["WEB & MOBILE", ["TypeScript", "React 19", "TanStack Start", "Convex", "Expo", "React Native", "Flutter", "Tailwind", "Fastify", "FastAPI"], C.violet],
-    ["BACKEND & INFRA", ["PostgreSQL", "Drizzle", "Go", "Rust", "Java", "Python", "Cloud Run", "Terraform", "Docker", "GitHub Actions", "Solidity"], C.pink]];
-  const rows = groups.map(([label, items, c], i) => { const y = 52 + i * 52; return `<g opacity="0"><text x="24" y="${y}" fill="${T.muted}" font-size="13" font-weight="700" letter-spacing="0.8">${esc(label)}</text>${chipRow(176, y, items, c)}${fadeIn(0.1 + i * 0.2)}${spring(0.1 + i * 0.2, 12)}</g>`; }).join("");
-  writeFileSync(`${DIR}/stack.svg`, card(1200, 180, rows));
+  const groups = [["AI", ["Gemini", "Vertex AI", "RAG", "LangChain", "Qdrant", "MCP", "BERT", "PyTorch", "scikit-learn"], C.cyan],
+    ["WEB & MOBILE", ["TypeScript", "React 19", "TanStack Start", "Convex", "Expo", "React Native", "Flutter", "Fastify", "FastAPI"], C.violet],
+    ["BACKEND & INFRA", ["PostgreSQL", "Go", "Rust", "Python", "Cloud Run", "Terraform", "GitHub Actions", "Solidity"], C.pink]];
+  const rows = groups.map(([label, items, c], i) => { const y = 54 + i * 54; return `<g opacity="0"><text x="24" y="${y}" fill="${T.muted}" font-size="14" font-weight="700" letter-spacing="0.8">${esc(label)}</text>${chipRow(186, y, items, c)}${fadeIn(0.1 + i * 0.2)}${spring(0.1 + i * 0.2, 12)}</g>`; }).join("");
+  writeFileSync(`${DIR}/stack.svg`, card(1200, 186, rows));
 }
 
 // 13. Research: one card per paper so each can link to its DOI or listing
@@ -367,11 +368,11 @@ ${lines.map((l, j) => `<text x="24" y="${76 + j * 25}" fill="${T.body}" font-siz
   const papers = [["research-qpain", "PAPER", "IEEE QPAIN 2026", "Decoding Research Trends: A Clustering Based Topic Modeling Framework", "IEEE Xplore, Scopus indexed · DOI 10.1109/QPAIN69676.2026.11545814 ↗", C.cyan],
     ["research-idaa", "CHAPTER", "IDAA 2025 · Taylor & Francis", "Beyond NER: A Comparative Benchmark of Medical BERTs for Multi-Label Adverse Drug Reaction Classification", "Book chapter · BioBERT and PubMedBERT on PsyTAR · Google Scholar ↗", C.violet],
     ["research-climate", "TALK", "South Asian Climate Conference 2024", "Cyclones and Calamity: A Historical and Statistical Unmasking of Losses in Bangladesh", "Statistical analysis and presentation · certificate on the portfolio ↗", C.pink]];
-  papers.forEach(([file, kind, venue, t, note, c]) => { const lines = wrap(t, 90); const k = chip(24, 38, kind, c);
-    writeFileSync(`${DIR}/${file}.svg`, card(1200, lines.length > 1 ? 116 : 94, `<rect x="0.5" y="0.5" width="1199" height="${lines.length > 1 ? 115 : 93}" rx="18" fill="none" stroke="${c}" stroke-opacity="0.25"/>
-${k.svg}<text x="${24 + k.w + 12}" y="38" fill="${T.ink}" font-size="16" font-weight="700">${esc(venue)}</text>
-${lines.map((l, j) => `<text x="24" y="${64 + j * 22}" fill="${T.body}" font-size="17" font-style="italic">${esc(l)}</text>`).join("")}
-<text x="1176" y="38" fill="${T.muted}" font-size="15" text-anchor="end">${esc(note)}</text>`)); });
+  papers.forEach(([file, kind, venue, t, note, c]) => { const lines = wrap(t, 80); const k = chip(24, 38, kind, c);
+    writeFileSync(`${DIR}/${file}.svg`, card(1200, lines.length > 1 ? 122 : 98, `<rect x="0.5" y="0.5" width="1199" height="${lines.length > 1 ? 121 : 97}" rx="18" fill="none" stroke="${c}" stroke-opacity="0.25"/>
+${k.svg}<text x="${24 + k.w + 12}" y="38" fill="${T.ink}" font-size="18" font-weight="700">${esc(venue)}</text>
+${lines.map((l, j) => `<text x="24" y="${66 + j * 24}" fill="${T.body}" font-size="19" font-style="italic">${esc(l)}</text>`).join("")}
+<text x="1176" y="38" fill="${T.muted}" font-size="17" text-anchor="end">${esc(note)}</text>`)); });
 }
 
 // 13b. Navigation pills, one per section so each is a link
@@ -383,7 +384,7 @@ ${lines.map((l, j) => `<text x="24" y="${64 + j * 22}" fill="${T.body}" font-siz
   writeFileSync(`${DIR}/footer.svg`, card(1200, 140, `
 <text x="600" y="50" fill="${T.ink}" font-size="24" font-weight="700" text-anchor="middle" letter-spacing="-0.4">Open to AI/ML engineering, full-stack and research roles.</text>
 <text x="600" y="80" fill="${T.body}" font-size="16" text-anchor="middle">If you ship AI features and care whether they work, we should talk.</text>
-<g opacity="0"><rect x="430" y="94" width="340" height="34" rx="17" fill="${C.cyan}" fill-opacity="0.16"/><text x="600" y="117" fill="${C.cyan}" font-size="16" font-weight="700" text-anchor="middle" font-family="${MONO}">ehsanul.siamdev@gmail.com</text>${fadeIn(0.4)}${spring(0.4, 10)}</g>`));
+<g opacity="0"><rect x="430" y="94" width="340" height="34" rx="17" fill="${C.cyan}" fill-opacity="0.16"/><text x="600" y="117" fill="${C.cyan}" font-size="17" font-weight="700" text-anchor="middle" font-family="${MONO}">ehsanul.siamdev@gmail.com</text>${fadeIn(0.4)}${spring(0.4, 10)}</g>`));
 }
 
 // 8. Typing banner: lines type in and erase in a loop, pure SMIL
