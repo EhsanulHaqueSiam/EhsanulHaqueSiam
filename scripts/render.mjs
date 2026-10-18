@@ -132,9 +132,9 @@ for (const [name, theme] of Object.entries(THEMES)) {
 // 3. Strength cards: a painted cover, the title and one proof line
 {
   const cards = [
-    { t: "LLM systems in production", c: C.cyan, img: "strength-llm.jpg", proof: "RAG on Vertex AI · fine-tuning · MCP servers" },
-    { t: "Full-stack product", c: C.violet, img: "strength-product.jpg", proof: "React 19 · Convex · Expo · Go · Rust" },
-    { t: "Published research", c: C.pink, img: "strength-research.jpg", proof: "IEEE Xplore · Taylor & Francis · NLP" },
+    { t: "LLM systems in production", c: C.cyan, img: "strength-llm.jpg", proof: "RAG · fine-tuning · MCP servers" },
+    { t: "Full-stack product", c: C.violet, img: "strength-product.jpg", proof: "React 19 · Convex · Expo · Go" },
+    { t: "Published research", c: C.pink, img: "strength-research.jpg", proof: "IEEE Xplore · Taylor & Francis" },
   ];
   const body = cards.map((k, i) => { const x = i * 400, cid = `sc${i}`;
     return `<g opacity="0" transform="translate(${x} 0)">
@@ -174,7 +174,9 @@ for (const [name, theme] of Object.entries(THEMES)) {
   <g opacity="0"><text x="66" y="580" fill="${T.muted}" font-size="20">Software Engineer @ Ledgercross  ·  Lead Researcher (NLP &amp; LLMs) @ Arché Intelligence Lab  ·  Dhaka</text>${fadeIn(1.2)}${spring(1.2, 12)}</g>
   <g opacity="0"><text x="66" y="616" fill="${T.body}" font-size="20">I turn papers into products that people use. Dhaka, UTC+6, usually online.</text>${fadeIn(1.5)}</g>
   <g opacity="0"><text x="66" y="652" fill="${T.muted}" font-size="18" font-family="${MONO}">$ status <tspan fill="${T.ink}">${esc(status)}</tspan> <tspan class="blink" fill="${C.cyan}">▍</tspan></text>${fadeIn(1.8)}</g>
-  <g transform="translate(756 462)" opacity="0">${["research", "models", "production"].map((t, i) => `<rect x="${i * 138}" y="0" width="126" height="30" rx="15" fill="${[C.cyan, C.violet, C.pink][i]}" fill-opacity="0.16"/><text x="${i * 138 + 63}" y="20" fill="${[C.cyan, C.violet, C.pink][i]}" font-size="15" font-weight="700" letter-spacing="1" text-anchor="middle">${t.toUpperCase()}</text>${i < 2 ? `<circle r="2.5" fill="${[C.cyan, C.violet][i]}"><animateMotion dur="2.4s" begin="${i * 1.2}s" repeatCount="indefinite" path="M${i * 138 + 126} 15 L${i * 138 + 138} 15"/></circle>` : ""}`).join("")}${fadeIn(2.0)}</g>
+  ${(() => { const labels = ["research", "models", "production"], cols = [C.cyan, C.violet, C.pink]; const ws = labels.map((t) => t.length * 10.2 + 30); const gap = 14; const total = ws.reduce((a, b) => a + b, 0) + gap * 2; let x = 0;
+    const pills = labels.map((t, i) => { const w = ws[i], px = x; x += w + gap; return `<rect x="${px}" y="0" width="${w}" height="30" rx="15" fill="${cols[i]}" fill-opacity="0.16"/><text x="${px + w / 2}" y="20" fill="${cols[i]}" font-size="15" font-weight="700" letter-spacing="1" text-anchor="middle">${t.toUpperCase()}</text>${i < 2 ? `<circle r="2.5" fill="${cols[i]}"><animateMotion dur="2.4s" begin="${i * 1.2}s" repeatCount="indefinite" path="M${px + w} 15 L${px + w + gap} 15"/></circle>` : ""}`; }).join("");
+    return `<g transform="translate(${1136 - total} 462)" opacity="0">${pills}${fadeIn(2.0)}</g>`; })()}
   <rect x="0.5" y="0.5" width="1199" height="689" rx="18" fill="none" stroke="${T.line}"/>
 </g>`));
 }
@@ -195,7 +197,7 @@ for (const [name, theme] of Object.entries(THEMES)) {
 
 // 5. Stats card: glowing ring of this year's contributions plus odometer counters
 {
-  const total = cc.contributionCalendar.totalContributions, r = 62, c = 2 * Math.PI * r;
+  const total = cc.contributionCalendar.totalContributions, r = 68, c = 2 * Math.PI * r;
   const stats = [["stars", stars], ["commits, 12 mo", commits], ["pull requests", u.pullRequests.totalCount], ["followers", u.followers.totalCount]];
   const grid = stats.map(([l, v], i) => { const x = 240 + (i % 2) * 170, y = 92 + Math.floor(i / 2) * 84;
     return `<g opacity="0">${odometer(v.toLocaleString("en-US"), x, y, 34, T.ink, 0.3 + i * 0.1)}${label(l.toUpperCase(), x, y + 22)}${fadeIn(0.1 + i * 0.15)}${spring(0.1 + i * 0.15, 16)}</g>`; }).join("");
@@ -207,7 +209,7 @@ for (const [name, theme] of Object.entries(THEMES)) {
     <animate attributeName="stroke-dashoffset" from="${c}" to="${c * 0.08}" begin="0.2s" dur="1.8s" fill="freeze" ${EASE}/></circle>
   <circle r="${r + 11}" fill="none" stroke="${T.line}" stroke-dasharray="2 6"/>${orbit}
   ${odometer(total.toLocaleString("en-US"), -([...total.toLocaleString("en-US")].reduce((a, ch) => a + (/\d/.test(ch) ? 18.6 : 7.8), 0) / 2), 10, 30, T.ink, 0.4)}
-  <text x="0" y="34" fill="${T.muted}" font-size="14" letter-spacing="0.6" text-anchor="middle">CONTRIBUTIONS</text>
+  <text x="0" y="32" fill="${T.muted}" font-size="14" text-anchor="middle">contributions</text>
 </g>
 ${grid}
 <g opacity="0">${label(`STREAK ${current} DAYS · LONGEST ${longest} · ${repos.length} PUBLIC REPOS`, 24, 244, T.muted)}${fadeIn(0.9)}</g>`));
