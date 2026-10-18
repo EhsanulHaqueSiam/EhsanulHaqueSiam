@@ -44,6 +44,7 @@
 | 👁️ | [**Gaze Tracker**](https://github.com/EhsanulHaqueSiam/Gaze-Tracker-Android) | Hands-free Android control: gaze navigation, dwell-to-click, 9-point calibration. | MediaPipe · Accessibility Service |
 
 <!-- ACTIVE-PROJECTS-START -->
+<sub>🔄 Building now (last 30 days): [**getmyprof**](https://github.com/EhsanulHaqueSiam/getmyprof) · [**isbdbannedhere**](https://github.com/EhsanulHaqueSiam/isbdbannedhere) · <i>updated Oct 18, 2026</i></sub>
 <!-- ACTIVE-PROJECTS-END -->
 
 ## Research
