@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="170" viewBox="0 0 1200 170" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" ><defs>
-<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2"/></filter>
-<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.06 0"/></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0 0.05 0 0 0 0.05 0"/></filter>
 </defs>
 <style>
 @keyframes drift1{0%{transform:translate(0,0)}50%{transform:translate(90px,40px)}100%{transform:translate(0,0)}}
@@ -17,16 +17,16 @@
 .pulse{animation:pulse 2.4s ease-in-out infinite}.rise{animation:rise 9s linear infinite}.marquee{animation:marquee 28s linear infinite}
 .spin{animation:spin 30s linear infinite;transform-origin:center;transform-box:fill-box}.blink{animation:blink 1s step-end infinite}.breathe{animation:breathe 3s ease-in-out infinite}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
-</style><rect x="0.5" y="0.5" width="1199" height="169" rx="14" fill="#000" stroke="#27272a"/><text x="24" y="36" fill="#fff" font-size="16" font-weight="700" letter-spacing="-0.2">Right now</text><text x="1140" y="36" fill="#71717a" font-size="12" text-anchor="end">LIVE · pushed in the last 30 days · rendered Oct 18</text><g transform="translate(1152 32)"><circle r="4" fill="#22d3ee"/><circle r="4" fill="none" stroke="#22d3ee"><animate attributeName="r" values="4;12" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0" dur="1.8s" repeatCount="indefinite"/></circle></g><g opacity="0">
+</style><rect x="0.5" y="0.5" width="1199" height="169" rx="18" fill="#FBF8F3" stroke="#E4DCCE"/><text x="24" y="36" fill="#1C1A17" font-size="16" font-weight="700" letter-spacing="-0.2">Right now</text><text x="1140" y="36" fill="#7A7268" font-size="12" text-anchor="end">LIVE · pushed in the last 30 days · rendered Oct 18</text><g transform="translate(1152 32)"><circle r="4" fill="#6E8B4A"/><circle r="4" fill="none" stroke="#6E8B4A"><animate attributeName="r" values="4;12" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0" dur="1.8s" repeatCount="indefinite"/></circle></g><g opacity="0">
   <circle cx="34" cy="64" r="5" fill="#3178c6"/>
-  <text x="50" y="69" fill="#fff" font-size="15" font-weight="700">getmyprof</text>
-  <text x="144.8" y="69" fill="#71717a" font-size="12">TypeScript</text>
-  <text x="50" y="88" fill="#a1a1aa" font-size="12.5" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">feat(web): one control kit everywhere, and the shell works on a phone (#71)</text>
-  <text x="1164" y="69" fill="#22d3ee" font-size="12" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">14h ago</text>
+  <text x="50" y="69" fill="#1C1A17" font-size="15" font-weight="700">getmyprof</text>
+  <text x="144.8" y="69" fill="#7A7268" font-size="12">TypeScript</text>
+  <text x="50" y="88" fill="#7A7268" font-size="12.5" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">feat(web): one control kit everywhere, and the shell works on a phone (#71)</text>
+  <rect x="1093.6" y="55" width="70.4" height="20" rx="10" fill="#DDE8CF"/><text x="1128.8" y="69" fill="#3F5A24" font-size="11.5" font-weight="600" text-anchor="middle">14h ago</text>
   <animate attributeName="opacity" from="0" to="1" begin="0.20s" dur="0.8s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 14;0 -4;0 0" keyTimes="0;0.7;1" begin="0.20s" dur="1s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.3 1;0.3 0 0.4 1"/></g><g opacity="0">
   <circle cx="34" cy="110" r="5" fill="#3178c6"/>
-  <text x="50" y="115" fill="#fff" font-size="15" font-weight="700">isbdbannedhere</text>
-  <text x="190.79999999999998" y="115" fill="#71717a" font-size="12">TypeScript</text>
-  <text x="50" y="134" fill="#a1a1aa" font-size="12.5" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">chore(ci): manual dispatch, deploy on main pushes and dispatches</text>
-  <text x="1164" y="115" fill="#22d3ee" font-size="12" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">2d ago</text>
+  <text x="50" y="115" fill="#1C1A17" font-size="15" font-weight="700">isbdbannedhere</text>
+  <text x="190.79999999999998" y="115" fill="#7A7268" font-size="12">TypeScript</text>
+  <text x="50" y="134" fill="#7A7268" font-size="12.5" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">chore(ci): manual dispatch, deploy on main pushes and dispatches</text>
+  <rect x="1100.8" y="101" width="63.2" height="20" rx="10" fill="#F6E5B5"/><text x="1132.4" y="115" fill="#7A5A12" font-size="11.5" font-weight="600" text-anchor="middle">2d ago</text>
   <animate attributeName="opacity" from="0" to="1" begin="0.35s" dur="0.8s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 14;0 -4;0 0" keyTimes="0;0.7;1" begin="0.35s" dur="1s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.3 1;0.3 0 0.4 1"/></g></svg>
