@@ -15,7 +15,7 @@
 
 <br><br>
 
-<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/stats.svg" width="100%" alt="50K+ users served, 1.5x client revenue growth, 3 papers and talks, 8+ production apps"/>
+<img src="https://raw.githubusercontent.com/EhsanulHaqueSiam/EhsanulHaqueSiam/main/assets/stats.svg?v=2" width="100%" alt="50K+ users served, 1.5x client revenue growth, 3 papers and talks, 8+ production apps"/>
 
 </div>
 
