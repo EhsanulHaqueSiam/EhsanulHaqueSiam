@@ -17,16 +17,16 @@
 .pulse{animation:pulse 2.4s ease-in-out infinite}.rise{animation:rise 9s linear infinite}.marquee{animation:marquee 28s linear infinite}
 .spin{animation:spin 30s linear infinite;transform-origin:center;transform-box:fill-box}.blink{animation:blink 1s step-end infinite}.breathe{animation:breathe 3s ease-in-out infinite}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
-</style><rect x="0.5" y="0.5" width="1199" height="189" rx="18" fill="#24211D" stroke="#36312B"/><text x="24" y="36" fill="#F3EDE3" font-size="18" font-weight="700" letter-spacing="-0.2">Right now</text><text x="1140" y="36" fill="#9A9185" font-size="17" text-anchor="end">LIVE · pushed in the last 30 days · rendered Oct 24</text><g transform="translate(1152 32)"><circle r="4" fill="#9DBB76"/><circle r="4" fill="none" stroke="#9DBB76"><animate attributeName="r" values="4;12" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0" dur="1.8s" repeatCount="indefinite"/></circle></g><g opacity="0">
+</style><rect x="0.5" y="0.5" width="1199" height="189" rx="18" fill="#24211D" stroke="#36312B"/><text x="24" y="36" fill="#F3EDE3" font-size="18" font-weight="700" letter-spacing="-0.2">Right now</text><text x="1140" y="36" fill="#9A9185" font-size="17" text-anchor="end">LIVE · pushed in the last 30 days · rendered Oct 25</text><g transform="translate(1152 32)"><circle r="4" fill="#9DBB76"/><circle r="4" fill="none" stroke="#9DBB76"><animate attributeName="r" values="4;12" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0" dur="1.8s" repeatCount="indefinite"/></circle></g><g opacity="0">
   <circle cx="34" cy="68" r="5" fill="#3178c6"/>
   <text x="50" y="73" fill="#F3EDE3" font-size="20" font-weight="700">isbdbannedhere</text>
   <text x="216" y="73" fill="#9A9185" font-size="17">TypeScript</text>
   <text x="50" y="95" fill="#9A9185" font-size="18" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">data: receipts review #17 (1 added)</text>
-  <rect x="1091.6" y="57" width="72.4" height="24" rx="12" fill="#4A3A12"/><text x="1127.8" y="74" fill="#F1D89A" font-size="16" font-weight="600" text-anchor="middle">3d ago</text>
+  <rect x="1091.6" y="57" width="72.4" height="24" rx="12" fill="#4A3A12"/><text x="1127.8" y="74" fill="#F1D89A" font-size="16" font-weight="600" text-anchor="middle">4d ago</text>
   <animate attributeName="opacity" from="0" to="1" begin="0.20s" dur="0.8s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 14;0 -4;0 0" keyTimes="0;0.7;1" begin="0.20s" dur="1s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.3 1;0.3 0 0.4 1"/></g><g opacity="0">
   <circle cx="34" cy="122" r="5" fill="#3178c6"/>
   <text x="50" y="127" fill="#F3EDE3" font-size="20" font-weight="700">getmyprof</text>
   <text x="161" y="127" fill="#9A9185" font-size="17">TypeScript</text>
   <text x="50" y="149" fill="#9A9185" font-size="18" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">feat(web): one control kit everywhere, and the shell works on a phone (#71)</text>
-  <rect x="1091.6" y="111" width="72.4" height="24" rx="12" fill="#4A3A12"/><text x="1127.8" y="128" fill="#F1D89A" font-size="16" font-weight="600" text-anchor="middle">6d ago</text>
+  <rect x="1091.6" y="111" width="72.4" height="24" rx="12" fill="#4A2219"/><text x="1127.8" y="128" fill="#F3C2B6" font-size="16" font-weight="600" text-anchor="middle">7d ago</text>
   <animate attributeName="opacity" from="0" to="1" begin="0.35s" dur="0.8s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 14;0 -4;0 0" keyTimes="0;0.7;1" begin="0.35s" dur="1s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.3 1;0.3 0 0.4 1"/></g></svg>
